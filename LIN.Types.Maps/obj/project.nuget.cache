@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aD89zCvvV3cMQWTjxf1YK5Aeq3IeTWi38ICz8ED67WWeKMNJ1hsnFlAK7tnghu7UmWs+u2vsCRC+ZR8ui41Qtw==",
+  "dgSpecHash": "55zT2bS2vS3acbjjdW+S2dGjmdzblml9fl7Gruc2Ae9zJ8RHc/1w8nbbw79ZY3KL9Eb1MWmtzxkHZxmS89/7qQ==",
   "success": true,
   "projectFilePath": "D:\\LIN Services\\Tipos\\LIN.Types.Maps\\LIN.Types.Maps.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\giral\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.9\\microsoft.windowsdesktop.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\giral\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.9\\microsoft.netcore.app.ref.7.0.9.nupkg.sha512",
-    "C:\\Users\\giral\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.9\\microsoft.aspnetcore.app.ref.7.0.9.nupkg.sha512"
-  ],
+  "expectedPackageFiles": [],
   "logs": []
 }

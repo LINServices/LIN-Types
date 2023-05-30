@@ -19,6 +19,7 @@ namespace LIN.Types.Inventory.Models
         [Column("PROFILE_FK")]
         public int ProfileID { get; set; }
 
+
         [Column("INVENTARIO_FK")]
         public int Inventario { get; set; }
 

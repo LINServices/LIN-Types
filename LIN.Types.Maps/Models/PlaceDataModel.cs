@@ -13,4 +13,5 @@ public class PlaceDataModel
     public string Latitud { get; set; } = string.Empty;
 
 
+
 }
