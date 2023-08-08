@@ -1,6 +1,9 @@
-LIN.Shared/obj
-LIN.Developer.Types/obj
-Http/obj
-LIN.Shared/bin
-LIN.Developer.Types/bin
-Http/bin
+LIN.Shared/obj/
+LIN.Developer.Types/obj/
+Http/obj/
+LIN.Employee.Types/obj/
+
+LIN.Shared/bin/
+LIN.Developer.Types/bin/
+Http/bin/
+LIN.Employee.Types/bin/
