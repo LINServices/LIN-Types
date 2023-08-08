@@ -1,0 +1,15 @@
+D:\LIN Services\Tipos\Http\bin\x86\Debug\net7.0\Http.deps.json
+D:\LIN Services\Tipos\Http\bin\x86\Debug\net7.0\Http.dll
+D:\LIN Services\Tipos\Http\bin\x86\Debug\net7.0\Http.pdb
+D:\LIN Services\Tipos\Http\bin\x86\Debug\net7.0\LIN.Shared.dll
+D:\LIN Services\Tipos\Http\bin\x86\Debug\net7.0\LIN.Shared.pdb
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.csproj.AssemblyReference.cache
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.AssemblyInfo.cs
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.csproj.CopyComplete
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.dll
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\refint\Http.dll
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\Http.pdb
+D:\LIN Services\Tipos\Http\obj\x86\Debug\net7.0\ref\Http.dll

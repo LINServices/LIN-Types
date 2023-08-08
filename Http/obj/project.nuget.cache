@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "+TbhnNMJRnGI1c7S0b4qkbcx95bIBtQCFHBRHlXPxukXoyOTQ93zqG38e6n9Uvw32+KfNq3/ZffNGi0QCd9feQ==",
+  "success": true,
+  "projectFilePath": "D:\\LIN Services\\Tipos\\Http\\Http.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\giral\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.9\\microsoft.aspnetcore.openapi.7.0.9.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

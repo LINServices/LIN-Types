@@ -1,0 +1,15 @@
+D:\LIN Services\Tipos\LIN.Developer.Types\bin\Debug\net7.0\LIN.Developer.Types.deps.json
+D:\LIN Services\Tipos\LIN.Developer.Types\bin\Debug\net7.0\LIN.Developer.Types.dll
+D:\LIN Services\Tipos\LIN.Developer.Types\bin\Debug\net7.0\LIN.Developer.Types.pdb
+D:\LIN Services\Tipos\LIN.Developer.Types\bin\Debug\net7.0\LIN.Shared.dll
+D:\LIN Services\Tipos\LIN.Developer.Types\bin\Debug\net7.0\LIN.Shared.pdb
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.csproj.AssemblyReference.cache
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.csproj.CopyComplete
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.dll
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\refint\LIN.Developer.Types.dll
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\LIN.Developer.Types.pdb
+D:\LIN Services\Tipos\LIN.Developer.Types\obj\Debug\net7.0\ref\LIN.Developer.Types.dll
