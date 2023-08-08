@@ -6,5 +6,6 @@ public enum LINApps
     Undefined,
     Inventory,
     CloudConsole,
-    Admin
+    Admin,
+    Employee
 }
