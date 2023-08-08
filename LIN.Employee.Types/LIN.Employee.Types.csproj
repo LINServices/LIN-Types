@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LIN.Shared\LIN.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

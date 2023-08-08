@@ -29,5 +29,10 @@ public enum ProfileRols
     /// </summary>
     Tester,
 
+    /// <summary>
+    /// System Admin
+    /// </summary>
+    Admin,
+
 
 }
