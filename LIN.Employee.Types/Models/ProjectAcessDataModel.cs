@@ -8,7 +8,7 @@ public class ProjectAcessDataModel
 
 
     public int ID { get; set; } = 0;
-    public ProfileRols Rol { get; set; }
+    public ProjectRoles Rol { get; set; }
 
     [Column("ESTADO")]
     public ProjectAccessState State { get; set; }

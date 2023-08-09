@@ -1,7 +1,7 @@
 ﻿namespace LIN.Employee.Types.Enumerations;
 
 
-public enum ProfileRols
+public enum ProjectRoles
 {
 
     /// <summary>

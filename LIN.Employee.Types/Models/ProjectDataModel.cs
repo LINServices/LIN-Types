@@ -18,7 +18,7 @@ public class ProjectDataModel
     public int Creador { get; set; } = 0;
 
     [NotMapped]
-    public ProfileRols MyRol { get; set; }
+    public ProjectRoles MyRol { get; set; }
 
     [NotMapped]
     public List<ProjectAcessDataModel> UsersAccess { get; set; } = new();
