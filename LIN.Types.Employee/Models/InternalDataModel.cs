@@ -1,6 +1,6 @@
-﻿using LIN.Employee.Types.Enumerations;
+﻿using LIN.Types.Employee.Enumerations;
 
-namespace LIN.Employee.Types.Models;
+namespace LIN.Types.Employee.Models;
 
 public class InternalDataModel
 {

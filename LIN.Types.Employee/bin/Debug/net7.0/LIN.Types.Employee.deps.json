@@ -1,0 +1,61 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "LIN.Types.Employee/1.0.0": {
+        "dependencies": {
+          "LIN.Shared": "1.0.0",
+          "LIN.Types": "1.0.0",
+          "LIN.Types.Auth": "1.0.0"
+        },
+        "runtime": {
+          "LIN.Types.Employee.dll": {}
+        }
+      },
+      "LIN.Shared/1.0.0": {
+        "runtime": {
+          "LIN.Shared.dll": {}
+        }
+      },
+      "LIN.Types/1.0.0": {
+        "runtime": {
+          "LIN.Types.dll": {}
+        }
+      },
+      "LIN.Types.Auth/1.0.0": {
+        "dependencies": {
+          "LIN.Types": "1.0.0"
+        },
+        "runtime": {
+          "LIN.Types.Auth.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LIN.Types.Employee/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LIN.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LIN.Types/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LIN.Types.Auth/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

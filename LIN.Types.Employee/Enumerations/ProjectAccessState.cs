@@ -1,4 +1,4 @@
-﻿namespace LIN.Employee.Types.Enumerations;
+﻿namespace LIN.Types.Employee.Enumerations;
 
 
 public enum ProjectAccessState

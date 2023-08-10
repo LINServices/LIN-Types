@@ -1,7 +1,7 @@
-﻿using LIN.Employee.Types.Enumerations;
+﻿using LIN.Types.Employee.Enumerations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Employee.Types.Models;
+namespace LIN.Types.Employee.Models;
 
 public class ProjectAcessDataModel
 {
