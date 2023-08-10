@@ -18,7 +18,6 @@ namespace LIN.Shared.Models
         [Column("CONTRASENA")]
         public string Contraseña { get; set; } = string.Empty;
 
-        public Sexos Sexo { get; set; } = Sexos.Undefined;
         public DateTime Creacion { get; set; }
         public AccountStatus Estado { get; set; } = AccountStatus.Normal;
         public UserRol Rol { get; set; } = UserRol.User;

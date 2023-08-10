@@ -20,7 +20,7 @@ public class ProductDataTransfer
 
     public string Description { get; set; } = string.Empty;
 
-    public ProductCategories Category { get; set; } = ProductCategories.Undefined;
+  //  public ProductCategories Category { get; set; } = ProductCategories.Undefined;
 
     public ProductBaseStatements Estado { get; set; }
 
@@ -55,9 +55,8 @@ public class ProductDataTransfer
         this.Name = model.Name;
         this.Code = model.Code;
         this.Description = model.Description;
-        this.Category = model.Category;
+      //  this.Category = model.Category;
         this.Description = model.Description;
-        this.Category = model.Category;
         this.Estado = model.Estado;
         this.Provider = model.Provider;
         this.Inventory = model.Inventory;
