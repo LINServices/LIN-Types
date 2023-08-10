@@ -1,9 +1,17 @@
-LIN.Shared/obj/
-LIN.Developer.Types/obj/
 Http/obj/
-LIN.Employee.Types/obj/
+LIN.Modules/obj/
+LIN.Shared/obj/
+LIN.Types/obj/
+LIN.Types/obj/
+LIN.Types.Auth/obj/
+LIN.Types.Developer/obj/
+LIN.Types.Employee/obj/
 
-LIN.Shared/bin/
-LIN.Developer.Types/bin/
 Http/bin/
-LIN.Employee.Types/bin/
+LIN.Modules/bin/
+LIN.Shared/bin/
+LIN.Types/bin/
+LIN.Types/bin/
+LIN.Types.Auth/bin/
+LIN.Types.Developer/bin/
+LIN.Types.Employee/bin/
