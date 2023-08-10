@@ -1,10 +1,10 @@
-D:\LIN Services\Tipos\LIN.Shared\bin\Debug\net7.0\LIN.Shared.deps.json
-D:\LIN Services\Tipos\LIN.Shared\bin\Debug\net7.0\LIN.Shared.dll
-D:\LIN Services\Tipos\LIN.Shared\bin\Debug\net7.0\LIN.Shared.pdb
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\LIN.Shared.GeneratedMSBuildEditorConfig.editorconfig
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\LIN.Shared.AssemblyInfoInputs.cache
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\LIN.Shared.AssemblyInfo.cs
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\LIN.Shared.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Shared\bin\Debug\net7.0\LIN.Shared.deps.json
+D:\LIN Services\Tipos\LIN.Shared\bin\Debug\net7.0\LIN.Shared.dll
+D:\LIN Services\Tipos\LIN.Shared\bin\Debug\net7.0\LIN.Shared.pdb
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\LIN.Shared.dll
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\refint\LIN.Shared.dll
 D:\LIN Services\Tipos\LIN.Shared\obj\Debug\net7.0\LIN.Shared.pdb

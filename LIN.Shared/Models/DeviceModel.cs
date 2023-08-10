@@ -18,7 +18,7 @@ public class DeviceModel
     public int Cuenta { get; set; }
     public double Logitud { get; set; }
     public double Latitud { get; set; }
-    public Platforms Platform { get; set; } = Platforms.Undefined;
+    public dynamic Platform { get; set; } = 0;
     public DeviceState Estado { get; set; } = DeviceState.Actived;
     public LINApps App { get; set; } = LINApps.Undefined;
 
