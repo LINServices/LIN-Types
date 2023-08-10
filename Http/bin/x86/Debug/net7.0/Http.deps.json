@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Http/1.0.0": {
         "dependencies": {
-          "LIN.Shared": "1.0.0",
+          "LIN.Types": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.9",
           "Newtonsoft.Json": "13.0.3"
         },
@@ -43,9 +43,9 @@
           }
         }
       },
-      "LIN.Shared/1.0.0": {
+      "LIN.Types/1.0.0": {
         "runtime": {
-          "LIN.Shared.dll": {}
+          "LIN.Types.dll": {}
         }
       }
     }
@@ -77,7 +77,7 @@
       "path": "newtonsoft.json/13.0.3",
       "hashPath": "newtonsoft.json.13.0.3.nupkg.sha512"
     },
-    "LIN.Shared/1.0.0": {
+    "LIN.Types/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
