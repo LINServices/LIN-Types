@@ -4,8 +4,7 @@
 public class CategorizeModel
 {
 
-    public Shared.Enumerations.Sentiment Sentiment { get; set; } = Shared.Enumerations.Sentiment.Undefined;
-    public Shared.Enumerations.LangEnum Languaje { get; set; } = Shared.Enumerations.LangEnum.Undefined;
-
+    public Sentiments Sentiment { get; set; } = Sentiments.Undefined;
+    public Languajes Languaje { get; set; } = Languajes.Undefined;
 
 }
