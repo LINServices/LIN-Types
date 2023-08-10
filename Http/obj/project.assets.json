@@ -47,14 +47,14 @@
           }
         }
       },
-      "LIN.Shared/1.0.0": {
+      "LIN.Types/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "compile": {
-          "bin/placeholder/LIN.Shared.dll": {}
+          "bin/placeholder/LIN.Types.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LIN.Shared.dll": {}
+          "bin/placeholder/LIN.Types.dll": {}
         }
       }
     }
@@ -119,15 +119,15 @@
         "packageIcon.png"
       ]
     },
-    "LIN.Shared/1.0.0": {
+    "LIN.Types/1.0.0": {
       "type": "project",
-      "path": "../LIN.Shared/LIN.Shared.csproj",
-      "msbuildProject": "../LIN.Shared/LIN.Shared.csproj"
+      "path": "../LIN.Types/LIN.Types.csproj",
+      "msbuildProject": "../LIN.Types/LIN.Types.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "LIN.Shared >= 1.0.0",
+      "LIN.Types >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.9",
       "Newtonsoft.Json >= 13.0.3"
     ]
@@ -165,8 +165,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\LIN Services\\Tipos\\LIN.Shared\\LIN.Shared.csproj": {
-              "projectPath": "D:\\LIN Services\\Tipos\\LIN.Shared\\LIN.Shared.csproj"
+            "D:\\LIN Services\\Tipos\\LIN.Types\\LIN.Types.csproj": {
+              "projectPath": "D:\\LIN Services\\Tipos\\LIN.Types\\LIN.Types.csproj"
             }
           }
         }

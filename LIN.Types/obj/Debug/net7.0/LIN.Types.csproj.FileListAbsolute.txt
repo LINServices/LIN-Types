@@ -1,0 +1,11 @@
+D:\LIN Services\Tipos\LIN.Types\bin\Debug\net7.0\LIN.Types.deps.json
+D:\LIN Services\Tipos\LIN.Types\bin\Debug\net7.0\LIN.Types.dll
+D:\LIN Services\Tipos\LIN.Types\bin\Debug\net7.0\LIN.Types.pdb
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\LIN.Types.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\LIN.Types.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\LIN.Types.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\LIN.Types.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\LIN.Types.dll
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\refint\LIN.Types.dll
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\LIN.Types.pdb
+D:\LIN Services\Tipos\LIN.Types\obj\Debug\net7.0\ref\LIN.Types.dll

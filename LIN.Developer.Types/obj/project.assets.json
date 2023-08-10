@@ -12,18 +12,6 @@
           "bin/placeholder/LIN.Shared.dll": {}
         }
       }
-    },
-    "net7.0/win-x86": {
-      "LIN.Shared/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "compile": {
-          "bin/placeholder/LIN.Shared.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LIN.Shared.dll": {}
-        }
-      }
     }
   },
   "libraries": {
@@ -103,11 +91,6 @@
           }
         },
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
-      }
-    },
-    "runtimes": {
-      "win-x86": {
-        "#import": []
       }
     }
   }

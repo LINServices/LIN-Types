@@ -1,8 +1,9 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿global using LIN.Types.Responses;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 
-namespace LIN.Shared.Responses;
+namespace Http.ResponsesList;
 
 
 public class HttpResponseBase : IActionResult
@@ -65,9 +66,6 @@ public class HttpResponseBase : IActionResult
         return response switch
         {
             Responses.Success => 200,
-            Responses.UserVoid => 400,
-            Responses.NameVoid => 400,
-            Responses.PasswordVoid => 400,
             Responses.InvalidApiKey => 401,
             Responses.PasswordShort => 400,
             Responses.NotRows => 404,
@@ -79,14 +77,11 @@ public class HttpResponseBase : IActionResult
             Responses.LockAccount => 423,
             Responses.DisableAccount => 423,
             Responses.InvalidPassword => 401,
-            Responses.InvalidParamText => 400,
-            Responses.InvalidParamNum => 400,
             Responses.InvalidUser => 400,
             Responses.InvalidParam => 400,
-            Responses.DontHaveCredits => 402,
-            Responses.DontHavePermissions => 401,
             Responses.FirewallBlocked => 403,
             Responses.UnavailableService => 503,
+            Responses.WithoutCredits => 202,
             _ => 500,
         };
     }

@@ -1,4 +1,4 @@
-﻿namespace LIN.Shared.Responses;
+﻿namespace Http.ResponsesList;
 
 public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
 {
@@ -22,12 +22,12 @@ public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
     public HttpReadOneResponse(Responses response = Responses.Undefined)
     {
         var obj = new ReadOneResponse<M>()
-        { 
+        {
             Response = response,
-            Model = new() 
+            Model = new()
         };
         Response = obj.Response;
-        Build(obj);   
+        Build(obj);
     }
 
 

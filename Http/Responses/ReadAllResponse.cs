@@ -1,5 +1,4 @@
-﻿
-namespace LIN.Shared.Responses;
+﻿namespace Http.ResponsesList;
 
 public class HttpReadAllResponse<M> : HttpResponseBase
 {

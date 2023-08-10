@@ -1,4 +1,4 @@
-﻿namespace LIN.Shared.Responses;
+﻿namespace Http.ResponsesList;
 
 
 /// <summary>
@@ -7,7 +7,7 @@
 public class HttpCreateResponse : HttpResponseBase
 {
 
- 
+
     public HttpCreateResponse()
     {
         var obj = new CreateResponse()
