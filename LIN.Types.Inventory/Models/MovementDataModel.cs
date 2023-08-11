@@ -17,8 +17,8 @@ namespace LIN.Types.Inventory.Models
         public int Inventario { get; set; }
 
 
-        [Column("USUARIO_FK")]
-        public int Usuario { get; set; }
+        [Column("PROFILE_FK")]
+        public int ProfileID { get; set; }
 
 
         [NotMapped]

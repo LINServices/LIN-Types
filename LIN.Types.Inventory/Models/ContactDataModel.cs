@@ -31,7 +31,7 @@ public class ContactDataModel
     public ContactStatus State { get; set; } = ContactStatus.Normal;
 
     [Column("USUARIO_FK")]
-    public int UserID { get; set; } = -1;
+    public int ProfileID { get; set; } = -1;
 
 
 
@@ -44,7 +44,7 @@ public class ContactDataModel
         Mail = model.Mail;
         Direction = model.Direction;
         State = model.State;
-        UserID = model.UserID;
+        ProfileID = model.ProfileID;
     }
 
 

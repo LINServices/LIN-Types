@@ -16,8 +16,8 @@ namespace LIN.Types.Inventory.Models
         public DateTime Fecha { get; set; }
 
 
-        [Column("USUARIO_FK")]
-        public int Usuario { get; set; }
+        [Column("PROFILE_FK")]
+        public int ProfileID { get; set; }
 
         [Column("INVENTARIO_FK")]
         public int Inventario { get; set; }
