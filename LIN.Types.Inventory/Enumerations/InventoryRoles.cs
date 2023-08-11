@@ -1,7 +1,7 @@
-﻿namespace LIN.Shared.Enumerations;
+﻿namespace LIN.Types.Inventory.Enumerations;
 
 
-public enum InventoryRols
+public enum InventoryRoles
 {
 
     /// <summary>

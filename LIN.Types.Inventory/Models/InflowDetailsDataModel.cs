@@ -1,7 +1,6 @@
-﻿
-using System.ComponentModel.DataAnnotations.Schema;
+﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Shared.Models
+namespace LIN.Types.Inventory.Models
 {
     public class InflowDetailsDataModel : AbstractDetailsDataModel
     {

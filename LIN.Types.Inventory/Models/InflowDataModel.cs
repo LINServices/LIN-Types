@@ -1,11 +1,11 @@
-﻿using LIN.Shared.Enumerations;
+﻿using LIN.Types.Inventory.Enumerations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Shared.Models
+namespace LIN.Types.Inventory.Models
 {
     public class InflowDataModel : MovementDataModel<InflowDetailsDataModel>
     {
-       
+
         [Column("TIPO")]
         public InflowsTypes Type { get; set; }
 

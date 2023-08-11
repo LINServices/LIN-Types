@@ -1,4 +1,4 @@
-﻿namespace LIN.Shared.Models;
+﻿namespace LIN.Types.Inventory.Models;
 
 
 public class HomeDto

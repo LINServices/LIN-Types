@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Shared.Models
+namespace LIN.Types.Inventory.Models
 {
 
-    public abstract class MovementDataModel<DetailsModel> where DetailsModel : class 
+    public abstract class MovementDataModel<DetailsModel> where DetailsModel : class
     {
 
         public int ID { get; set; } = 0;

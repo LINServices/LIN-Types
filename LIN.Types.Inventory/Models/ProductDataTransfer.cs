@@ -1,7 +1,7 @@
-﻿using LIN.Shared.Enumerations;
+﻿using LIN.Types.Inventory.Enumerations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Shared.Models;
+namespace LIN.Types.Inventory.Models;
 
 
 /// <summary>
@@ -20,7 +20,7 @@ public class ProductDataTransfer
 
     public string Description { get; set; } = string.Empty;
 
-  //  public ProductCategories Category { get; set; } = ProductCategories.Undefined;
+    public ProductCategories Category { get; set; } = ProductCategories.Undefined;
 
     public ProductBaseStatements Estado { get; set; }
 
@@ -40,7 +40,7 @@ public class ProductDataTransfer
 
     public ProductStatements EstadoDetail { get; set; } = ProductStatements.Normal;
 
-    
+
 
     public void Normalize()
     {
@@ -50,16 +50,16 @@ public class ProductDataTransfer
 
     public void FillWith(ProductDataTransfer model)
     {
-        this.ProductID = model.ProductID;
-        this.Image = model.Image;
-        this.Name = model.Name;
-        this.Code = model.Code;
-        this.Description = model.Description;
-      //  this.Category = model.Category;
-        this.Description = model.Description;
-        this.Estado = model.Estado;
-        this.Provider = model.Provider;
-        this.Inventory = model.Inventory;
+        ProductID = model.ProductID;
+        Image = model.Image;
+        Name = model.Name;
+        Code = model.Code;
+        Description = model.Description;
+        //  this.Category = model.Category;
+        Description = model.Description;
+        Estado = model.Estado;
+        Provider = model.Provider;
+        Inventory = model.Inventory;
     }
 
 

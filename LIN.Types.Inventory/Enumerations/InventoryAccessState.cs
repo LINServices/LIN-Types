@@ -1,4 +1,4 @@
-﻿namespace LIN.Shared.Enumerations;
+﻿namespace LIN.Types.Inventory.Enumerations;
 
 
 public enum InventoryAccessState

@@ -1,14 +1,14 @@
-﻿using LIN.Shared.Enumerations;
+﻿using LIN.Types.Inventory.Enumerations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Shared.Models
+namespace LIN.Types.Inventory.Models
 {
     public class InventoryAcessDataModel
     {
 
 
         public int ID { get; set; } = 0;
-        public InventoryRols Rol { get; set; } 
+        public InventoryRoles Rol { get; set; }
 
         [Column("ESTADO")]
         public InventoryAccessState State { get; set; }

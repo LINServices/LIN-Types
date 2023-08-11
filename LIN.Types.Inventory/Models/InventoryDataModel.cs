@@ -1,7 +1,7 @@
-﻿using LIN.Shared.Enumerations;
+﻿using LIN.Types.Inventory.Enumerations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace LIN.Shared.Models
+namespace LIN.Types.Inventory.Models
 {
 
     /// <summary>
@@ -21,7 +21,7 @@ namespace LIN.Shared.Models
         public int Creador { get; set; } = 0;
 
         [NotMapped]
-        public InventoryRols MyRol { get;set; }
+        public InventoryRoles MyRol { get; set; }
 
         [NotMapped]
         public List<InventoryAcessDataModel> UsersAccess { get; set; } = new();

@@ -1,6 +1,6 @@
-﻿using LIN.Shared.Enumerations;
+﻿using LIN.Types.Inventory.Enumerations;
 
-namespace LIN.Shared.Models;
+namespace LIN.Types.Inventory.Models;
 
 
 public class InfoRow
@@ -12,7 +12,7 @@ public class InfoRow
     public decimal PrecioVenta { get; set; }
     public DateTime Fecha { get; set; }
     public int Cantidad { get; set; }
-   
+
 
 }
 

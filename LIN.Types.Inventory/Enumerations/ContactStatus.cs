@@ -1,4 +1,4 @@
-﻿namespace LIN.Shared.Enumerations;
+﻿namespace LIN.Types.Inventory.Enumerations;
 
 
 public enum ContactStatus
@@ -15,7 +15,7 @@ public enum ContactStatus
     Normal,
 
     /// <summary>
-    /// Contatcos eliminado
+    /// Contacto eliminado
     /// </summary>
     Deleted,
 
