@@ -5,7 +5,8 @@ public class IntegrantDataModel
 {
 
     public int ID { get; set; } = 0;
-    public int InventoryAccessID { get; set; } = 0;
+    public int InventoryID { get; set; } = 0;
+    public int ProfileID { get; set; } = 0;
     public int AccessID { get; set; } = 0;
     public string Nombre { get; set; } = string.Empty;
     public byte[] Perfil { get; set; } = Array.Empty<byte>();
