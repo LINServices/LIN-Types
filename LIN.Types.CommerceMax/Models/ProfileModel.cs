@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.CommerceMax.Models;
 
 
-public class ProfileDataModel
+public class ProfileModel
 {
 
     public int ID { get; set; }
