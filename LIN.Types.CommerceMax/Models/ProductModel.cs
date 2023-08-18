@@ -17,8 +17,8 @@ public class ProductModel
     [Column("ESTADO")]
     public Enumerations.ProductStatements Estado { get; set; } = Enumerations.ProductStatements.Normal;
 
-    [Column("PRODUCTO_FK")]
-    public int ProductoFK { get; set; } = 0;
+    [Column("PROFILE_FK")]
+    public int ProfileID { get; set; } = 0;
 
     [Column("IMAGEN")]
     public byte[] Image { get; set; } = Array.Empty<byte>();
