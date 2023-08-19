@@ -26,9 +26,6 @@ public class ProductModel
     [Column("NOMBRE")]
     public string Name { get; set; } = string.Empty;
 
-    [Column("CODIGO")]
-    public string Code { get; set; } = string.Empty;
-
     [Column("DESCRIPCION")]
     public string Description { get; set; } = string.Empty;
 
