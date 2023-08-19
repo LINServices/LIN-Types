@@ -2,6 +2,15 @@
 
 namespace LIN.Types.Tools;
 
+
+internal class NotProfile : IProfile
+{
+    public int ID { get; set; }
+    public int AccountID { get; set; }
+    public string Hash { get; set; }
+}
+
+
 public class Hash
 {
 
@@ -23,9 +32,13 @@ public class Hash
     /// Valida el hash de un perfil
     /// </summary>
     /// <param name="profile">Perfil</param>
-    public static bool ValidateHash(IProfile profile)
+    public static bool ValidateHash(IProfile profile, int accountID)
     {
-        var now = GenerateHash(profile);
+        var now = GenerateHash(new NotProfile()
+        {
+            AccountID = accountID,
+            ID = profile.ID
+        });
         return now == profile.Hash;
     }
 
