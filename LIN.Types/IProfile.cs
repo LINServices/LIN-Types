@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Auth.Abstracts;
+﻿namespace LIN.Types;
 
 
 /// <summary>
