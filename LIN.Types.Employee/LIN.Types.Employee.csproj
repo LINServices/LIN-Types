@@ -7,7 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LIN.Shared\LIN.Shared.csproj" />
     <ProjectReference Include="..\LIN.Types.Auth\LIN.Types.Auth.csproj" />
     <ProjectReference Include="..\LIN.Types\LIN.Types.csproj" />
   </ItemGroup>
