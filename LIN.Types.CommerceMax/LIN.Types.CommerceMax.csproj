@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\LIN.Types.Auth\LIN.Types.Auth.csproj" />
+  </ItemGroup>
+
 </Project>
