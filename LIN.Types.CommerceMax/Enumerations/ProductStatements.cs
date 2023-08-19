@@ -10,13 +10,18 @@ public enum ProductStatements
     Undefined,
 
     /// <summary>
-    /// ProductDataTransfer ya no usado
-    /// </summary>
-    Deprecated,
-
-    /// <summary>
-    /// State normal
+    /// Estado normal
     /// </summary>
     Normal,
+
+    /// <summary>
+    /// Estado eliminado
+    /// </summary>
+    Deleted,
+
+    /// <summary>
+    /// Estado Baneado
+    /// </summary>
+    Banned,
 
 }
