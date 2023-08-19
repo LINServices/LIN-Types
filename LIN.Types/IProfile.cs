@@ -18,10 +18,4 @@ public interface IProfile
     /// </summary>
     public int AccountID { get; set; }
 
-
-    /// <summary>
-    /// Hash de verificación de seguridad
-    /// </summary>
-    public string Hash { get; set; }
-
 }
