@@ -1,9 +1,7 @@
-﻿using LIN.Types.Developer.Enumerations;
-
-namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Developer.Models;
 
 
-public class ProfileDataModel
+public class ProfileDataModel : LIN.Types.IProfile
 {
 
     public int ID { get; set; }
@@ -18,8 +16,9 @@ public class ProfileDataModel
 
     public string Description { get; set; } = string.Empty;
 
-    public int UserID { get; set; }
+    public int AccountID { get; set; }
 
     public ProfileStatus Estado { get; set; } = ProfileStatus.Normal;
 
+    public DateTime Creación { get; set; }
 }
