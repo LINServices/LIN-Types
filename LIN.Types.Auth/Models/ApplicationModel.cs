@@ -8,4 +8,6 @@ public class ApplicationModel
     public string Name { get; set; } = string.Empty;
     public string Key { get; set; } = string.Empty;
 
+    public OrganizationModel Organization { get; set; } = new();
+
 }
