@@ -8,5 +8,6 @@ public class OrganizationModel
     public string Name { get; set; } = string.Empty;
     public string Domain { get; set; } = string.Empty;
     public List<AccountModel> Members { get; set; } = new();
+    public List<ApplicationModel> WhiteList { get; set; } = new();
 
 }
