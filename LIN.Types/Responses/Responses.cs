@@ -96,7 +96,9 @@ public enum Responses
     /// <summary>
     /// Servicio no disponible
     /// </summary>
-    UnavailableService
+    UnavailableService,
+
+    UnauthorizedByOrg
 
 
 }
