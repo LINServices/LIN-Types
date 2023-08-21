@@ -13,4 +13,5 @@ public class ProfileDataModel : IProfile
     public DateTime Creación { get; set; }
     public ProfileStatus Estado { get; set; } = ProfileStatus.Normal;
     public int AccountID { get; set; } = 0;
+
 }
