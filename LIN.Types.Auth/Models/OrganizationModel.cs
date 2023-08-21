@@ -8,7 +8,7 @@ public class OrganizationModel
     public bool HaveWhiteList { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Domain { get; set; } = string.Empty;
-    public List<AccountModel> Members { get; set; }
+    public List<OrganizationAccessModel> Members { get; set; }
     public List<AppOnOrgModel> AppList { get; set; }
 
 }
