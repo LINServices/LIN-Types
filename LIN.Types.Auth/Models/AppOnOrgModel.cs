@@ -1,11 +1,11 @@
 ﻿namespace LIN.Types.Auth.Models;
 
 
-public class AppOrganizationModel
+public class AppOnOrgModel
 {
 
     public int ID { get; set; } = 0;
-    public bool Estado { get; set; }
+    public AppOnOrgStates State { get; set; } = AppOnOrgStates.Activated;
     public virtual ApplicationModel App { get; set; }
 
 }

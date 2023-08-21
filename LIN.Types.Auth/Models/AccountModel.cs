@@ -12,6 +12,7 @@ public class AccountModel
     [Column("CONTRASENA")]
     public string Contraseña { get; set; } = string.Empty;
     public Genders Genero { get; set; } = Genders.Undefined;
+
     [Column("CREACION")]
     public DateTime Creación { get; set; }
     public AccountStatus Estado { get; set; } = AccountStatus.Normal;
