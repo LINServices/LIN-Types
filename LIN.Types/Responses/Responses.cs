@@ -98,7 +98,9 @@ public enum Responses
     /// </summary>
     UnavailableService,
 
-    UnauthorizedByOrg
+    UnauthorizedByOrg,
+
+    LoginBlockedByOrg
 
 
 }

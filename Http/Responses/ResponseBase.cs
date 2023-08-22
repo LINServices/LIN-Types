@@ -82,6 +82,8 @@ public class HttpResponseBase : IActionResult
             Responses.FirewallBlocked => 403,
             Responses.UnavailableService => 503,
             Responses.WithoutCredits => 202,
+            Responses.LoginBlockedByOrg => 403,
+            Responses.UnauthorizedByOrg => 403,
             _ => 500,
         };
     }
