@@ -9,6 +9,7 @@ LIN.Types.Employee/obj/*
 LIN.Types.Inventory/obj/*
 LIN.Types.Maps/obj/*
 LIN.Types.CommerceMax/obj/*
+LIN.Types.Communication/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -21,3 +22,4 @@ LIN.Types.Employee/bin/*
 LIN.Types.Inventory/bin/*
 LIN.Types.Maps/bin/*
 LIN.Types.CommerceMax/bin/*
+LIN.Types.Communication/bin/*
