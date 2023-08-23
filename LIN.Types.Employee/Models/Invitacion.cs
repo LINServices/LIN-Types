@@ -1,5 +1,6 @@
 ﻿namespace LIN.Types.Employee.Models;
 
+
 public class Invitación
 {
     public int ID { get; set; } = 0;
