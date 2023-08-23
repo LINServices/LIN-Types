@@ -8,7 +8,7 @@ public class PassKeyModel
 
     public string User { get; set; } = string.Empty;
 
-    public string ApplicationName { get; set; } = string.Empty;
+    public string ApplicationKey { get; set; } = string.Empty;
 
     public string Token { get; set; } = string.Empty;
 
@@ -20,5 +20,6 @@ public class PassKeyModel
 
     public PassKeyStatus Status { get; set; } = PassKeyStatus.Undefined;
 
+    public ApplicationModel Application { get; set; } = new();
 
 }
