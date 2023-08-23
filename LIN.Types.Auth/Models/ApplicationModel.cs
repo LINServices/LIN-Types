@@ -11,5 +11,4 @@ public class ApplicationModel
     public ApplicationBadges Badge { get; set; } = ApplicationBadges.None;
     public int AccountID { get; set; }
 
-
 }
