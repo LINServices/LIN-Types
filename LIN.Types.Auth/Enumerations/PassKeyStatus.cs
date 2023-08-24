@@ -27,6 +27,11 @@ public enum PassKeyStatus
     /// <summary>
     /// Expirado
     /// </summary>
-    Expired
+    Expired,
+
+    /// <summary>
+    /// Bloqueado por la organzacion
+    /// </summary>
+    BlockedByOrg
 
 }
