@@ -8,8 +8,6 @@ public class PassKeyModel
 
     public string User { get; set; } = string.Empty;
 
-    public string ApplicationKey { get; set; } = string.Empty;
-
     public string Token { get; set; } = string.Empty;
 
     public DateTime Hora { get; set; }
