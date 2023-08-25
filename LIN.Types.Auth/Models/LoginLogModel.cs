@@ -12,6 +12,8 @@ public class LoginLogModel
     [Column("PLATAFORMA")]
     public Platforms Platform { get; set; } = Platforms.Undefined;
 
+    public LoginTypes Type { get; set; } = LoginTypes.Undefined;
+
     [Column("USUARIO_FK")]
     public int AccountID { get; set; } = 0;
 
