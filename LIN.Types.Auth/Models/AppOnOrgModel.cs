@@ -9,4 +9,8 @@ public class AppOnOrgModel
     public virtual ApplicationModel App { get; set; }
     public virtual OrganizationModel Organization { get; set; }
 
+
+    public int AppID { get; set; } = 0;
+    public int OrgID { get; set; } = 0;
+
 }
