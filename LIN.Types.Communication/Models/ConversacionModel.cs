@@ -8,7 +8,6 @@ public class ConversaciónModel
     public ProfileModel UsuarioB { get; set; }
     public List<MessageModel> Mensajes { get; set; }
 
-
     public int UsuarioAID { get; set; }
     public int UsuarioBID { get; set; }
 
