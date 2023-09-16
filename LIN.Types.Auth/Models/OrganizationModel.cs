@@ -12,4 +12,5 @@ public class OrganizationModel
     public List<OrganizationAccessModel> Members { get; set; }
     public List<AppOnOrgModel> AppList { get; set; }
 
+    public OrgPolicy Policy { get; set; }
 }
