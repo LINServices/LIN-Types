@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Maps.Models;
 
 
-internal class ProfileModel
+public class ProfileModel
 {
 
     public int ID { get; set; }

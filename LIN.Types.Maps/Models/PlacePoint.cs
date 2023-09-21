@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Maps.Models;
 
 
-internal class PlacePoint
+public class PlacePoint
 {
     public int ID { get; set; }
     public double Longitude { get; set; }
