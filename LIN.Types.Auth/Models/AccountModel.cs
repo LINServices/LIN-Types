@@ -15,6 +15,7 @@ public class AccountModel
 
     [Column("CREACION")]
     public DateTime Creación { get; set; }
+    public DateTime? Birthday { get; set; }
     public AccountStatus Estado { get; set; } = AccountStatus.Normal;
     public AccountRoles Rol { get; set; } = AccountRoles.User;
     public AccountVisibility Visibilidad { get; set; } = AccountVisibility.Visible;

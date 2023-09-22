@@ -18,8 +18,7 @@ public class DeviceModel
     public double Latitud { get; set; }
     public Platforms Platform { get; set; } = 0;
     public DeviceState Estado { get; set; } = DeviceState.Actived;
-    public Applications App { get; set; } = Applications.Undefined;
-
+  
 
     public static bool operator ==(DeviceModel? a, DeviceModel? b)
     {
