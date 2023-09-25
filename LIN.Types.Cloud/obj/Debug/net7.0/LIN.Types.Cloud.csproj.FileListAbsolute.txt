@@ -1,0 +1,11 @@
+D:\LIN Services\Tipos\LIN.Types.Cloud\bin\Debug\net7.0\LIN.Types.Cloud.deps.json
+D:\LIN Services\Tipos\LIN.Types.Cloud\bin\Debug\net7.0\LIN.Types.Cloud.dll
+D:\LIN Services\Tipos\LIN.Types.Cloud\bin\Debug\net7.0\LIN.Types.Cloud.pdb
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\LIN.Types.Cloud.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\LIN.Types.Cloud.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\LIN.Types.Cloud.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\LIN.Types.Cloud.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\LIN.Types.Cloud.dll
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\refint\LIN.Types.Cloud.dll
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\LIN.Types.Cloud.pdb
+D:\LIN Services\Tipos\LIN.Types.Cloud\obj\Debug\net7.0\ref\LIN.Types.Cloud.dll

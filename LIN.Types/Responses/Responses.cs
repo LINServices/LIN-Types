@@ -100,7 +100,12 @@ public enum Responses
 
     UnauthorizedByOrg,
 
-    LoginBlockedByOrg
+    LoginBlockedByOrg,
+
+    /// <summary>
+    /// Espacio insuficiente
+    /// </summary>
+    InsufficientStorage
 
 
 }
