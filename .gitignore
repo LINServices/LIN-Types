@@ -10,6 +10,7 @@ LIN.Types.Inventory/obj/*
 LIN.Types.Maps/obj/*
 LIN.Types.CommerceMax/obj/*
 LIN.Types.Communication/obj/*
+LIN.Types.Cloud/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -23,3 +24,4 @@ LIN.Types.Inventory/bin/*
 LIN.Types.Maps/bin/*
 LIN.Types.CommerceMax/bin/*
 LIN.Types.Communication/bin/*
+LIN.Types.Cloud/bin/*
