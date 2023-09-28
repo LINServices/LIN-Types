@@ -1,5 +1,6 @@
 ﻿namespace Http.ResponsesList;
 
+
 public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
 {
 

@@ -8,5 +8,6 @@ public class ProfileModel
     public string Alias { get; set; } = string.Empty;
     public int AccountID { get; set; }
     public List<ProfileModel> Friends { get; set; } = new();
+    public DateTime LastConnection { get; set; }
 
 }

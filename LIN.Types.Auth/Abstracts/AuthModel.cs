@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Auth.Abstracts;
 
 
-public class AuthModel<T>  where T : new()
+public class AuthModel<T> where T : new()
 {
 
     public Models.AccountModel Account { get; set; } = new();

@@ -2,6 +2,7 @@
 
 namespace LIN.Modules;
 
+
 public class Mail
 {
     public static bool Validar(string email)

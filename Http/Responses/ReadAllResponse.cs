@@ -1,5 +1,6 @@
 ﻿namespace Http.ResponsesList;
 
+
 public class HttpReadAllResponse<M> : HttpResponseBase
 {
 
