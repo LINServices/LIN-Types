@@ -47,7 +47,7 @@ public class HttpCreateResponse : HttpResponseBase
         return new()
         {
             Object = res,
-            Response = res.Response,
+            Response = res.Response
         };
     }
 

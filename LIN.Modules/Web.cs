@@ -9,7 +9,7 @@ public class Web
     public static string AddParameters(string baseUrl, Dictionary<string, string> parameters)
     {
         // Crear un objeto UriBuilder con la URL base y la ruta
-        UriBuilder uriBuilder = new UriBuilder(baseUrl);
+        var uriBuilder = new UriBuilder(baseUrl);
 
         // Agregar los parámetros a la cadena de consulta
         if (parameters.Count > 0)
@@ -26,7 +26,7 @@ public class Web
         }
 
         // Obtener la URL final con los parámetros agregados
-        string finalUrl = uriBuilder.ToString();
+        var finalUrl = uriBuilder.ToString();
         return finalUrl;
     }
 

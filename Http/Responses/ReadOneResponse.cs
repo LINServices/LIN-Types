@@ -54,7 +54,7 @@ public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
         return new()
         {
             Object = res,
-            Response = res.Response,
+            Response = res.Response
         };
     }
 

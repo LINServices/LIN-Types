@@ -17,7 +17,7 @@ public enum LoginTypes
     /// <summary>
     /// Usando passkey
     /// </summary>
-    Passkey,
+    Passkey
 
 
 }

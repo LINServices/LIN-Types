@@ -26,12 +26,12 @@ public class KeyGen
             var key = new StringBuilder(length);
 
             // numero máximo de random
-            int chLeng = caracteres.Length;
+            var chLeng = caracteres.Length;
 
             // generación de la llave
-            for (int i = 0; i <= length; i++)
+            for (var i = 0; i <= length; i++)
             {
-                int randomNumber = random.Next(0, chLeng);
+                var randomNumber = random.Next(0, chLeng);
                 key.Append(caracteres[randomNumber]);
             }
             // Retorno de la key
@@ -66,12 +66,12 @@ public class KeyGen
             var key = new StringBuilder(length);
 
             // numero máximo de random
-            int chLeng = caracteres.Length;
+            var chLeng = caracteres.Length;
 
             // generación de la llave
-            for (int i = 0; i <= length; i++)
+            for (var i = 0; i <= length; i++)
             {
-                int randomNumber = random.Next(0, chLeng);
+                var randomNumber = random.Next(0, chLeng);
                 key.Append(caracteres[randomNumber]);
             }
             // Retorno de la key

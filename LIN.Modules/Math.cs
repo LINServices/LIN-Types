@@ -34,10 +34,10 @@ public class Pricing
 
 
         // Calcula el monto del descuento
-        decimal montoDescuento = (originalPrice * (discountPercent / 100.0m));
+        var montoDescuento = originalPrice * (discountPercent / 100.0m);
 
         // Precio con descuento
-        decimal precioConDescuento = originalPrice - montoDescuento;
+        var precioConDescuento = originalPrice - montoDescuento;
 
         if (precioConDescuento < 1)
             precioConDescuento = 1;

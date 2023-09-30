@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Developer.Models;
 
 
-public class ProfileDataModel : LIN.Types.IProfile
+public class ProfileDataModel : IProfile
 {
 
     public int ID { get; set; }

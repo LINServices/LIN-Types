@@ -30,6 +30,6 @@ public enum AccountStatus
     /// <summary>
     /// Cuenta baneada
     /// </summary>
-    Banned,
+    Banned
 
 }

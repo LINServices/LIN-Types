@@ -25,7 +25,7 @@ public class HttpResponseBase : IActionResult
     public HttpResponseBase(Responses response = Responses.Undefined)
     {
         Response = response;
-        Build(new ResponseBase(response));
+        Build(new(response));
     }
 
 
@@ -53,7 +53,7 @@ public class HttpResponseBase : IActionResult
         return new()
         {
             Object = res,
-            Response = res.Response,
+            Response = res.Response
         };
     }
 
@@ -85,7 +85,7 @@ public class HttpResponseBase : IActionResult
             Responses.LoginBlockedByOrg => 403,
             Responses.UnauthorizedByOrg => 403,
             Responses.InsufficientStorage => 507,
-            _ => 500,
+            _ => 500
         };
     }
 

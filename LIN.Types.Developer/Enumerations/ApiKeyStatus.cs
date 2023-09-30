@@ -7,6 +7,6 @@ public enum ApiKeyStatus
     Undefined,
     Actived,
     Deleted,
-    Disable,
+    Disable
 
 }

@@ -15,6 +15,6 @@ public enum ApplicationBadges
     /// <summary>
     /// Insignia verificado
     /// </summary>
-    Verified,
+    Verified
 
 }

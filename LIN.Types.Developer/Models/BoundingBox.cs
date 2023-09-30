@@ -16,7 +16,7 @@ public class BoundingBox
         const double earthRadiusKm = 6371; // Radio de la Tierra en kilómetros
         const double degreesPerRadian = 180.0 / Math.PI;
 
-        double margin = distanceKm / earthRadiusKm * degreesPerRadian;
+        var margin = distanceKm / earthRadiusKm * degreesPerRadian;
 
         return margin;
     }
@@ -26,12 +26,12 @@ public class BoundingBox
 
         var margin = CalculateMargin(km);
 
-        double minX = longitude - margin;
-        double minY = latitude - margin;
-        double maxX = longitude + margin;
-        double maxY = latitude + margin;
+        var minX = longitude - margin;
+        var minY = latitude - margin;
+        var maxX = longitude + margin;
+        var maxY = latitude + margin;
 
-        return new BoundingBox
+        return new()
         {
             MinX = minX,
             MinY = minY,

@@ -26,7 +26,7 @@ public class HttpReadAllResponse<M> : HttpResponseBase
         var obj = new ReadAllResponse<M>
         {
             Response = response,
-            Models = new List<M>()
+            Models = new()
         };
         Response = obj.Response;
         Build(obj);
@@ -56,7 +56,7 @@ public class HttpReadAllResponse<M> : HttpResponseBase
         return new()
         {
             Object = res,
-            Response = res.Response,
+            Response = res.Response
         };
     }
 
