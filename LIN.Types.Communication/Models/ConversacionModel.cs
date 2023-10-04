@@ -11,5 +11,6 @@ public class ConversationModel
     public List<MemberChatModel> Members { get; set; }
     public List<MessageModel> Mensajes { get; set; }
     public ConversationsTypes Type { get; set; }
+    public ConversationVisibility Visibility { get; set; }
 
 }
