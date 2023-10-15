@@ -1,0 +1,14 @@
+﻿namespace LIN.Types.Planner.Models;
+
+
+public class ProjectModel
+{
+
+    public int Id { get; set; } 
+    public string Name { get; set; }
+    public bool IsClose { get; set; }
+    public List<WorkModel> Tasks { get; set; }
+    public DateTime StartDate { get; set; }
+    public DateTime EndDate { get; set; }
+
+}

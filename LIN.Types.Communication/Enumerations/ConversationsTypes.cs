@@ -5,5 +5,6 @@ public enum ConversationsTypes
 {
     None,
     Personal,
-    Group
+    Group,
+    Work
 }

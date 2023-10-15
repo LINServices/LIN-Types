@@ -1,0 +1,11 @@
+D:\LIN Services\Tipos\LIN.Types.Planner\bin\Debug\net7.0\LIN.Types.Planner.deps.json
+D:\LIN Services\Tipos\LIN.Types.Planner\bin\Debug\net7.0\LIN.Types.Planner.dll
+D:\LIN Services\Tipos\LIN.Types.Planner\bin\Debug\net7.0\LIN.Types.Planner.pdb
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\LIN.Types.Planner.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\LIN.Types.Planner.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\LIN.Types.Planner.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\LIN.Types.Planner.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\LIN.Types.Planner.dll
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\refint\LIN.Types.Planner.dll
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\LIN.Types.Planner.pdb
+D:\LIN Services\Tipos\LIN.Types.Planner\obj\Debug\net7.0\ref\LIN.Types.Planner.dll
