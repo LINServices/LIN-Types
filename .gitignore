@@ -11,6 +11,8 @@ LIN.Types.Maps/obj/*
 LIN.Types.CommerceMax/obj/*
 LIN.Types.Communication/obj/*
 LIN.Types.Cloud/obj/*
+LIN.Types.Planner/obj/*
+LIN.Types.Contacts/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -25,3 +27,5 @@ LIN.Types.Maps/bin/*
 LIN.Types.CommerceMax/bin/*
 LIN.Types.Communication/bin/*
 LIN.Types.Cloud/bin/*
+LIN.Types.Planner/bin/*
+LIN.Types.Contacts/bin/*
