@@ -8,6 +8,6 @@ public class AuthModel<T> where T : new()
 
     public T Profile { get; set; } = new();
 
-    public string LINAuthToken { get; set; } = string.Empty;
+    public Dictionary<string, string> TokenCollection { get; set; }
 
 }
