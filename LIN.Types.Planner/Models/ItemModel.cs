@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Planner.Models;
 
 
-public class WorkModel
+public class ItemModel
 {
 
     public int Id { get; set; }
