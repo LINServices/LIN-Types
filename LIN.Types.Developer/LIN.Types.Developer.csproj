@@ -7,7 +7,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\LIN.Types\LIN.Types.csproj"/>
+        <ProjectReference Include="..\LIN.Types\LIN.Types.csproj" />
     </ItemGroup>
 
 </Project>

@@ -6,7 +6,7 @@ public class ApiKeyUsesDataModel
 
     public int ID { get; set; }
 
-    public ApiKeyDataModel Key { get; set; }
+    public string KeyUId { get; set; }
 
     public TransactionDataModel Transaction { get; set; }
 

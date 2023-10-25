@@ -105,7 +105,10 @@ public enum Responses
     /// <summary>
     /// Espacio insuficiente
     /// </summary>
-    InsufficientStorage
+    InsufficientStorage,
+
+    UnauthorizedByApp
+
 
 
 }

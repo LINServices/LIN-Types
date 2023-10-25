@@ -5,7 +5,7 @@ public class ApiKeyDataModel
 {
 
 
-    public int ID { get; set; }
+    public string ID { get; set; }
 
 
     [Column("NOMBRE")]
@@ -18,10 +18,6 @@ public class ApiKeyDataModel
 
     [Column("ESTADO")]
     public ApiKeyStatus Status { get; set; } = ApiKeyStatus.Actived;
-
-
-    [Column("PROJECT_FK")]
-    public ProjectDataModel Project { get; set; }
 
 
 }

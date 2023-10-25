@@ -8,15 +8,12 @@ public class ProjectDataModel
 
     public string Nombre { get; set; } = string.Empty;
 
-    public DateTime Creacion { get; set; }
+    public string ProjectUId { get; set; } = "";
+
+    public DateTime Creation { get; set; }
 
     public ProfileDataModel Profile { get; set; }
 
     public ProjectStatus Estado { get; set; } = ProjectStatus.None;
-
-    public List<FirewallRuleDataModel> IPs { get; set; } = new();
-
-    public List<ApiKeyDataModel> Keys { get; set; } = new();
-
 
 }

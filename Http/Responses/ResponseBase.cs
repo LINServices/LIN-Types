@@ -85,6 +85,7 @@ public class HttpResponseBase : IActionResult
             Responses.LoginBlockedByOrg => 403,
             Responses.UnauthorizedByOrg => 403,
             Responses.InsufficientStorage => 507,
+            Responses.UnauthorizedByApp => 403,
             _ => 500
         };
     }

@@ -1,4 +1,4 @@
-﻿using LIN.Types.Developer.Enumerations;
+﻿ using LIN.Types.Developer.Enumerations;
 
 namespace LIN.Types.Developer.Models;
 
