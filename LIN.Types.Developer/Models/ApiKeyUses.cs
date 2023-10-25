@@ -6,9 +6,9 @@ public class ApiKeyUsesDataModel
 
     public int ID { get; set; }
 
-    public int KeyID { get; set; }
+    public ApiKeyDataModel Key { get; set; }
 
-    public int TransactionID { get; set; }
+    public TransactionDataModel Transaction { get; set; }
 
     [NotMapped]
     public decimal Valor { get; set; }

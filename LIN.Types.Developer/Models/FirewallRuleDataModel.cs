@@ -1,6 +1,4 @@
-﻿using LIN.Types.Developer.Enumerations;
-
-namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Developer.Models;
 
 
 public class FirewallRuleDataModel
@@ -14,7 +12,7 @@ public class FirewallRuleDataModel
 
     public string IPFinal { get; set; } = string.Empty;
 
-    public int ProjectID { get; set; }
+    public ProjectDataModel Project { get; set; }
 
     public FirewallRuleStatus Status { get; set; } = FirewallRuleStatus.Undefined;
 

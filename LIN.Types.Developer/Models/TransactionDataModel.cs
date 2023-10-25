@@ -14,6 +14,9 @@ public class TransactionDataModel
 
     public TransactionTypes Tipo { get; set; }
 
+    public int UseID { get; set; }
+    public ApiKeyUsesDataModel Use { get; set; }
+    public ProfileDataModel Profile { get; set; }
     public int ProfileID { get; set; }
 
     public string Description { get; set; } = string.Empty;

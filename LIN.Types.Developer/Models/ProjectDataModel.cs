@@ -1,6 +1,4 @@
-﻿using LIN.Types.Developer.Enumerations;
-
-namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Developer.Models;
 
 
 public class ProjectDataModel
@@ -12,12 +10,13 @@ public class ProjectDataModel
 
     public DateTime Creacion { get; set; }
 
-    public int ProfileID { get; set; }
+    public ProfileDataModel Profile { get; set; }
 
     public ProjectStatus Estado { get; set; } = ProjectStatus.None;
 
-    [NotMapped]
     public List<FirewallRuleDataModel> IPs { get; set; } = new();
+
+    public List<ApiKeyDataModel> Keys { get; set; } = new();
 
 
 }

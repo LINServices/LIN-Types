@@ -1,6 +1,4 @@
-﻿using LIN.Types.Developer.Enumerations;
-
-namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Developer.Models;
 
 
 public class ApiKeyDataModel
@@ -23,7 +21,7 @@ public class ApiKeyDataModel
 
 
     [Column("PROJECT_FK")]
-    public int ProjectID { get; set; }
+    public ProjectDataModel Project { get; set; }
 
 
 }

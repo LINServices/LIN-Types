@@ -20,5 +20,7 @@ public class ProfileDataModel : IProfile
 
     public ProfileStatus Estado { get; set; } = ProfileStatus.Normal;
 
+    public List<TransactionDataModel> Transactions { get; set; }
+
     public DateTime Creación { get; set; }
 }
