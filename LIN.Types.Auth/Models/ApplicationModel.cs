@@ -11,6 +11,6 @@ public class ApplicationModel
     public ApplicationBadges Badge { get; set; } = ApplicationBadges.None;
     public int AccountID { get; set; }
     public bool AllowAnyAccount { get; set; }
-    public List<AccountModel> Allowed { get; set; } = new();
+    public List<AppAccessModel> Allowed { get; set; } = new();
 
 }
