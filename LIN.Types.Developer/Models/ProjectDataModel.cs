@@ -20,6 +20,7 @@ public class ProjectDataModel
     public ProjectStatus Estado { get; set; } = ProjectStatus.None;
 
 
+    public ProfileDataModel Profile { get; set; }
     public List<FirewallRuleModel> FirewallRules { get; set; } = new();
     public List<KeyModel> Keys { get; set; } = new();
 
