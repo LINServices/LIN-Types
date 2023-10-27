@@ -16,7 +16,7 @@ public interface IProfile
     /// <summary>
     /// Fecha de creación del perfil
     /// </summary>
-    public DateTime Creación { get; set; }
+    public DateTime Creation { get; set; }
 
 
     /// <summary>

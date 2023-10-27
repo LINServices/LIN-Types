@@ -6,6 +6,6 @@ namespace LIN.Types.Developer.Interfaces;
 public interface IProjectKey : IProjectModel
 {
 
-    public List<ApiKeyDataModel> Keys { get; set; }
+    public List<KeyModel> Keys { get; set; }
 
 }
