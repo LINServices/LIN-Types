@@ -12,6 +12,7 @@ public class HttpResponseBase : IActionResult
 
     public Responses Response { get; set; }
     public ResponseBase? Object;
+    public string? Message { get; set; } = null;
 
 
     public HttpResponseBase()
@@ -39,6 +40,7 @@ public class HttpResponseBase : IActionResult
 
     public async Task ExecuteResultAsync(ActionContext context)
     {
+        Object.Message = ((Object.Message == null) ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
         var json = JsonConvert.SerializeObject(Object);
