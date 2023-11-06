@@ -5,6 +5,7 @@ public class ProjectDBModel : ProjectModel
 {
 
     [BsonElement("connection_string")]
+    [Column("connection_string")]
     public string ConnectionString { get; set; } = string.Empty;
 
 
