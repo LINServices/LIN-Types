@@ -3,10 +3,8 @@
 namespace LIN.Types.Developer.Models.Projects;
 
 
-/// <summary>
-/// Modelo base de un proyecto.
-/// </summary>
-public class ProjectModel : IMongoBase
+
+public class ResourceModel : IMongoBase
 {
 
     [BsonId]
@@ -26,8 +24,8 @@ public class ProjectModel : IMongoBase
     [Column("status")]
     public ProjectStatus Status { get; set; }
 
-    [BsonElement("account_id")]
-    [Column("account_id")]
-    public int AccountId { get; set; }
+    [BsonElement("profile_id")]
+    [Column("profile_id")]
+    public int ProfileId { get; set; }
 
 }

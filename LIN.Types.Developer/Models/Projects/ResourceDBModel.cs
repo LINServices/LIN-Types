@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Developer.Models.Projects;
 
 
-public class ProjectDBModel : ProjectModel
+public class ResourceDBModel : ResourceModel
 {
 
     [BsonElement("connection_string")]
