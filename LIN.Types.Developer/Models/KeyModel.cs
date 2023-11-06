@@ -19,6 +19,5 @@ public class KeyModel
     [Column("PROJECT_FK")]
     public int ProjectId { get; set; }
 
-    public ProjectDataModel Project { get; set; }
 
 }

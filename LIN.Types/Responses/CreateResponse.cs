@@ -14,6 +14,13 @@ public class CreateResponse : ResponseBase
 
 
 
+    /// <summary>
+    /// ID del elemento
+    /// </summary>
+    public string LastUnique { get; set; } = string.Empty;
+
+
+
 
     /// <summary>
     /// Nueva respuesta 
@@ -36,6 +43,9 @@ public class CreateResponse : ResponseBase
         LastID = lastID;
         Message = message;
     }
+
+
+   
 
 
 
