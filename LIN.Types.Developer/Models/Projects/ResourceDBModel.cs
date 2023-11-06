@@ -8,5 +8,4 @@ public class ResourceDBModel : ResourceModel
     [Column("connection_string")]
     public string ConnectionString { get; set; } = string.Empty;
 
-
 }
