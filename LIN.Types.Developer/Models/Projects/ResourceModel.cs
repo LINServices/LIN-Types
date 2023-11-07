@@ -28,4 +28,8 @@ public class ResourceModel : IMongoBase
     [Column("profile_id")]
     public int ProfileId { get; set; }
 
+    [BsonElement("Allowed")]
+    [Column("Allowed")]
+    public List<AccessModel> Allowed { get; set; }
+
 }
