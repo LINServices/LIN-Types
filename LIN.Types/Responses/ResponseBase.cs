@@ -11,13 +11,13 @@ public class ResponseBase
 
 
     /// <summary>
-    /// Mensaje del elemeto
+    /// Mensaje del elemento
     /// </summary>
     public string Message { get; set; } = "";
 
 
     /// <summary>
-    /// Autenticacion
+    /// Autenticación
     /// </summary>
     public string Token { get; set; } = "";
 
