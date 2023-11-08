@@ -6,5 +6,8 @@ public enum ProjectTypes
     None,
     App,
     DB,
-    Key
+    Key,
+    BotIA,
+    VisionIA,
+    Emosense,
 }
