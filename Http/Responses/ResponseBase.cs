@@ -41,7 +41,7 @@ public class HttpResponseBase : IActionResult
 
     public async Task ExecuteResultAsync(ActionContext context)
     {
-        Object!.Message = ((Object.Message == null || Object.Message.Trim() == string.Empty) ? Message : Object.Message) ?? "";
+        Object!.Message = (Object.Message == null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
         var json = JsonConvert.SerializeObject(Object);
