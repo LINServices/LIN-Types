@@ -10,5 +10,7 @@ public class ApplicationModel
     public string Key { get; set; } = string.Empty;
     public ApplicationBadges Badge { get; set; } = ApplicationBadges.None;
     public int AccountID { get; set; }
+    public bool AllowAnyAccount { get; set; }
+    public List<AppAccessModel> Allowed { get; set; } = new();
 
 }

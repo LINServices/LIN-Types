@@ -13,6 +13,8 @@ public class HttpResponseBase : IActionResult
     public Responses Response { get; set; }
     public ResponseBase? Object;
 
+    public string? Message { get; set; } = null;
+
 
     public HttpResponseBase()
     {
@@ -39,6 +41,7 @@ public class HttpResponseBase : IActionResult
 
     public async Task ExecuteResultAsync(ActionContext context)
     {
+        Object!.Message = (Object.Message == null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
         var json = JsonConvert.SerializeObject(Object);
@@ -85,6 +88,7 @@ public class HttpResponseBase : IActionResult
             Responses.LoginBlockedByOrg => 403,
             Responses.UnauthorizedByOrg => 403,
             Responses.InsufficientStorage => 507,
+            Responses.UnauthorizedByApp => 403,
             _ => 500
         };
     }

@@ -7,9 +7,9 @@ public class ConversationModel
 {
 
     public int ID { get; set; }
-    public string Name { get; set; }
-    public List<MemberChatModel> Members { get; set; }
-    public List<MessageModel> Mensajes { get; set; }
+    public string Name { get; set; } = string.Empty;
+    public List<MemberChatModel> Members { get; set; } = new();
+    public List<MessageModel> Mensajes { get; set; } = new();
     public ConversationsTypes Type { get; set; }
     public ConversationVisibility Visibility { get; set; }
 

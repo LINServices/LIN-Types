@@ -4,21 +4,33 @@
 public class ProfileDataModel : IProfile
 {
 
+    [Column("ID")]
     public int ID { get; set; }
 
-    public string Name { get; set; } = string.Empty;
+    [Column("ALIAS")]
+    public string Alias { get; set; } = string.Empty;
 
-    public decimal Credito { get; set; } = 0m;
+    [Column("CREDITS")]
+    public decimal Credits { get; set; } = 0m;
 
-    public int Discont { get; set; } = 0;
+    [Column("DISCOUNT")]
+    public int Discount { get; set; } = 0;
 
+    [Column("MAIL")]
     public string Email { get; set; } = string.Empty;
 
+    [Column("DESCRIPTION")]
     public string Description { get; set; } = string.Empty;
 
-    public int AccountID { get; set; }
-
+    [Column("STATE")]
     public ProfileStatus Estado { get; set; } = ProfileStatus.Normal;
 
-    public DateTime Creación { get; set; }
+    [Column("CREATION")]
+    public DateTime Creation { get; set; }
+
+    [Column("ACCOUNT_ID")]
+    public int AccountID { get; set; }
+
+    public List<TransactionDataModel> Transactions { get; set; } = new();
+
 }

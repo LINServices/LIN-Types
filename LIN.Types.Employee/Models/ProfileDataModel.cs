@@ -15,5 +15,5 @@ public class ProfileDataModel : IProfile
     public int OrganizationID { get; set; } = 0;
     public int AccountID { get; set; } = 0;
     public List<TeamAccessModel> Teams { get; set; }
-
+    public DateTime Creation { get; set; }
 }

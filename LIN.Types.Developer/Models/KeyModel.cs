@@ -1,29 +1,23 @@
-﻿using LIN.Types.Developer.Enumerations;
-
-namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Developer.Models;
 
 
-public class ApiKeyDataModel
+public class KeyModel
 {
 
-
+    [Column("ID")]
     public int ID { get; set; }
 
-
-    [Column("NOMBRE")]
+    [Column("NAME")]
     public string Nombre { get; set; } = string.Empty;
 
-
-    [Column("LLAVE")]
+    [Column("KEY")]
     public string Key { get; set; } = string.Empty;
 
-
-    [Column("ESTADO")]
+    [Column("STATE")]
     public ApiKeyStatus Status { get; set; } = ApiKeyStatus.Actived;
 
-
     [Column("PROJECT_FK")]
-    public int ProjectID { get; set; }
+    public int ProjectId { get; set; }
 
 
 }
