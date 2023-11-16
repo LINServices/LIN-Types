@@ -7,6 +7,7 @@ public class EventModel
     public string Nombre { get; set; }
     public DateTime DateStart { get; set; }
     public DateTime EndStart { get; set; }
-    public ProfileModel Profile { get; set; }
+    public ProfileModel Creador { get; set; }
+    public List<ProfileModel> Guests { get; set; }
 
 }
