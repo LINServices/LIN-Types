@@ -14,6 +14,7 @@ LIN.Types.Cloud/obj/*
 LIN.Types.Planner/obj/*
 LIN.Types.Contacts/obj/*
 LIN.Types.Emma/obj/*
+LIN.Types.Calendar/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -31,3 +32,4 @@ LIN.Types.Cloud/bin/*
 LIN.Types.Planner/bin/*
 LIN.Types.Contacts/bin/*
 LIN.Types.Emma/bin/*
+LIN.Types.Calendar/bin/*
