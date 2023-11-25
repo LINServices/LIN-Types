@@ -13,6 +13,12 @@ public class HttpResponseBase : IActionResult
     public Responses Response { get; set; }
     public ResponseBase? Object;
 
+
+
+
+
+
+
     public string? Message { get; set; } = null;
 
 

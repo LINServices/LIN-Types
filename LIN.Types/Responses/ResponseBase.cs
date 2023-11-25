@@ -23,6 +23,10 @@ public class ResponseBase
 
 
 
+    public object AlternativeObject { get; set; } = "";
+
+
+
     /// <summary>
     /// Constructor
     /// </summary>
