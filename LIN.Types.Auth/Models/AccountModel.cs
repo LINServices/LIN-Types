@@ -21,6 +21,6 @@ public class AccountModel
     public AccountVisibility Visibilidad { get; set; } = AccountVisibility.Visible;
     public AccountBadges Insignia { get; set; } = AccountBadges.None;
 
-    public virtual OrganizationAccessModel? OrganizationAccess { get; set; }
+    public OrganizationAccessModel? OrganizationAccess { get; set; }
 
 }
