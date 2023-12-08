@@ -95,6 +95,7 @@ public class HttpResponseBase : IActionResult
             Responses.UnauthorizedByOrg => 403,
             Responses.InsufficientStorage => 507,
             Responses.UnauthorizedByApp => 403,
+            Responses.NotFoundDirectory => 404,
             _ => 500
         };
     }

@@ -10,5 +10,6 @@ public class DirectoryMember
     public int AccountId { get; set; }
     public int DirectoryId { get; set; }
 
+    public DirectoryRoles Rol { get; set; }
 
 }

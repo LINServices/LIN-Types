@@ -107,7 +107,9 @@ public enum Responses
     /// </summary>
     InsufficientStorage,
 
-    UnauthorizedByApp
+    UnauthorizedByApp,
+
+    NotFoundDirectory
 
 
 

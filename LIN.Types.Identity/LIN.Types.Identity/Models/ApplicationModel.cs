@@ -11,4 +11,6 @@ public class ApplicationModel
     public ApplicationBadges Badge { get; set; } = ApplicationBadges.None;
     public int AccountID { get; set; }
 
+    public DirectoryModel? Directory { get; set; }
+    public int DirectoryId { get; set; }
 }

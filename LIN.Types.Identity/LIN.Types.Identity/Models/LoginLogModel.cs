@@ -20,4 +20,5 @@ public class LoginLogModel
     public ApplicationModel Application { get; set; } = null!;
 
 
+    public int ApplicationID { get; set; }
 }
