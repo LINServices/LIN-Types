@@ -20,11 +20,6 @@ public enum AccountRoles
     /// <summary>
     /// Administrador del sistema (Todos los privilegios)
     /// </summary>
-    Admin,
-
-    /// <summary>
-    /// Empleado en LIN
-    /// </summary>
-    Employee
+    Admin
 
 }

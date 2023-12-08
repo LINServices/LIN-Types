@@ -18,6 +18,6 @@ public class PassKeyModel
 
     public PassKeyStatus Status { get; set; } = PassKeyStatus.Undefined;
 
-    public ApplicationModel Application { get; set; } = new();
+    public ApplicationModel Application { get; set; } = null!;
 
 }

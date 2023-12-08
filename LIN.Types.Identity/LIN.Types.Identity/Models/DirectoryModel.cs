@@ -5,7 +5,7 @@ public class DirectoryModel
 {
 
     public int ID { get; set; } = 0;
-    public IdentityModel Identity { get; set; }
+    public IdentityModel Identity { get; set; } = null!;
     public int IdentityId { get; set; }
 
     public string Nombre { get; set; } = string.Empty;

@@ -4,7 +4,10 @@
 public enum IdentityTypes
 {
 
+    // Tipo cuenta.
     Account,
+
+    // Tipo directorio.
     Directory
 
 }

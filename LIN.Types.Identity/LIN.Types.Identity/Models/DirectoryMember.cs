@@ -4,8 +4,8 @@
 public class DirectoryMember
 {
 
-    public DirectoryModel Directory { get; set; }
-    public AccountModel Account { get; set; }
+    public DirectoryModel Directory { get; set; } = null!;
+    public AccountModel Account { get; set; } = null!;
 
     public int AccountId { get; set; }
     public int DirectoryId { get; set; }

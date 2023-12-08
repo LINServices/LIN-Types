@@ -31,19 +31,5 @@ public class Web
     }
 
 
-    public static string AgregarParametros(string url, Dictionary<string, string> parametros)
-    {
-        var uriBuilder = new UriBuilder(url);
-        var query = System.Web.HttpUtility.ParseQueryString(uriBuilder.Query);
-
-        foreach (var parametro in parametros)
-        {
-            query[parametro.Key] = parametro.Value;
-        }
-
-        uriBuilder.Query = query.ToString();
-        return uriBuilder.ToString();
-    }
-
 
 }

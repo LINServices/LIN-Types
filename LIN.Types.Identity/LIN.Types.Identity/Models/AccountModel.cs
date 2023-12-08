@@ -5,7 +5,7 @@ public class AccountModel
 {
 
     public int ID { get; set; } = 0;
-    public IdentityModel Identity { get; set; }
+    public IdentityModel Identity { get; set; } = null!;
     public byte[]? Perfil { get; set; } = [];
     public string Nombre { get; set; } = string.Empty;
 

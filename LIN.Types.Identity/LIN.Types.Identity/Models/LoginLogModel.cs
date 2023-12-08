@@ -15,9 +15,9 @@ public class LoginLogModel
     [Column("USUARIO_FK")]
     public int AccountID { get; set; } = 0;
 
-    public AccountModel Account { get; set; }
+    public AccountModel Account { get; set; } = null!;
 
-    public ApplicationModel Application { get; set; } = new();
+    public ApplicationModel Application { get; set; } = null!;
 
 
 }

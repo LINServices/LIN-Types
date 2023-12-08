@@ -1,6 +1,4 @@
-﻿using System.Reflection.Emit;
-
-namespace LIN.Types.Identity.Models;
+﻿namespace LIN.Types.Identity.Models;
 
 
 public class OrganizationModel
@@ -10,9 +8,8 @@ public class OrganizationModel
     public bool IsPublic { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Domain { get; set; } = string.Empty;
-    public List<OrganizationAccessModel> Members { get; set; } = new();
-
-    public DirectoryModel Directory { get; set; }
+    public List<OrganizationAccessModel> Members { get; set; } = [];
+    public DirectoryModel Directory { get; set; } = null!;
     public int DirectoryId { get; set; }
 
 }
