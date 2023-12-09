@@ -96,6 +96,7 @@ public class HttpResponseBase : IActionResult
             Responses.InsufficientStorage => 507,
             Responses.UnauthorizedByApp => 403,
             Responses.NotFoundDirectory => 404,
+            Responses.PoliciesNotComplied => 400,
             _ => 500
         };
     }

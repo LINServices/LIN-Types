@@ -109,7 +109,9 @@ public enum Responses
 
     UnauthorizedByApp,
 
-    NotFoundDirectory
+    NotFoundDirectory,
+
+    PoliciesNotComplied
 
 
 

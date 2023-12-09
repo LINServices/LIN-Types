@@ -5,7 +5,7 @@ public class PolicyModel
 {
 
     public int Id { get; set; }
-    public PolicyTypes PolicyTypes { get; set; }
+    public PolicyTypes Type { get; set; }
     public DateTime Creation {  get; set; }
     public string ValueJson { get; set; } = string.Empty;
 
