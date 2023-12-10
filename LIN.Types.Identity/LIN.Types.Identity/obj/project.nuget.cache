@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "+EDqsiFBObaGXCZ2t2SGecwhcR3kxl9MHh39pIIaTXEbf1VFrO60xJz//ijQS/xvH6kFXqKt8ymWPe1R2MLO2g==",
+  "success": true,
+  "projectFilePath": "D:\\LIN Services\\Tipos\\LIN.Types.Identity\\LIN.Types.Identity\\LIN.Types.Identity.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\giral\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

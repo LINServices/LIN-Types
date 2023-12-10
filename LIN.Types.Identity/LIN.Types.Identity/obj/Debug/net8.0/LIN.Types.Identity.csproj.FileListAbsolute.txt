@@ -1,0 +1,12 @@
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\bin\Debug\net8.0\LIN.Types.Identity.deps.json
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\bin\Debug\net8.0\LIN.Types.Identity.dll
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\bin\Debug\net8.0\LIN.Types.Identity.pdb
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.sourcelink.json
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.dll
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\refint\LIN.Types.Identity.dll
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\LIN.Types.Identity.pdb
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\net8.0\ref\LIN.Types.Identity.dll
