@@ -1,1 +1,0 @@
-﻿global using LIN.Types.Inventory.Enumerations;
