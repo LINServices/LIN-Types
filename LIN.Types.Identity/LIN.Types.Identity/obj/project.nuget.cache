@@ -1,10 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "+EDqsiFBObaGXCZ2t2SGecwhcR3kxl9MHh39pIIaTXEbf1VFrO60xJz//ijQS/xvH6kFXqKt8ymWPe1R2MLO2g==",
+  "dgSpecHash": "q4x/t3BfZ0jpHAyMBNzJgMTNUMsNvdXBQ793Y/KjzEdNXXGEofefoU9uvXy8lwWKUx76S9N1UXIcKRDdxr6siA==",
   "success": true,
   "projectFilePath": "D:\\LIN Services\\Tipos\\LIN.Types.Identity\\LIN.Types.Identity\\LIN.Types.Identity.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\giral\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "C:\\Users\\giral\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\8.0.0\\microsoft.bcl.asyncinterfaces.8.0.0.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.text.encodings.web\\8.0.0\\system.text.encodings.web.8.0.0.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
+    "C:\\Users\\giral\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512"
   ],
   "logs": []
 }

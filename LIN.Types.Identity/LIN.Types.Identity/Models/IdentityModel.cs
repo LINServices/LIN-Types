@@ -8,4 +8,7 @@ public class IdentityModel
     public string Unique { get; set; } = string.Empty;
     public IdentityTypes Type { get; set; }
 
+    public List<DirectoryMember> DirectoryMembers { get; set; } = [];
+
+
 }

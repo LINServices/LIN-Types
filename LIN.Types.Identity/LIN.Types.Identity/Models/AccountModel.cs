@@ -19,8 +19,8 @@ public class AccountModel
     public AccountRoles Rol { get; set; } = AccountRoles.User;
     public AccountVisibility Visibilidad { get; set; } = AccountVisibility.Visible;
     public AccountBadges Insignia { get; set; } = AccountBadges.None;
+    public Genders Gender { get; set; } = Genders.Undefined;
     public int IdentityId { get; set; }
     public OrganizationAccessModel? OrganizationAccess { get; set; }
-    public List<DirectoryMember> DirectoryMembers { get; set; } = [];
-
+  
 }

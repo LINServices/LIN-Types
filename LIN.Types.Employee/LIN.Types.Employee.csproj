@@ -8,7 +8,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LIN.Types.Auth\LIN.Types.Auth.csproj" />
     <ProjectReference Include="..\LIN.Types\LIN.Types.csproj" />
   </ItemGroup>
 
