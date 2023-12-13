@@ -9,3 +9,6 @@ D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\netstandar
 D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\netstandard2.1\LIN.Types.Identity.sourcelink.json
 D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\netstandard2.1\LIN.Types.Identity.dll
 D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\netstandard2.1\LIN.Types.Identity.pdb
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\bin\Debug\netstandard2.1\LIN.Types.dll
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\bin\Debug\netstandard2.1\LIN.Types.pdb
+D:\LIN Services\Tipos\LIN.Types.Identity\LIN.Types.Identity\obj\Debug\netstandard2.1\LIN.Types.Identity.csproj.CopyComplete

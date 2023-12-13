@@ -53,7 +53,8 @@ public class HttpResponseBase : IActionResult
         Object!.Message = (Object.Message == null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
-        var json = System.Text.Json.JsonSerializer.Serialize(Object);
+        var json = System.Text.Json.JsonSerializer.Serialize(Object as object);
+
         await context.HttpContext.Response.WriteAsync(json);
     }
 
