@@ -12,6 +12,7 @@ public class HttpReadAllResponse<M> : HttpResponseBase
         {
             Response = Responses.Undefined
         };
+
         Response = obj.Response;
         Build(obj);
 

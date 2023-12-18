@@ -7,14 +7,23 @@ public class HttpResponseBase : IActionResult
     /// <summary>
     /// Respuesta de ka operación.
     /// </summary>
-    public Responses Response { get; set; }
-
+    public Responses Response
+    {
+        get => Object?.Response ?? Responses.Undefined; 
+        
+        set
+        {
+            if (Object == null)
+                return;
+            Object.Response = value;
+        }
+    }
 
 
     /// <summary>
     /// Objeto a JSON.
     /// </summary>
-    public ResponseBase? Object;
+    private protected ResponseBase Object = new();
 
 
 
@@ -80,6 +89,7 @@ public class HttpResponseBase : IActionResult
         {
             Responses.Success => 200,
             Responses.InvalidApiKey => 401,
+            Responses.Unauthorized => 401,
             Responses.PasswordShort => 400,
             Responses.NotRows => 404,
             Responses.NotExistProfile => 404,
@@ -101,6 +111,7 @@ public class HttpResponseBase : IActionResult
             Responses.UnauthorizedByApp => 403,
             Responses.NotFoundDirectory => 404,
             Responses.PoliciesNotComplied => 400,
+            Responses.IsLoading => 102,
             _ => 500
         };
     }
