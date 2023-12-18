@@ -8,7 +8,6 @@ public class PolicyModel
     public PolicyTypes Type { get; set; }
     public DateTime Creation {  get; set; }
     public string ValueJson { get; set; } = string.Empty;
-
     public DirectoryModel Directory { get; set; } = null!;
     public int DirectoryId { get; set; }
 

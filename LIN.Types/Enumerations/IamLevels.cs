@@ -4,6 +4,7 @@
 public enum IamLevels
 {
     NotAccess,
+    Guest,
     Visualizer,
     Privileged
 }

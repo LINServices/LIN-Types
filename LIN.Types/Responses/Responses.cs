@@ -111,7 +111,9 @@ public enum Responses
 
     NotFoundDirectory,
 
-    PoliciesNotComplied
+    PoliciesNotComplied,
+
+    IsLoading
 
 
 

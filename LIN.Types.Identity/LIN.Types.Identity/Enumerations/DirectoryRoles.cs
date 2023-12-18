@@ -5,6 +5,11 @@ public enum DirectoryRoles
 {
 
     /// <summary>
+    /// Invitado al directorio.
+    /// </summary>
+    Guest,
+
+    /// <summary>
     /// Integrante.
     /// </summary>
     Member,

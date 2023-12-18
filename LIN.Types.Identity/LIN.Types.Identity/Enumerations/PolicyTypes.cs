@@ -5,5 +5,6 @@ public enum PolicyTypes
 {
     PasswordLength,
     AccountLock,
-    ActiveTime
+    ActiveTime,
+    Permission
 }
