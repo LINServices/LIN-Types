@@ -1,9 +1,6 @@
 ﻿namespace LIN.Types.Identity.Enumerations;
 
 
-/// <summary>
-/// Visibilidad de cuenta
-/// </summary>
 public enum AccountVisibility
 {
     /// <summary>

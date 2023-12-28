@@ -3,15 +3,14 @@
 
 public class DirectoryModel
 {
-
-    public int ID { get; set; } = 0;
+    public int Id { get; set; }
+    public string Name { get; set; } = string.Empty;
+    [Column("CREATION")] public DateTime Creación { get; set; }
+    public DirectoryModel? Parent { get; set; }
+    public int ParentId { get; set; }
     public IdentityModel Identity { get; set; } = null!;
     public int IdentityId { get; set; }
-    public string Nombre { get; set; } = string.Empty;
-    public List<DirectoryMember> Members { get; set; } = [];
     public List<PolicyModel> Policies { get; set; } = [];
-
-    [Column("CREACION")]
-    public DateTime Creación { get; set; }
+    public List<SecurityGroupModel> SecurityGroups { get; set; } = [];
 
 }

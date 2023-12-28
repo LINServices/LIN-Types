@@ -6,14 +6,12 @@ public class AccountModel
 
     public int ID { get; set; } = 0;
     public IdentityModel Identity { get; set; } = null!;
-    public byte[]? Perfil { get; set; } = [];
+    public byte[] Perfil { get; set; } = [];
     public string Nombre { get; set; } = string.Empty;
 
-    [Column("CONTRASENA")]
-    public string Contraseña { get; set; } = string.Empty;
+    [Column("CONTRASENA")] public string Contraseña { get; set; } = string.Empty;
 
-    [Column("CREACION")]
-    public DateTime Creación { get; set; }
+    [Column("CREACION")] public DateTime Creación { get; set; }
     public DateTime? Birthday { get; set; }
     public AccountStatus Estado { get; set; } = AccountStatus.Normal;
     public AccountRoles Rol { get; set; } = AccountRoles.User;
@@ -21,6 +19,7 @@ public class AccountModel
     public AccountBadges Insignia { get; set; } = AccountBadges.None;
     public Genders Gender { get; set; } = Genders.Undefined;
     public int IdentityId { get; set; }
-    public OrganizationAccessModel? OrganizationAccess { get; set; }
-  
+
+    public List<SecurityGroupModel> SecurityGroups { get; set; }
+
 }

@@ -1,9 +1,6 @@
 ﻿namespace LIN.Types.Identity.Enumerations;
 
 
-/// <summary>
-/// Estados de cuenta
-/// </summary>
 public enum AccountStatus
 {
 

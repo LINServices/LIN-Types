@@ -8,5 +8,4 @@ public class EmailModel
     public EmailStatus Status { get; set; }
     public bool IsDefault { get; set; } = false;
     public int UserID { get; set; }
-
 }

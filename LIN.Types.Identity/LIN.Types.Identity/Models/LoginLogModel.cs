@@ -8,8 +8,6 @@ public class LoginLogModel
 
     [Column("FECHA")]
     public DateTime Date { get; set; }
-
-   
     public LoginTypes Type { get; set; } = LoginTypes.Undefined;
 
     [Column("USUARIO_FK")]
@@ -18,7 +16,6 @@ public class LoginLogModel
     public AccountModel Account { get; set; } = null!;
 
     public ApplicationModel Application { get; set; } = null!;
-
 
     public int ApplicationID { get; set; }
 }
