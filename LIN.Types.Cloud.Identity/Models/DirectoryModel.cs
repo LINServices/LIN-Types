@@ -5,6 +5,7 @@ public class DirectoryModel
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
-    public List<GroupModel> Groups { get; set; } = [];
+    public GroupModel Group { get; set; } = null!;
+    public int GroupId { get; set; }
 
 }

@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Cloud.Identity.Enumerations;
 
 
-public enum GroupRoles
+public enum Roles
 {
     None,
     Administrator,

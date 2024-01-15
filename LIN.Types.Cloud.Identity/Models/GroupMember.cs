@@ -4,10 +4,12 @@
 public class GroupMember
 {
 
-    public AccountModel Account { get; set; } = null!;
+    public IdentityModel Identity { get; set; } = null!;
     public GroupModel Group { get; set; } = null!;
 
-    public int AccountId { get; set; }
+    public int IdentityId { get; set; }
     public int GroupId { get; set; }
+
+    public GroupMemberTypes Type { get; set; }
 
 }
