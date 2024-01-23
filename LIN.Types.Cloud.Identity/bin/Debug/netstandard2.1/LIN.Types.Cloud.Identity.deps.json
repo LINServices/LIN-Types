@@ -1,0 +1,24 @@
+{
+  "runtimeTarget": {
+    "name": ".NETStandard,Version=v2.1/",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETStandard,Version=v2.1": {},
+    ".NETStandard,Version=v2.1/": {
+      "LIN.Types.Cloud.Identity/1.0.0": {
+        "runtime": {
+          "LIN.Types.Cloud.Identity.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LIN.Types.Cloud.Identity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -5,5 +5,9 @@ public enum Roles
 {
     None,
     Administrator,
-    //...
+    AccountOperator,
+    Regular,
+    Manager,
+    Viewer,
+    SecurityViewer
 }

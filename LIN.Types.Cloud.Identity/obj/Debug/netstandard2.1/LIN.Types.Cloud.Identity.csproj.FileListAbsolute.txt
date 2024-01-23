@@ -1,0 +1,10 @@
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\bin\Debug\netstandard2.1\LIN.Types.Cloud.Identity.deps.json
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\bin\Debug\netstandard2.1\LIN.Types.Cloud.Identity.dll
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\bin\Debug\netstandard2.1\LIN.Types.Cloud.Identity.pdb
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.sourcelink.json
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.dll
+D:\LIN Services\Tipos\LIN.Types.Cloud.Identity\obj\Debug\netstandard2.1\LIN.Types.Cloud.Identity.pdb

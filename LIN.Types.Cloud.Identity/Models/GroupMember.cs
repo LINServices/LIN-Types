@@ -12,4 +12,5 @@ public class GroupMember
 
     public GroupMemberTypes Type { get; set; }
 
+
 }
