@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Inventory.Models;
+﻿namespace LIN.Types.Inventory.Transient;
 
 
 public class HomeDto

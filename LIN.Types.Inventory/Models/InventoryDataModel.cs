@@ -12,13 +12,18 @@ namespace LIN.Types.Inventory.Models
 
         public int ID { get; set; } = 0;
         public string Nombre { get; set; } = string.Empty;
-        public string Direccion { get; set; } = string.Empty;
+        public string Direction { get; set; } = string.Empty;
 
-        [Column("ULTIMAMOD")]
-        public DateTime UltimaModificacion { get; set; }
 
         [Column("CREADOR_FK")]
         public int Creador { get; set; } = 0;
+
+        public List<ProductModel> Products { get; set; } = [];
+        public List<OutflowDataModel> Outflows { get; set; } = [];
+        public List<InflowDataModel> Inflows { get; set; } = [];
+
+
+
 
         [NotMapped]
         public InventoryRoles MyRol { get; set; }

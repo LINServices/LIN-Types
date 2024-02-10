@@ -12,17 +12,17 @@ namespace LIN.Types.Inventory.Models
         [Column("FECHA")]
         public DateTime Date { get; set; }
 
-
-        [Column("INVENTARIO_FK")]
-        public int Inventario { get; set; }
+        public InventoryDataModel Inventory { get; set; } = null!;
+        public int InventoryId { get; set; }
 
 
         [Column("PROFILE_FK")]
         public int ProfileID { get; set; }
 
 
-        [NotMapped]
-        public List<DetailsModel> Details { get; set; } = new();
+        public List<DetailsModel> Details { get; set; } = [];
+
+
 
 
         [NotMapped]
