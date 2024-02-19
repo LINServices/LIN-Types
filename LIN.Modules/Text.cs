@@ -6,8 +6,11 @@ namespace LIN.Modules;
 
 public class Text
 {
-    public static string GetInitials(string name)
+    public static string GetInitials(string? name)
     {
+
+        if (name == null)
+            return "?";
 
         name = name.Trim();
         string init = "";

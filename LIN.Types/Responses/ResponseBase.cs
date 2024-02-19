@@ -22,9 +22,7 @@ public class ResponseBase
     public string Token { get; set; } = "";
 
 
-
-    public object AlternativeObject { get; set; } = "";
-
+    public object AlternativeObject { get; set; }
 
 
     /// <summary>

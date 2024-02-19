@@ -9,6 +9,7 @@ public class IdentityModel
     public DateTime? EffectiveTime { get; set; }
     public DateTime? ExpirationTime { get; set; }
     public IdentityStatus Status { get; set; }
+    public IdentityType Type { get; set; }
     public List<IdentityRolesModel> Roles { get; set; } = [];
 
 }

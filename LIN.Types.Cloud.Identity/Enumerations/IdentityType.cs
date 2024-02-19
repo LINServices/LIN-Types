@@ -1,8 +1,8 @@
 ﻿namespace LIN.Types.Cloud.Identity.Enumerations;
 
-public enum GroupMemberTypes
+
+public enum IdentityType
 {
-    User,
-    Guest,
+    Account,
     Group
 }

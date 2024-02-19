@@ -25,11 +25,13 @@ public class CreateResponse : ResponseBase
     /// <summary>
     /// Nueva respuesta 
     /// </summary>
-    public CreateResponse()
+    public CreateResponse() 
     {
         Response = Responses.Undefined;
         LastID = -1;
     }
+
+
 
 
     /// <summary>
@@ -37,7 +39,7 @@ public class CreateResponse : ResponseBase
     /// </summary>
     /// <param name="response">Respuesta</param>
     /// <param name="lastID">ID</param>
-    public CreateResponse(Responses response = Responses.Undefined, int lastID = -1, string message = "")
+    public CreateResponse(Responses response = Responses.Undefined, int lastID = -1, string message = "") 
     {
         Response = response;
         LastID = lastID;

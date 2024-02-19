@@ -24,7 +24,6 @@ namespace LIN.Types.Inventory.Models
 
 
 
-
         [NotMapped]
         public InventoryRoles MyRol { get; set; }
 
