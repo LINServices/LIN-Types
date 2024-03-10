@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("LIN.Types.Cloud.Identity")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("LIN.Types.Exp.Search")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e779476539086d740d02e3dfcfc2b25b01b89413")]
-[assembly: System.Reflection.AssemblyProductAttribute("LIN.Types.Cloud.Identity")]
-[assembly: System.Reflection.AssemblyTitleAttribute("LIN.Types.Cloud.Identity")]
+[assembly: System.Reflection.AssemblyProductAttribute("LIN.Types.Exp.Search")]
+[assembly: System.Reflection.AssemblyTitleAttribute("LIN.Types.Exp.Search")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Generado por la clase WriteCodeFragment de MSBuild.
