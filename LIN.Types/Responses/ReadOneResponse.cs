@@ -22,6 +22,13 @@ public class ReadOneResponse<M> : ResponseBase where M : new()
     }
 
 
+    public ReadOneResponse(M model)
+    {
+        Response = Responses.Undefined;
+        Model = model;
+    }
+
+
 
 
 

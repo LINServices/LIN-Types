@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LIN.Types.Cloud.Identity")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e779476539086d740d02e3dfcfc2b25b01b89413")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e6fdfa1ebd33d0df3e921eca19914ba66e4d88bd")]
 [assembly: System.Reflection.AssemblyProductAttribute("LIN.Types.Cloud.Identity")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LIN.Types.Cloud.Identity")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

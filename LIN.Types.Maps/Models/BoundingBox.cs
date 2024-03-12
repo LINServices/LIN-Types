@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Maps.Models;
 
 
 public class BoundingBox

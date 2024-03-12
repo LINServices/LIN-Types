@@ -9,4 +9,5 @@ public class Temperature
     public double Max { get; set; }
     public int Pressure { get; set; }
     public int Humidity { get; set; }
+
 }
