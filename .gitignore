@@ -16,6 +16,8 @@ LIN.Types.Contacts/obj/*
 LIN.Types.Emma/obj/*
 LIN.Types.Calendar/obj/*
 LIN.Types.Identity/obj/*
+LIN.Types.Cloud.Identity/obj/*
+LIN.Types.Exp.Search/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -35,7 +37,8 @@ LIN.Types.Contacts/bin/*
 LIN.Types.Emma/bin/*
 LIN.Types.Calendar/bin/*
 LIN.Types.Identity/bin/*
-
+LIN.Types.Cloud.Identity/bin/*
+LIN.Types.Exp.Search/bin/*
 
 vs/
 .vs/
