@@ -18,6 +18,9 @@ LIN.Types.Calendar/obj/*
 LIN.Types.Identity/obj/*
 LIN.Types.Cloud.Identity/obj/*
 LIN.Types.Exp.Search/obj/*
+LIN.Types.Blogs/obj/*
+LIN.Types.Identity/LIN.Types.Identity/obj/*
+LIN.Types.Labs.Applications/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -39,6 +42,9 @@ LIN.Types.Calendar/bin/*
 LIN.Types.Identity/bin/*
 LIN.Types.Cloud.Identity/bin/*
 LIN.Types.Exp.Search/bin/*
+LIN.Types.Blogs/bin/*
+LIN.Types.Identity/LIN.Types.Identity/bin/*
+LIN.Types.Labs.Applications/bin/*
 
 vs/
 .vs/
