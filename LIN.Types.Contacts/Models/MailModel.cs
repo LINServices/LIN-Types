@@ -5,5 +5,7 @@ public class MailModel
 {
     public int Id { get; set; }
     public string Email { get; set; } = string.Empty;
-    public ProfileModel Profile { get; set; } = null!;
+    public ContactModel Contact { get; set; } = null!;
+    public int ContactId { get; set; }
+
 }
