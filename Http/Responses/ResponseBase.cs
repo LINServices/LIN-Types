@@ -12,7 +12,6 @@ public class HttpResponseBase : IActionResult
     public Responses Response
     {
         get => Object?.Response ?? Responses.Undefined; 
-        
         set
         {
             if (Object == null)

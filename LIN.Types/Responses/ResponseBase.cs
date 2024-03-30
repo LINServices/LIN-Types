@@ -1,8 +1,18 @@
-﻿namespace LIN.Types.Responses;
+﻿using LIN.Types.Models;
+
+namespace LIN.Types.Responses;
 
 
 public class ResponseBase
 {
+
+
+    /// <summary>
+    /// Lista de errores.
+    /// </summary>
+    public List<ErrorModel> Errors { get; set; }
+
+
 
     /// <summary>
     /// Respuesta
