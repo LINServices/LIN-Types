@@ -19,6 +19,7 @@ public class ProductDetailModel
 
 
     public ProductModel Product { get; set; } = null!;
+
     public int ProductId { get; set; }
 
 
