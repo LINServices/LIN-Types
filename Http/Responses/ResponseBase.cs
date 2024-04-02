@@ -1,4 +1,4 @@
-﻿using System.Text.Json;
+﻿using LIN.Types.Models;
 
 namespace Http.ResponsesList;
 
@@ -6,12 +6,29 @@ namespace Http.ResponsesList;
 public class HttpResponseBase : IActionResult
 {
 
+
+    /// <summary>
+    /// Errores.
+    /// </summary>
+    public List<ErrorModel> Errors
+    {
+        get => Object?.Errors ?? [];
+        set
+        {
+            if (Object == null)
+                return;
+            Object.Errors = value;
+        }
+    }
+
+
+
     /// <summary>
     /// Respuesta de ka operación.
     /// </summary>
     public Responses Response
     {
-        get => Object?.Response ?? Responses.Undefined; 
+        get => Object?.Response ?? Responses.Undefined;
         set
         {
             if (Object == null)

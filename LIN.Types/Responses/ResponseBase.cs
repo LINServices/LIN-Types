@@ -10,7 +10,7 @@ public class ResponseBase
     /// <summary>
     /// Lista de errores.
     /// </summary>
-    public List<ErrorModel> Errors { get; set; }
+    public List<ErrorModel> Errors { get; set; } = [];
 
 
 

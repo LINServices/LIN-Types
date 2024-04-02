@@ -4,12 +4,12 @@
 public class HomeDto
 {
 
-    public int Ventas30 { get; set; }
-    public int Ventas7 { get; set; }
+    public decimal TodaySalesTotal { get; set; }
+    public decimal YesterdaySalesTotal { get; set; }
 
-    public int Compras30 { get; set; }
-    public int Compras7 { get; set; }
+    public decimal WeekSalesTotal { get; set; }
+    public decimal LastWeekSalesTotal { get; set; }
 
-
+    public List<SalesModel> WeekSales { get; set; } = [];
 
 }
