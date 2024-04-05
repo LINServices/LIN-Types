@@ -129,6 +129,7 @@ public class HttpResponseBase : IActionResult
             Responses.UnauthorizedByApp => 403,
             Responses.NotFoundDirectory => 404,
             Responses.PoliciesNotComplied => 400,
+            Responses.ResourceExist => 409,
             Responses.IsLoading => 102,
             _ => 500
         };

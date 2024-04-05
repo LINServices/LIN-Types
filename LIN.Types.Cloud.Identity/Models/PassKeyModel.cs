@@ -11,6 +11,7 @@ public class PassKeyModel
     public DateTime Expiración { get; set; }
     public string HubKey { get; set; } = string.Empty;
     public PassKeyStatus Status { get; set; } = PassKeyStatus.Undefined;
+
     //public ApplicationModel Application { get; set; } = null!;
 
 }

@@ -113,7 +113,9 @@ public enum Responses
 
     PoliciesNotComplied,
 
-    IsLoading
+    IsLoading,
+
+    ResourceExist
 
 
 
