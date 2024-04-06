@@ -21,7 +21,7 @@ public class InflowDetailsDataModel
 
 
 
-    public InflowDataModel Movement { get; set; }
+    public InflowDataModel Movement { get; set; } = null!;
     public int MovementId { get; set; }
 
 }

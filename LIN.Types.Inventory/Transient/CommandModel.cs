@@ -3,7 +3,7 @@
 
 public class CommandModel
 {
-    public string Command { get; set; }
+    public string Command { get; set; } = string.Empty;
     public int Inventory { get; set; }
     public bool IsGeneral { get; set; }
 }

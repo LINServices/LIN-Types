@@ -13,5 +13,6 @@ public class IntegrantDataModel
     public string Usuario { get; set; } = string.Empty;
     public InventoryRoles Rol { get; set; } = InventoryRoles.Undefined;
 
+    public InventoryAccessState State { get; set; }
 
 }

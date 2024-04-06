@@ -17,7 +17,7 @@ public class OutflowDetailsDataModel
 
 
 
-    public OutflowDataModel Movement { get; set; }
+    public OutflowDataModel Movement { get; set; } = null!;
 
 
     public int MovementId { get; set; }
