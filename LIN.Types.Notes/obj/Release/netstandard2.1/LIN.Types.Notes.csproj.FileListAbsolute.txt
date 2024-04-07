@@ -1,0 +1,14 @@
+D:\LIN Services\Tipos\LIN.Types.Notes\bin\Release\netstandard2.1\LIN.Types.Notes.deps.json
+D:\LIN Services\Tipos\LIN.Types.Notes\bin\Release\netstandard2.1\LIN.Types.Notes.dll
+D:\LIN Services\Tipos\LIN.Types.Notes\bin\Release\netstandard2.1\LIN.Types.Notes.pdb
+D:\LIN Services\Tipos\LIN.Types.Notes\bin\Release\netstandard2.1\LIN.Types.dll
+D:\LIN Services\Tipos\LIN.Types.Notes\bin\Release\netstandard2.1\LIN.Types.pdb
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.csproj.AssemblyReference.cache
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.sourcelink.json
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Type.54EF63E5.Up2Date
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.dll
+D:\LIN Services\Tipos\LIN.Types.Notes\obj\Release\netstandard2.1\LIN.Types.Notes.pdb

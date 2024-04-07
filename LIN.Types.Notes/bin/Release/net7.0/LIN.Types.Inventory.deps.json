@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "LIN.Types.Inventory/1.0.0": {
+        "dependencies": {
+          "LIN.Types": "1.0.0"
+        },
+        "runtime": {
+          "LIN.Types.Inventory.dll": {}
+        }
+      },
+      "LIN.Types/1.0.0": {
+        "runtime": {
+          "LIN.Types.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LIN.Types.Inventory/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LIN.Types/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

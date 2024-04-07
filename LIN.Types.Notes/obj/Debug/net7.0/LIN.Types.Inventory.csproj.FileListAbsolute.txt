@@ -1,0 +1,16 @@
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.AssemblyInfoInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.AssemblyInfo.cs
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.csproj.CoreCompileInputs.cache
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.sourcelink.json
+D:\LIN Services\Tipos\LIN.Types.Inventory\bin\Debug\net7.0\LIN.Types.Inventory.deps.json
+D:\LIN Services\Tipos\LIN.Types.Inventory\bin\Debug\net7.0\LIN.Types.Inventory.dll
+D:\LIN Services\Tipos\LIN.Types.Inventory\bin\Debug\net7.0\LIN.Types.Inventory.pdb
+D:\LIN Services\Tipos\LIN.Types.Inventory\bin\Debug\net7.0\LIN.Types.dll
+D:\LIN Services\Tipos\LIN.Types.Inventory\bin\Debug\net7.0\LIN.Types.pdb
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.csproj.AssemblyReference.cache
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.csproj.CopyComplete
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.dll
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\refint\LIN.Types.Inventory.dll
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\LIN.Types.Inventory.pdb
+D:\LIN Services\Tipos\LIN.Types.Inventory\obj\Debug\net7.0\ref\LIN.Types.Inventory.dll
