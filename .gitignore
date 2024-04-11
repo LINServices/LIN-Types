@@ -21,6 +21,7 @@ LIN.Types.Exp.Search/obj/*
 LIN.Types.Blogs/obj/*
 LIN.Types.Identity/LIN.Types.Identity/obj/*
 LIN.Types.Labs.Applications/obj/*
+LIN.Types.Notes/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -43,6 +44,7 @@ LIN.Types.Identity/bin/*
 LIN.Types.Cloud.Identity/bin/*
 LIN.Types.Exp.Search/bin/*
 LIN.Types.Blogs/bin/*
+LIN.Types.Notes/bin/*
 LIN.Types.Identity/LIN.Types.Identity/bin/*
 LIN.Types.Labs.Applications/bin/*
 

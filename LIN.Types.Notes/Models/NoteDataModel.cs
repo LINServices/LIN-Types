@@ -8,6 +8,7 @@ public class NoteDataModel
     public string Tittle { get; set; } = string.Empty;
     public string Content { get; set; } = string.Empty;
 
+    public int Color { get; set; }
 
     public List<NoteAccessDataModel> UsersAccess { get; set; } = new();
 
