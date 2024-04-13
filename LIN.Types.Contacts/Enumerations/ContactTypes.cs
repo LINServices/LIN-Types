@@ -7,5 +7,6 @@ public enum ContactTypes
     Work,
     Study,
     Provider,
-    Family
+    Family,
+    Friend
 }
