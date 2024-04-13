@@ -6,6 +6,7 @@ namespace LIN.Types.Inventory.Transient;
 public class InfoRow
 {
 
+    public int ProductId { get; set; }
     public string ProductCode { get; set; } = string.Empty;
     public string ProductName { get; set; } = string.Empty;
     public decimal PrecioCompra { get; set; }
