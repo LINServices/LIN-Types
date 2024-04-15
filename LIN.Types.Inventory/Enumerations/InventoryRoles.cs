@@ -15,18 +15,28 @@ public enum InventoryRoles
     Administrator,
 
     /// <summary>
-    /// Miembro del inventario
+    /// Supervisor de inventario.
+    /// </summary>
+    Supervisor,
+
+    /// <summary>
+    /// Integrante de inventario.
     /// </summary>
     Member,
+
+    /// <summary>
+    /// Invitado
+    /// </summary>
+    Guest,
+
+    /// <summary>
+    /// Lector de inventarios.
+    /// </summary>
+    Reader,
 
     /// <summary>
     /// Eliminado del acceso (Sin permisos)
     /// </summary>
     Banned,
-
-    /// <summary>
-    /// Invitado
-    /// </summary>
-    Guest
 
 }

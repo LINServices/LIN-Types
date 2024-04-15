@@ -115,8 +115,9 @@ public enum Responses
 
     IsLoading,
 
-    ResourceExist
+    ResourceExist,
 
+    ClosedStream
 
 
 }
