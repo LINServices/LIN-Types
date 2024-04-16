@@ -23,6 +23,6 @@ public class FirewallRuleModel
     public int ProjectId { get; set; }
 
 
-    public ProjectDataModel Project { get; set; }
+    public ProjectDataModel Project { get; set; } = null!;
 
 }

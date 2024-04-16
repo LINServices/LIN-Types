@@ -13,8 +13,8 @@ public class BillingItemModel
     [Column("TRANSACTION_FK")]
     public int TransactionId { get; set; }
 
-    public TransactionDataModel Transaction { get; set; }
-    public KeyModel Key { get; set; }
+    public TransactionDataModel Transaction { get; set; } = null!;
+    public KeyModel Key { get; set; } = null!;
 
 
 }
