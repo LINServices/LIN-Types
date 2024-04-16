@@ -26,7 +26,7 @@ public class TransactionDataModel
     public int ProfileID { get; set; }
 
 
-    public BillingItemModel Billing { get; set; } = null!;
-    public ProfileDataModel Profile { get; set; } = null!;
+    public BillingItemModel Billing { get; set; }
+    public ProfileDataModel Profile { get; set; }
 
 }

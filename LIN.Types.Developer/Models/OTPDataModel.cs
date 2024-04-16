@@ -18,6 +18,6 @@ public class OTPDataModel
     [Column("PROFILE_FK")]
     public int ProfileId { get; set; }
 
-    public ProfileDataModel Profile { get; set; } = null!;
+    public ProfileDataModel Profile { get; set; }
    
 }
