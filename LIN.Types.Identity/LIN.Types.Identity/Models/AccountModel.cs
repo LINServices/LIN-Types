@@ -19,6 +19,6 @@ public class AccountModel
     public Genders Gender { get; set; } = Genders.Undefined;
     public int IdentityId { get; set; }
 
-    public List<SecurityGroupModel> SecurityGroups { get; set; }
+    public List<SecurityGroupModel> SecurityGroups { get; set; } = [];
 
 }

@@ -1,7 +1,5 @@
-﻿using LIN.Types.Notes.Enumerations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿namespace LIN.Types.Notes.Models;
 
-namespace LIN.Types.Notes.Models;
 
 public class NoteAccessDataModel
 {
@@ -15,14 +13,14 @@ public class NoteAccessDataModel
     public DateTime Fecha { get; set; }
 
 
-    public ProfileModel Profile { get; set; }
+    public ProfileModel Profile { get; set; } = null!;
 
     [Column("PROFILE_FK")]
     public int ProfileID { get; set; }
 
 
 
-    public NoteDataModel Note { get; set; }
+    public NoteDataModel Note { get; set; } = null!;
 
 
     [Column("NOTE_FK")]

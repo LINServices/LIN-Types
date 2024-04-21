@@ -22,6 +22,6 @@ public class TransactionDataModel
     [Column("PROFILE_ID")]
     public int ProfileID { get; set; }
 
-    public ProfileDataModel Profile { get; set; }
+    public ProfileDataModel Profile { get; set; } = null!;
 
 }

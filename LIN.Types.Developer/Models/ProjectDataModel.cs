@@ -20,8 +20,8 @@ public class ProjectDataModel
     public ProjectStatus Estado { get; set; } = ProjectStatus.None;
 
 
-    public ProfileDataModel Profile { get; set; }
-    public List<FirewallRuleModel> FirewallRules { get; set; } = new();
-    public List<KeyModel> Keys { get; set; } = new();
+    public ProfileDataModel Profile { get; set; } = null!;
+    public List<FirewallRuleModel> FirewallRules { get; set; } = [];
+    public List<KeyModel> Keys { get; set; } = [];
 
 }
