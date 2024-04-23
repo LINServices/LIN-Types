@@ -1,4 +1,6 @@
-﻿namespace LIN.Types.Calendar.Models;
+﻿using LIN.Types.Calendar.Enumerations;
+
+namespace LIN.Types.Calendar.Models;
 
 
 public class EventModel
@@ -7,7 +9,8 @@ public class EventModel
     public string Nombre { get; set; } = string.Empty;
     public DateTime DateStart { get; set; }
     public DateTime EndStart { get; set; }
-    public ProfileModel Creador { get; set; } = null!;
-    public List<ProfileModel> Guests { get; set; } = [];
+    public List<EventGuestModel> Guests { get; set; } = [];
+    public EventTypes Type { get; set; }
+    public bool IsAllDay { get; set; }
 
 }
