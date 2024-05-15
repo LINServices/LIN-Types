@@ -1,7 +1,6 @@
 ﻿namespace Http.Controllers;
 
 
-
 [Route("health")]
 public class HealthController : ControllerBase
 {

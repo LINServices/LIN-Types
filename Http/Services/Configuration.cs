@@ -1,7 +1,4 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using System.Security.Cryptography;
+﻿using Microsoft.Extensions.Configuration;
 
 namespace Http.Services;
 
