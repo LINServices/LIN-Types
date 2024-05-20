@@ -18,13 +18,13 @@ public static class HttpExtensions
         services.AddSwaggerGen();
         services.AddCors(options =>
         {
-            options.AddPolicy("AllowAnyOrigin",
-                builder =>
-                {
-                    builder.AllowAnyOrigin()
-                           .AllowAnyHeader()
-                           .AllowAnyMethod();
-                });
+options.AddPolicy("AllowAnyOrigin",
+    builder =>
+    {
+        builder.AllowAnyOrigin()
+   .AllowAnyHeader()
+   .AllowAnyMethod();
+    });
         });
 
 
@@ -47,8 +47,8 @@ public static class HttpExtensions
         app.UseSwagger();
         app.UseSwaggerUI(config =>
         {
-            config.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
-            config.RoutePrefix = string.Empty;
+config.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
+config.RoutePrefix = string.Empty;
         });
 
         app.UseHttpsRedirection();

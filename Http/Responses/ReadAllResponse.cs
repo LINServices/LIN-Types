@@ -10,7 +10,7 @@ public class HttpReadAllResponse<M> : HttpResponseBase
 
         var obj = new ReadAllResponse<M>()
         {
-            Response = Responses.Undefined
+Response = Responses.Undefined
         };
 
         Response = obj.Response;
@@ -26,8 +26,8 @@ public class HttpReadAllResponse<M> : HttpResponseBase
     {
         var obj = new ReadAllResponse<M>
         {
-            Response = response,
-            Models = []
+Response = response,
+Models = []
         };
         Response = obj.Response;
         Build(obj);
@@ -42,8 +42,8 @@ public class HttpReadAllResponse<M> : HttpResponseBase
     {
         var obj = new ReadAllResponse<M>
         {
-            Response = response,
-            Models = models ?? []
+Response = response,
+Models = models ?? []
         };
         Response = obj.Response;
         Build(obj);
@@ -56,8 +56,8 @@ public class HttpReadAllResponse<M> : HttpResponseBase
     {
         return new()
         {
-            Object = res,
-            Response = res.Response
+Object = res,
+Response = res.Response
         };
     }
 

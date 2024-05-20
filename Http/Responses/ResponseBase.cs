@@ -15,9 +15,9 @@ public class HttpResponseBase : IActionResult
         get => Object?.Errors ?? [];
         set
         {
-            if (Object == null)
-                return;
-            Object.Errors = value;
+if (Object == null)
+    return;
+Object.Errors = value;
         }
     }
 
@@ -31,9 +31,9 @@ public class HttpResponseBase : IActionResult
         get => Object?.Response ?? Responses.Undefined;
         set
         {
-            if (Object == null)
-                return;
-            Object.Response = value;
+if (Object == null)
+    return;
+Object.Response = value;
         }
     }
 
@@ -92,8 +92,8 @@ public class HttpResponseBase : IActionResult
     {
         return new()
         {
-            Object = res,
-            Response = res.Response
+Object = res,
+Response = res.Response
         };
     }
 
@@ -105,33 +105,33 @@ public class HttpResponseBase : IActionResult
 
         return response switch
         {
-            Responses.Success => 200,
-            Responses.InvalidApiKey => 401,
-            Responses.Unauthorized => 401,
-            Responses.PasswordShort => 400,
-            Responses.NotRows => 404,
-            Responses.NotExistProfile => 404,
-            Responses.NotExistAccount => 404,
-            Responses.Undefined => 500,
-            Responses.NotConnection => 500,
-            Responses.ExistAccount => 409,
-            Responses.LockAccount => 423,
-            Responses.DisableAccount => 423,
-            Responses.InvalidPassword => 401,
-            Responses.InvalidUser => 400,
-            Responses.InvalidParam => 400,
-            Responses.FirewallBlocked => 403,
-            Responses.UnavailableService => 503,
-            Responses.WithoutCredits => 202,
-            Responses.LoginBlockedByOrg => 403,
-            Responses.UnauthorizedByOrg => 403,
-            Responses.InsufficientStorage => 507,
-            Responses.UnauthorizedByApp => 403,
-            Responses.NotFoundDirectory => 404,
-            Responses.PoliciesNotComplied => 400,
-            Responses.ResourceExist => 409,
-            Responses.IsLoading => 102,
-            _ => 500
+Responses.Success => 200,
+Responses.InvalidApiKey => 401,
+Responses.Unauthorized => 401,
+Responses.PasswordShort => 400,
+Responses.NotRows => 404,
+Responses.NotExistProfile => 404,
+Responses.NotExistAccount => 404,
+Responses.Undefined => 500,
+Responses.NotConnection => 500,
+Responses.ExistAccount => 409,
+Responses.LockAccount => 423,
+Responses.DisableAccount => 423,
+Responses.InvalidPassword => 401,
+Responses.InvalidUser => 400,
+Responses.InvalidParam => 400,
+Responses.FirewallBlocked => 403,
+Responses.UnavailableService => 503,
+Responses.WithoutCredits => 202,
+Responses.LoginBlockedByOrg => 403,
+Responses.UnauthorizedByOrg => 403,
+Responses.InsufficientStorage => 507,
+Responses.UnauthorizedByApp => 403,
+Responses.NotFoundDirectory => 404,
+Responses.PoliciesNotComplied => 400,
+Responses.ResourceExist => 409,
+Responses.IsLoading => 102,
+_ => 500
         };
     }
 
