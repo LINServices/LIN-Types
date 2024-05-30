@@ -7,9 +7,9 @@ public class HealthController : ControllerBase
 
 
     [HttpGet]
-    public string Get()
+    public IActionResult Get()
     {
-        return "OK";
+        return Ok("OK");
     }
 
 

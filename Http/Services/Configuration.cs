@@ -29,11 +29,11 @@ public static class Configuration
 
         if (!IsStart || Config == null)
         {
-var configBuilder = new ConfigurationBuilder()
-         .SetBasePath(Directory.GetCurrentDirectory())
-          .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
+            var configBuilder = new ConfigurationBuilder()
+                     .SetBasePath(Directory.GetCurrentDirectory())
+                      .AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
 
-Config = configBuilder.Build();
+            Config = configBuilder.Build();
         }
 
         return Config[route] ?? string.Empty;
