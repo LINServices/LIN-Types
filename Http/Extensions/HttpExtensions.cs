@@ -43,6 +43,9 @@ public static class HttpExtensions
         // Usar CORS.
         app.UseCors("AllowAnyOrigin");
 
+        // https.
+        app.UseHttpsRedirection();
+
         // Swagger.
         app.UseSwagger();
         app.UseSwaggerUI(config =>
