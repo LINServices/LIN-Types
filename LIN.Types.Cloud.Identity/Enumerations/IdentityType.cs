@@ -4,5 +4,6 @@
 public enum IdentityType
 {
     Account,
-    Group
+    Group,
+    Application
 }

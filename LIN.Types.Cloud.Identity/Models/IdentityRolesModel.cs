@@ -1,5 +1,6 @@
 ﻿namespace LIN.Types.Cloud.Identity.Models;
 
+
 public class IdentityRolesModel
 {
     public IdentityModel Identity { get; set; } = null!;

@@ -22,8 +22,8 @@ public static class HttpExtensions
                 builder =>
                 {
                     builder.AllowAnyOrigin()
-               .AllowAnyHeader()
-               .AllowAnyMethod();
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
                 });
         });
 
