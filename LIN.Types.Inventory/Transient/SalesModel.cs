@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LIN.Types.Inventory.Transient;
+﻿namespace LIN.Types.Inventory.Transient;
 
 public class SalesModel
 {

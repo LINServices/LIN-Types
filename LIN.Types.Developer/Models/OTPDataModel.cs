@@ -19,5 +19,5 @@ public class OTPDataModel
     public int ProfileId { get; set; }
 
     public ProfileDataModel Profile { get; set; } = null!;
-   
+
 }

@@ -11,7 +11,7 @@ public class SearchResult(string title, string link, string snippet)
     public ResultType ResultType { get; set; }
 
     public SearchResult() : this(string.Empty, string.Empty, string.Empty)
-    { 
+    {
     }
 
 }

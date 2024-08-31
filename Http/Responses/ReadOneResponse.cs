@@ -9,7 +9,7 @@ public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
 
         var obj = new ReadAllResponse<M>()
         {
-Response = Responses.Undefined
+            Response = Responses.Undefined
         };
         Response = obj.Response;
         Build(obj);
@@ -24,8 +24,8 @@ Response = Responses.Undefined
     {
         var obj = new ReadOneResponse<M>()
         {
-Response = response,
-Model = new()
+            Response = response,
+            Model = new()
         };
         Response = obj.Response;
         Build(obj);
@@ -39,8 +39,8 @@ Model = new()
     {
         var obj = new ReadOneResponse<M>()
         {
-Response = response,
-Model = model
+            Response = response,
+            Model = model
         };
         Response = obj.Response;
         Build(obj);
@@ -53,8 +53,8 @@ Model = model
     {
         return new()
         {
-Object = res,
-Response = res.Response
+            Object = res,
+            Response = res.Response
         };
     }
 

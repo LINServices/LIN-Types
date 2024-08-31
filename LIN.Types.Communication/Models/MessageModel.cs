@@ -4,7 +4,7 @@ namespace LIN.Types.Communication.Models;
 
 
 public class MessageModel
-{ 
+{
     public int ID { get; set; }
     public ConversationModel Conversacion { get; set; }
     public ProfileModel Remitente { get; set; }
@@ -16,6 +16,6 @@ public class MessageModel
 
 
     [NotMapped]
-    public bool IsLocal { get; set; } 
+    public bool IsLocal { get; set; }
 
 }

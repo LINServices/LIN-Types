@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace LIN.Types.Inventory.Models
+﻿namespace LIN.Types.Inventory.Models
 {
 
     public abstract class MovementDataModel<DetailsModel> where DetailsModel : class

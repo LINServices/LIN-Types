@@ -8,7 +8,7 @@ public class OrganizationModel
     public string Name { get; set; } = string.Empty;
     public GroupModel Directory { get; set; } = null!;
     public int DirectoryId { get; set; }
-    public DateTime Creation {  get; set; }
+    public DateTime Creation { get; set; }
     public bool IsPublic { get; set; }
 
     public List<GroupModel> OwnedGroups { get; set; } = [];

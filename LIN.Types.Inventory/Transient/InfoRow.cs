@@ -1,6 +1,4 @@
-﻿using LIN.Types.Inventory.Enumerations;
-
-namespace LIN.Types.Inventory.Transient;
+﻿namespace LIN.Types.Inventory.Transient;
 
 
 public class InfoRow

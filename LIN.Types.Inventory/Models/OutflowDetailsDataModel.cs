@@ -1,8 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿namespace LIN.Types.Inventory.Models;
 
-namespace LIN.Types.Inventory.Models;
-
-public class OutflowDetailsDataModel 
+public class OutflowDetailsDataModel
 {
 
     public int ID { get; set; } = 0;
