@@ -33,7 +33,6 @@ public static class HttpExtensions
     }
 
 
-
     /// <summary>
     /// Agregar LIN Services.
     /// </summary>
@@ -60,6 +59,5 @@ public static class HttpExtensions
         return app;
 
     }
-
 
 }
