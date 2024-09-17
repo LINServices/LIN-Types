@@ -20,7 +20,6 @@ public class ReadAllResponse<M> : ResponseBase
     }
 
 
-
     /// <summary>
     /// Constructor
     /// </summary>
@@ -39,6 +38,5 @@ public class ReadAllResponse<M> : ResponseBase
         Response = response;
         Models = models ?? [];
     }
-
 
 }

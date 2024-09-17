@@ -63,7 +63,6 @@ public enum Responses
     /// </summary>
     InvalidUser,
 
-
     /// <summary>
     /// No existe el perfil
     /// </summary>
@@ -89,17 +88,24 @@ public enum Responses
     /// </summary>
     FirewallBlocked,
 
-
+    /// <summary>
+    /// Contraseña invalida.
+    /// </summary>
     InvalidPassword,
-
 
     /// <summary>
     /// Servicio no disponible
     /// </summary>
     UnavailableService,
 
+    /// <summary>
+    /// Desautorizado por la organización.
+    /// </summary>
     UnauthorizedByOrg,
 
+    /// <summary>
+    /// Login bloqueado por la organización.
+    /// </summary>
     LoginBlockedByOrg,
 
     /// <summary>
@@ -107,17 +113,31 @@ public enum Responses
     /// </summary>
     InsufficientStorage,
 
+    /// <summary>
+    /// Aplicación no autorizada
+    /// </summary>
     UnauthorizedByApp,
 
+    /// <summary>
+    /// Directorio no encontrado.
+    /// </summary>
     NotFoundDirectory,
 
+    /// <summary>
+    /// No cumple con las políticas.
+    /// </summary>
     PoliciesNotComplied,
 
+    /// <summary>
+    /// Cargando.
+    /// </summary>
     IsLoading,
 
+    /// <summary>
+    /// Recurso ya existe..
+    /// </summary>
     ResourceExist,
 
+    [Obsolete]
     ClosedStream
-
-
 }

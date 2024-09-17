@@ -8,17 +8,17 @@ public enum Genders
 {
 
     /// <summary>
-    /// Genero indefinido / desconocido
+    /// Genero indefinido / desconocido.
     /// </summary>
     Undefined,
 
     /// <summary>
-    /// Genero masculino
+    /// Genero masculino.
     /// </summary>
     Male,
 
     /// <summary>
-    /// Genero femenino
+    /// Genero femenino.
     /// </summary>
     Female
 

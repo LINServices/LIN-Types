@@ -2,7 +2,6 @@
 
 namespace LIN.Types.Responses;
 
-
 public class ResponseBase
 {
 
@@ -11,7 +10,6 @@ public class ResponseBase
     /// Lista de errores.
     /// </summary>
     public List<ErrorModel> Errors { get; set; } = [];
-
 
 
     /// <summary>

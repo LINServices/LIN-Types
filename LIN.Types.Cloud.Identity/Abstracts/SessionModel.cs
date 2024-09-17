@@ -2,7 +2,6 @@
 
 namespace LIN.Types.Cloud.Identity.Abstracts;
 
-
 public class SessionModel<T> where T : new()
 {
 

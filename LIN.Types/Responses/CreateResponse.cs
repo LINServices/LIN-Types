@@ -13,13 +13,10 @@ public class CreateResponse : ResponseBase
     public int LastID { get; set; } = -1;
 
 
-
     /// <summary>
     /// ID del elemento
     /// </summary>
     public string LastUnique { get; set; } = string.Empty;
-
-
 
 
     /// <summary>
@@ -30,8 +27,6 @@ public class CreateResponse : ResponseBase
         Response = Responses.Undefined;
         LastID = -1;
     }
-
-
 
 
     /// <summary>
@@ -45,10 +40,5 @@ public class CreateResponse : ResponseBase
         LastID = lastID;
         Message = message;
     }
-
-
-
-
-
 
 }
