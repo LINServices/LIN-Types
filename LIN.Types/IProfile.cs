@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types;
 
-
 /// <summary>
 /// Recomendaciones de lo que debe de tener un Perfil en LIN
 /// </summary>
