@@ -1,21 +1,20 @@
 ﻿namespace LIN.Types.Developer.Models;
 
-
 public class OTPDataModel
 {
-    [Column("ID")]
+    [Column("id")]
     public int ID { get; set; }
 
-    [Column("OTP_CODE")]
+    [Column("otp_code")]
     public string OTP { get; set; } = string.Empty;
 
-    [Column("EXPIRATION")]
+    [Column("expiration")]
     public DateTime Vencimiento { get; set; }
 
-    [Column("STATE")]
+    [Column("state")]
     public OTPStatus Estado { get; set; } = OTPStatus.actived;
 
-    [Column("PROFILE_FK")]
+    [Column("profile_fk")]
     public int ProfileId { get; set; }
 
     public ProfileDataModel Profile { get; set; } = null!;

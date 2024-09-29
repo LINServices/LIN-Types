@@ -4,24 +4,23 @@
 public class FirewallRuleModel
 {
 
-    [Column("ID")]
+    [Column("id")]
     public int ID { get; set; }
 
-    [Column("NAME")]
+    [Column("name")]
     public string Name { get; set; } = string.Empty;
 
-    [Column("STARTING_IP")]
+    [Column("start_ip")]
     public string IPInicio { get; set; } = string.Empty;
 
-    [Column("FINAL_IP")]
+    [Column("end_ip")]
     public string IPFinal { get; set; } = string.Empty;
 
-    [Column("STATE")]
+    [Column("state")]
     public FirewallRuleStatus Status { get; set; } = FirewallRuleStatus.Undefined;
 
-    [Column("PROJECT_FK")]
+    [Column("project_fk")]
     public int ProjectId { get; set; }
-
 
     public ProjectDataModel Project { get; set; } = null!;
 

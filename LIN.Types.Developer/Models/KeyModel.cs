@@ -1,22 +1,21 @@
 ﻿namespace LIN.Types.Developer.Models;
 
-
 public class KeyModel
 {
 
-    [Column("ID")]
+    [Column("id")]
     public int ID { get; set; }
 
-    [Column("NAME")]
+    [Column("name")]
     public string Nombre { get; set; } = string.Empty;
 
-    [Column("KEY")]
+    [Column("api_key")]
     public string Key { get; set; } = string.Empty;
 
-    [Column("STATE")]
+    [Column("state")]
     public ApiKeyStatus Status { get; set; } = ApiKeyStatus.Actived;
 
-    [Column("PROJECT_FK")]
+    [Column("project_fk")]
     public int ProjectId { get; set; }
 
     public ProjectDataModel Project { get; set; } = null!;
