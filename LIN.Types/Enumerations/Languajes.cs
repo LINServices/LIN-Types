@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Enumerations;
 
 
-public enum Languajes
+public enum Languages
 {
     /// <summary>
     /// Lenguaje desconocido

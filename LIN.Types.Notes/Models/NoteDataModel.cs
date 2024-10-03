@@ -1,4 +1,6 @@
-﻿namespace LIN.Types.Notes.Models;
+﻿using LIN.Types.Enumerations;
+
+namespace LIN.Types.Notes.Models;
 
 
 public class NoteDataModel
@@ -9,7 +11,7 @@ public class NoteDataModel
     public string Content { get; set; } = string.Empty;
     public int Color { get; set; }
     public DateTime LastUpdate { get; set; }
+    public Languages Language { get; set; }
     public List<NoteAccessDataModel> UsersAccess { get; set; } = [];
-
 
 }
