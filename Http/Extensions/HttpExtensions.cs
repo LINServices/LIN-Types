@@ -1,11 +1,11 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Http.Middlewares;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace Http.Extensions;
 
 public static class HttpExtensions
 {
-
 
     /// <summary>
     /// Agregar LIN Services.
@@ -30,6 +30,20 @@ public static class HttpExtensions
 
         return services;
 
+    }
+
+
+    /// <summary>
+    /// Usar rate token limit.
+    /// </summary>
+    /// <param name="limit">Limite.</param>
+    /// <param name="time">Tiempo.</param>
+    public static IApplicationBuilder UseRateTokenLimit(this IApplicationBuilder app, int limit, TimeSpan time)
+    {
+        RateTokenLimitingMiddleware.TimeSpan = time;
+        RateTokenLimitingMiddleware.RequestLimit = limit;
+        app.UseMiddleware<RateTokenLimitingMiddleware>();
+        return app;
     }
 
 
