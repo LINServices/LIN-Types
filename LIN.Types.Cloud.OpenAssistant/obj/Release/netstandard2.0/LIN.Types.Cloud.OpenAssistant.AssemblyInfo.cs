@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LIN.Types.Cloud.OpenAssistant")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+787b4755f95ec199d42bc5f93bd3e084b856e65f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e7a361f008680cc4b6cbd8b4b89beaaaa4cac166")]
 [assembly: System.Reflection.AssemblyProductAttribute("LIN.Types.Cloud.OpenAssistant")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LIN.Types.Cloud.OpenAssistant")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
