@@ -15,7 +15,7 @@ public class HttpResponseBase : IActionResult
         get => Object?.Errors ?? [];
         set
         {
-            if (Object == null)
+            if (Object is null)
                 return;
             Object.Errors = value;
         }
@@ -31,7 +31,7 @@ public class HttpResponseBase : IActionResult
         get => Object?.Response ?? Responses.Undefined;
         set
         {
-            if (Object == null)
+            if (Object is null)
                 return;
             Object.Response = value;
         }
@@ -77,7 +77,7 @@ public class HttpResponseBase : IActionResult
 
     public async Task ExecuteResultAsync(ActionContext context)
     {
-        Object!.Message = (Object.Message == null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
+        Object!.Message = (Object.Message is null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
         var json = System.Text.Json.JsonSerializer.Serialize(Object as object);

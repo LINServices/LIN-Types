@@ -27,7 +27,7 @@ public static class Configuration
     public static string GetConfiguration(string route)
     {
 
-        if (!IsStart || Config == null)
+        if (!IsStart || Config is null)
         {
             var configBuilder = new ConfigurationBuilder()
                      .SetBasePath(Directory.GetCurrentDirectory())
