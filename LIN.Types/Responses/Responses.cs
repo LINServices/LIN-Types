@@ -139,5 +139,10 @@ public enum Responses
     ResourceExist,
 
     [Obsolete]
-    ClosedStream
+    ClosedStream,
+
+    /// <summary>
+    /// Limite excedido.
+    /// </summary>
+    RateLimitExceeded,
 }

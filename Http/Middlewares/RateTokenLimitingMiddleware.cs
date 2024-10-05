@@ -12,10 +12,15 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
 
     internal static TimeSpan TimeSpan { get; set; }
 
+
+    /// <summary>
+    /// AL invocar.
+    /// </summary>
     public async Task InvokeAsync(HttpContext context)
     {
         // Aquí obtienes el identificador del usuario (por ejemplo, un nombre de usuario o ID único)
         var userId = GetPrimaryId(context.Request.Headers["token"].FirstOrDefault());
+
 
         if (!string.IsNullOrEmpty(userId))
         {
@@ -32,6 +37,7 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
                         context.Response.StatusCode = StatusCodes.Status429TooManyRequests;
                         var response = new ResponseBase()
                         {
+                            Response = Responses.RateLimitExceeded,
                             Message = "Has superado el límite de solicitudes. Inténtalo de nuevo más tarde.",
                         };
 
@@ -56,6 +62,7 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
                 _userRequestLog[userId] = (DateTime.UtcNow, 1);
             }
         }
+
 
         // Pasar la solicitud al siguiente middleware si no se excede el límite
         await _next(context);

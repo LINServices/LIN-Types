@@ -131,6 +131,7 @@ public class HttpResponseBase : IActionResult
             Responses.PoliciesNotComplied => 400,
             Responses.ResourceExist => 409,
             Responses.IsLoading => 102,
+            Responses.RateLimitExceeded => 429,
             _ => 500
         };
     }
