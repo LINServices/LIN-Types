@@ -1,0 +1,11 @@
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\bin\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.deps.json
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\bin\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.dll
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\bin\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.pdb
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.csproj.AssemblyReference.cache
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.AssemblyInfoInputs.cache
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.AssemblyInfo.cs
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.csproj.CoreCompileInputs.cache
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.dll
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.pdb
+D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\obj\Release\netstandard2.0\LIN.Types.Cloud.OpenAssistant.sourcelink.json
