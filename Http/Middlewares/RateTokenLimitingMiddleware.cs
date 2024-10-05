@@ -1,4 +1,6 @@
-﻿namespace Http.Middlewares;
+﻿using System.IdentityModel.Tokens.Jwt;
+
+namespace Http.Middlewares;
 
 public class RateTokenLimitingMiddleware(RequestDelegate next)
 {
@@ -13,7 +15,7 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
     public async Task InvokeAsync(HttpContext context)
     {
         // Aquí obtienes el identificador del usuario (por ejemplo, un nombre de usuario o ID único)
-        var userId = context.Request.Headers["token"].FirstOrDefault();
+        var userId = GetPrimaryId(context.Request.Headers["token"].FirstOrDefault());
 
         if (!string.IsNullOrEmpty(userId))
         {
@@ -57,6 +59,36 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
 
         // Pasar la solicitud al siguiente middleware si no se excede el límite
         await _next(context);
+    }
+
+
+    /// <summary>
+    /// Obtener el primary id del token JWT.
+    /// </summary>
+    /// <param name="token">Token a validar.</param>
+    private static string GetPrimaryId(string? token)
+    {
+
+        if (string.IsNullOrWhiteSpace(token))
+            return string.Empty;
+
+        try
+        {
+            // Decodificar el JWT sin verificar la firma
+            var handler = new JwtSecurityTokenHandler();
+            var jsonToken = handler.ReadJwtToken(token);
+            var payload = jsonToken.Payload;
+
+            // Obtener el primary id del payload
+            var primarySid = payload.FirstOrDefault(p => p.Key == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid").Value;
+
+            return primarySid?.ToString() ?? "";
+        }
+        catch (Exception)
+        {
+        }
+        return "";
+
     }
 
 }
