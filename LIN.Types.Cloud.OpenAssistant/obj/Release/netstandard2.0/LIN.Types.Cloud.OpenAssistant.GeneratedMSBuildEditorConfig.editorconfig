@@ -1,5 +1,5 @@
 is_global = true
 build_property.RootNamespace = LIN.Types.Cloud.OpenAssistant
-build_property.ProjectDir = D:\LIN Services\Servicios\LIN.Cloud.OpenAssistant\LIN.Types.Cloud.OpenAssistant\
+build_property.ProjectDir = D:\LIN Services\Tipos\LIN.Types.Cloud.OpenAssistant\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
