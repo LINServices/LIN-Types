@@ -35,7 +35,7 @@ public class RateLimitAttribute : ActionFilterAttribute
             if (requestInfo.BlockedUntil.HasValue && requestInfo.BlockedUntil > now)
             {
                 // Respuesta.
-                var response = new CreateResponse()
+                var response = new ResponseBase()
                 {
                     Response = Responses.RateLimitExceeded,
                     Message = $"Has excedido el límite de solicitudes. Intenta nuevamente después de {requestInfo.BlockedUntil - now:hh\\:mm\\:ss}."
@@ -63,7 +63,7 @@ public class RateLimitAttribute : ActionFilterAttribute
                 if (requestInfo.RequestCount > _requestLimit)
                 {
                     // Respuesta.
-                    var response = new CreateResponse()
+                    var response = new ResponseBase()
                     {
                         Response = Responses.RateLimitExceeded,
                         Message = $"Has excedido el límite de solicitudes. Intenta nuevamente después de {requestInfo.BlockedUntil - now:hh\\:mm\\:ss}."
