@@ -34,11 +34,18 @@ public class RateLimitAttribute : ActionFilterAttribute
             // Verificar si está bloqueado
             if (requestInfo.BlockedUntil.HasValue && requestInfo.BlockedUntil > now)
             {
+                // Respuesta.
+                var response = new CreateResponse()
+                {
+                    Response = Responses.RateLimitExceeded,
+                    Message = $"Has excedido el límite de solicitudes. Intenta nuevamente después de {requestInfo.BlockedUntil - now:hh\\:mm\\:ss}."
+                };
                 // Bloquear la solicitud con un código 429
                 context.Result = new ContentResult
                 {
-                    Content = $"Has excedido el límite de solicitudes. Intenta nuevamente después de {requestInfo.BlockedUntil - now:hh\\:mm\\:ss}.",
-                    StatusCode = StatusCodes.Status429TooManyRequests
+                    Content = System.Text.Json.JsonSerializer.Serialize(response),
+                    StatusCode = StatusCodes.Status429TooManyRequests,
+                    ContentType = "application/json"
                 };
                 return;
             }
@@ -55,12 +62,19 @@ public class RateLimitAttribute : ActionFilterAttribute
 
                 if (requestInfo.RequestCount > _requestLimit)
                 {
+                    // Respuesta.
+                    var response = new CreateResponse()
+                    {
+                        Response = Responses.RateLimitExceeded,
+                        Message = $"Has excedido el límite de solicitudes. Intenta nuevamente después de {requestInfo.BlockedUntil - now:hh\\:mm\\:ss}."
+                    };
                     // Bloquear al usuario
                     requestInfo.BlockedUntil = now.Add(_blockDuration);
                     context.Result = new ContentResult
                     {
-                        Content = $"Has excedido el límite de solicitudes. Intenta nuevamente después de {requestInfo.BlockedUntil - now:hh\\:mm\\:ss}.",
-                        StatusCode = StatusCodes.Status429TooManyRequests
+                        Content = System.Text.Json.JsonSerializer.Serialize(response),
+                        StatusCode = StatusCodes.Status429TooManyRequests,
+                        ContentType = "application/json"
                     };
                     return;
                 }
