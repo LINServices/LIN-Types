@@ -7,12 +7,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>LIN.Types.Notes</Title>
+		<Description>Tipos generales de LIN Notas</Description>
+	</PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\LIN.Types\LIN.Types.csproj" />
-  </ItemGroup>
-
+	<ItemGroup>
+		<PackageReference Include="LIN.Types" Version="1.0.0" />
+	</ItemGroup>
+	
 </Project>

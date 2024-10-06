@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
@@ -7,8 +7,18 @@
     <Nullable>disable</Nullable>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>LIN.Types.Communication</Title>
+		<Description>Tipos generales de comunicación</Description>
+	</PropertyGroup>
+
   <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="LIN.Types" Version="1.0.0" />
+	</ItemGroup>
 
 </Project>

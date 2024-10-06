@@ -9,15 +9,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="LIN.Types" Version="1.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.8" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.8.1" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.8.1" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.8.1" />
         <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.1" />
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\LIN.Types\LIN.Types.csproj" />
     </ItemGroup>
 
 </Project>

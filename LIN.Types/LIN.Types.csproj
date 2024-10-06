@@ -5,6 +5,9 @@
 		<LangVersion>12</LangVersion>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>disable</Nullable>
+        <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+        <Title>LIN.Types</Title>
+        <Description>Tipos generales de LIN Platform</Description>
     </PropertyGroup>
 
     <ItemGroup>

@@ -5,4 +5,9 @@
 	<LangVersion>12</LangVersion>
   </PropertyGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>LIN.Types.Cloud.OpenAssistant</Title>
+		<Description>Tipos de asistente</Description>
+	</PropertyGroup>
 </Project>
