@@ -38,12 +38,12 @@ public class HttpReadAllResponse<M> : HttpResponseBase
     /// <summary>
     /// Constructor
     /// </summary>
-    public HttpReadAllResponse(Responses response, List<M> models)
+    public HttpReadAllResponse(Responses response, IEnumerable<M> models)
     {
         var obj = new ReadAllResponse<M>
         {
             Response = response,
-            Models = models ?? []
+            Models = models ?? new List<M>()
         };
         Response = obj.Response;
         Build(obj);
