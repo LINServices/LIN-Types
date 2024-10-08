@@ -43,7 +43,7 @@ public class HttpReadAllResponse<M> : HttpResponseBase
         var obj = new ReadAllResponse<M>
         {
             Response = response,
-            Models = models ?? new List<M>()
+            Models = models ?? []
         };
         Response = obj.Response;
         Build(obj);
