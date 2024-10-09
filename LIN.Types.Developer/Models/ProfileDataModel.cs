@@ -29,7 +29,7 @@ public class ProfileDataModel : IProfile
     public DateTime Creation { get; set; }
 
     [Column("ACCOUNT_ID")]
-    public int AccountID { get; set; }
+    public int AccountId { get; set; }
 
     public List<TransactionDataModel> Transactions { get; set; } = new();
 

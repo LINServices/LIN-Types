@@ -12,7 +12,7 @@ public class OTPDataModel
     public DateTime Expiration { get; set; }
 
     [Column("state")]
-    public OTPStatus Status { get; set; } = OTPStatus.actived;
+    public OTPStatus Status { get; set; } = OTPStatus.Active;
 
     [Column("profile_fk")]
     public int ProfileId { get; set; }

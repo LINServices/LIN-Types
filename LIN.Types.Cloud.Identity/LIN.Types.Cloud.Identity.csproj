@@ -11,10 +11,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Cloud.Identity</Title>
 		<Description>Tipos de Identidad</Description>
+		<Version>1.1</Version>
 	</PropertyGroup>
 	
   <ItemGroup>
-    <PackageReference Include="LIN.Types" Version="1.0.0" />
+    <PackageReference Include="LIN.Types" Version="1.2.0" />
   </ItemGroup>
 
 </Project>

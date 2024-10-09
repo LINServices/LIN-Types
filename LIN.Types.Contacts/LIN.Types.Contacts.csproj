@@ -13,6 +13,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Contacts</Title>
 		<Description>Tipos generales de LIN Contacts</Description>
+		<Version>1.1</Version>
 	</PropertyGroup>
 
     <ItemGroup>
@@ -20,7 +21,7 @@
     </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="1.0.0" />
+		<PackageReference Include="LIN.Types" Version="1.2.0" />
 	</ItemGroup>
 
 </Project>
