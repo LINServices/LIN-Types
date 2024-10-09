@@ -9,7 +9,7 @@ public interface IProfile
     /// <summary>
     /// ID del perfil
     /// </summary>
-    public int ID { get; set; }
+    public int Id { get; set; }
 
 
     /// <summary>
@@ -21,6 +21,6 @@ public interface IProfile
     /// <summary>
     /// ID de la cuenta en LIN Auth
     /// </summary>
-    public int AccountID { get; set; }
+    public int AccountId { get; set; }
 
 }
