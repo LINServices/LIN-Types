@@ -8,7 +8,7 @@ public class TransactionDataModel
     public int Id { get; set; }
 
     [Column("DATE")]
-    public DateTime Fecha { get; set; }
+    public DateTime Date { get; set; }
 
     [Column("DESCRIPTION")]
     public string Description { get; set; } = string.Empty;

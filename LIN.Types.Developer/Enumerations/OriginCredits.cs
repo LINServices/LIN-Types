@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Developer.Enumerations;
 
-
 public enum TransactionTypes
 {
 
@@ -38,7 +37,4 @@ public enum TransactionTypes
     /// Quitados de la cuenta por alguna razor
     /// </summary>
     Booted
-
-
-
 }

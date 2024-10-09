@@ -5,7 +5,7 @@ public class ProfileDataModel : IProfile
 {
 
     [Column("ID")]
-    public int ID { get; set; }
+    public int Id { get; set; }
 
     [Column("ALIAS")]
     public string Alias { get; set; } = string.Empty;

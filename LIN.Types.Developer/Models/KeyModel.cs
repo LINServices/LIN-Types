@@ -4,16 +4,16 @@ public class KeyModel
 {
 
     [Column("id")]
-    public int ID { get; set; }
+    public int Id { get; set; }
 
     [Column("name")]
-    public string Nombre { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
 
     [Column("api_key")]
     public string Key { get; set; } = string.Empty;
 
     [Column("state")]
-    public ApiKeyStatus Status { get; set; } = ApiKeyStatus.Actived;
+    public ApiKeyStatus Status { get; set; } = ApiKeyStatus.Active;
 
     [Column("project_fk")]
     public int ProjectId { get; set; }

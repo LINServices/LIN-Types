@@ -5,10 +5,10 @@ public class ProjectDataModel
 {
 
     [Column("ID")]
-    public int ID { get; set; }
+    public int Id { get; set; }
 
     [Column("NAME")]
-    public string Nombre { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
 
     [Column("CREATION")]
     public DateTime Creation { get; set; }
@@ -17,7 +17,7 @@ public class ProjectDataModel
     public int ProfileID { get; set; }
 
     [Column("STATE")]
-    public ProjectStatus Estado { get; set; } = ProjectStatus.None;
+    public ProjectStatus Status { get; set; } = ProjectStatus.None;
 
 
     public ProfileDataModel Profile { get; set; } = null!;
