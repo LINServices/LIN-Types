@@ -5,21 +5,14 @@ using System.IdentityModel.Tokens.Jwt;
 namespace Http.Attributes;
 
 [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class)]
-public class RateLimitAttribute : ActionFilterAttribute
+public class RateLimitAttribute(int requestLimit = 20, int timeWindowSeconds = 60, int blockDurationSeconds = 60) : ActionFilterAttribute
 {
+    
     private static ConcurrentDictionary<string, RequestInfo> _requests = new();
-    private readonly int _requestLimit;
-    private readonly TimeSpan _timeWindow;
-    private readonly TimeSpan _blockDuration;
-    private readonly string key;
-
-    public RateLimitAttribute(int requestLimit = 20, int timeWindowSeconds = 60, int blockDurationSeconds = 60)
-    {
-        _requestLimit = requestLimit;
-        _timeWindow = TimeSpan.FromSeconds(timeWindowSeconds);
-        _blockDuration = TimeSpan.FromSeconds(blockDurationSeconds);
-        this.key = Guid.NewGuid().ToString();
-    }
+    private readonly int _requestLimit = requestLimit;
+    private readonly TimeSpan _timeWindow = TimeSpan.FromSeconds(timeWindowSeconds);
+    private readonly TimeSpan _blockDuration = TimeSpan.FromSeconds(blockDurationSeconds);
+    private readonly string key = Guid.NewGuid().ToString();
 
     public override void OnActionExecuting(ActionExecutingContext context)
     {
