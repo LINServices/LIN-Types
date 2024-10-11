@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Enumerations;
 
-
 /// <summary>
 /// Géneros
 /// </summary>

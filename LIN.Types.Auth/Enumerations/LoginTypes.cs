@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Auth.Enumerations;
 
-
 public enum LoginTypes
 {
 
@@ -18,6 +17,5 @@ public enum LoginTypes
     /// Usando passkey
     /// </summary>
     Passkey
-
 
 }

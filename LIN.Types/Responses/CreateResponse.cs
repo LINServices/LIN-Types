@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Responses;
 
-
 /// <summary>
 /// Respuesta de 'Crear'
 /// </summary>

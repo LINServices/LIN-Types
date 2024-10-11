@@ -7,7 +7,7 @@ public class ReadAllResponse<M> : ResponseBase
     /// <summary>
     /// Lista de modelos
     /// </summary>
-    public IEnumerable<M> Models { get; set; }
+    public List<M> Models { get; set; }
 
 
     /// <summary>
@@ -36,7 +36,7 @@ public class ReadAllResponse<M> : ResponseBase
     public ReadAllResponse(Responses response, IEnumerable<M> models)
     {
         Response = response;
-        Models = models ?? [];
+        Models = models.ToList() ?? [];
     }
 
 }

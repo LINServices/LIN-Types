@@ -1,12 +1,11 @@
 ﻿namespace LIN.Types.Auth.Enumerations;
 
-
 public enum DeviceState
 {
 
-    Actived,
+    Active,
     Disconnected,
     WaitingResponse,
-    Desactived
+    Disactivate
 
 }

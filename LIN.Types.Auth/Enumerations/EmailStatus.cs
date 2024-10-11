@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Auth.Enumerations;
 
-
 public enum EmailStatus
 {
 

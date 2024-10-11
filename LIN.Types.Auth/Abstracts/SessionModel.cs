@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Auth.Abstracts;
 
-
 public class SessionModel<T> where T : new()
 {
 

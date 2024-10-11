@@ -2,7 +2,6 @@
 
 namespace Http.Services;
 
-
 public static class Configuration
 {
 

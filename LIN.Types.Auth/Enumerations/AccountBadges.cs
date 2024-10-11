@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Auth.Enumerations;
 
-
 /// <summary>
 /// Insignias que puede tener una cuenta
 /// </summary>

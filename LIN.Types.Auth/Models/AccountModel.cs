@@ -1,20 +1,15 @@
 ﻿namespace LIN.Types.Auth.Models;
 
-
 public class AccountModel
 {
 
-    public int ID { get; set; } = 0;
-    public string Usuario { get; set; } = string.Empty;
-    public byte[] Perfil { get; set; } = Array.Empty<byte>();
-    public string Nombre { get; set; } = string.Empty;
-
-    [Column("CONTRASENA")]
-    public string Contraseña { get; set; } = string.Empty;
+    public int Id { get; set; } = 0;
+    public string User { get; set; } = string.Empty;
+    public byte[] Profile { get; set; } = [];
+    public string Name { get; set; } = string.Empty;
+    public string Password { get; set; } = string.Empty;
     public Genders Genero { get; set; } = Genders.Undefined;
-
-    [Column("CREACION")]
-    public DateTime Creación { get; set; }
+    public DateTime Creation { get; set; }
     public DateTime? Birthday { get; set; }
     public AccountStatus Estado { get; set; } = AccountStatus.Normal;
     public AccountRoles Rol { get; set; } = AccountRoles.User;
