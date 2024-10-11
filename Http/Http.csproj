@@ -9,10 +9,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
+		<Version>1.1</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="LIN.Types" Version="1.2.0" />
+        <PackageReference Include="LIN.Types" Version="1.3.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.8.1" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.8.1" />
