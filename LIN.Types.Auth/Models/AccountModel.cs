@@ -2,7 +2,6 @@
 
 public class AccountModel
 {
-
     public int Id { get; set; } = 0;
     public string User { get; set; } = string.Empty;
     public byte[] Profile { get; set; } = [];
@@ -11,11 +10,9 @@ public class AccountModel
     public Genders Genero { get; set; } = Genders.Undefined;
     public DateTime Creation { get; set; }
     public DateTime? Birthday { get; set; }
-    public AccountStatus Estado { get; set; } = AccountStatus.Normal;
+    public AccountStatus Status { get; set; } = AccountStatus.Normal;
     public AccountRoles Rol { get; set; } = AccountRoles.User;
-    public AccountVisibility Visibilidad { get; set; } = AccountVisibility.Visible;
-    public AccountBadges Insignia { get; set; } = AccountBadges.None;
-
+    public AccountVisibility Visibility { get; set; } = AccountVisibility.Visible;
+    public AccountBadges Badge { get; set; } = AccountBadges.None;
     public OrganizationAccessModel? OrganizationAccess { get; set; }
-
 }
