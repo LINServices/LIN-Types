@@ -7,6 +7,6 @@ public class AccountLog
     public DateTime Time { get; set; }
     public AccountModel Account { get; set; } = null!;
     public int AccountId { get; set; }
-    public ApplicationModel Application { get; set; } = null!;
-    public int ApplicationId { get; set; }
+    public ApplicationModel? Application { get; set; } = null!;
+    public int? ApplicationId { get; set; }
 }
