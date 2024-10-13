@@ -10,4 +10,10 @@ public class HealthController : ControllerBase
         return Ok("OK");
     }
 
+    [HttpHead]
+    public IActionResult Head()
+    {
+        return Ok("OK");
+    }
+
 }

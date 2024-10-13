@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>1.1</Version>
+		<Version>1.2</Version>
     </PropertyGroup>
 
     <ItemGroup>
