@@ -1,9 +1,7 @@
 ﻿namespace Http.ResponsesList;
 
-
 public class HttpCreateResponse : HttpResponseBase
 {
-
 
     /// <summary>
     /// Nueva respuesta Create.
@@ -38,7 +36,10 @@ public class HttpCreateResponse : HttpResponseBase
     }
 
 
-
+    /// <summary>
+    /// Nueva respuesta.
+    /// </summary>
+    /// <param name="res">respuesta base.</param>
     public static implicit operator HttpCreateResponse(CreateResponse res)
     {
         return new()

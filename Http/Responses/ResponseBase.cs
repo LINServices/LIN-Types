@@ -2,9 +2,15 @@
 
 namespace Http.ResponsesList;
 
-
 public class HttpResponseBase : IActionResult
 {
+
+    /// <summary>
+    /// Nueva respuesta.
+    /// </summary>
+    public HttpResponseBase() : this(Responses.Undefined)
+    {
+    }
 
 
     /// <summary>
@@ -20,7 +26,6 @@ public class HttpResponseBase : IActionResult
             Object.Errors = value;
         }
     }
-
 
 
     /// <summary>
@@ -44,37 +49,35 @@ public class HttpResponseBase : IActionResult
     private protected ResponseBase Object = new();
 
 
-
-
-
-
-
+    /// <summary>
+    /// Mensaje.
+    /// </summary>
     public string? Message { get; set; } = null;
-
-
-    public HttpResponseBase()
-    {
-    }
 
 
     /// <summary>
     /// Constructor
     /// </summary>
-    public HttpResponseBase(Responses response = Responses.Undefined)
+    public HttpResponseBase(Responses response)
     {
         Response = response;
         Build(new(response));
     }
 
 
-
+    /// <summary>
+    /// Contruir respuesta.
+    /// </summary>
     protected void Build(ResponseBase obj)
     {
         Object = obj;
     }
 
 
-
+    /// <summary>
+    /// Ejecutar resultado.
+    /// </summary>
+    /// <param name="context">Contexto.</param>
     public async Task ExecuteResultAsync(ActionContext context)
     {
         Object!.Message = (Object.Message is null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
@@ -86,8 +89,10 @@ public class HttpResponseBase : IActionResult
     }
 
 
-
-
+    /// <summary>
+    /// Operador de conversion.
+    /// </summary>
+    /// <param name="res"></param>
     public static implicit operator HttpResponseBase(ResponseBase res)
     {
         return new()
@@ -98,8 +103,9 @@ public class HttpResponseBase : IActionResult
     }
 
 
-
-
+    /// <summary>
+    /// Respuestas a codigos de estado.
+    /// </summary>
     public static int ResponseEncode(Responses response)
     {
 

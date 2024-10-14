@@ -1,12 +1,13 @@
 ﻿namespace Http.ResponsesList;
 
-
 public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
 {
 
+    /// <summary>
+    /// Nueva respuesta.
+    /// </summary>
     public HttpReadOneResponse()
     {
-
         var obj = new ReadAllResponse<M>()
         {
             Response = Responses.Undefined
@@ -14,7 +15,6 @@ public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
         Response = obj.Response;
         Build(obj);
     }
-
 
 
     /// <summary>
@@ -47,7 +47,9 @@ public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
     }
 
 
-
+    /// <summary>
+    /// Operador de conversion.
+    /// </summary>
 
     public static implicit operator HttpReadOneResponse<M>(ReadOneResponse<M> res)
     {
@@ -57,6 +59,5 @@ public class HttpReadOneResponse<M> : HttpResponseBase where M : new()
             Response = res.Response
         };
     }
-
 
 }

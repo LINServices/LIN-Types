@@ -5,11 +5,21 @@ namespace Http.Middlewares;
 public class RateTokenLimitingMiddleware(RequestDelegate next)
 {
 
-    private readonly RequestDelegate _next = next;
+    /// <summary>
+    /// Cache.
+    /// </summary>
     private static readonly Dictionary<string, (DateTime Timestamp, int RequestCount)> _userRequestLog = new();
 
+
+    /// <summary>
+    /// Limite.
+    /// </summary>
     internal static int RequestLimit { get; set; }
 
+
+    /// <summary>
+    /// Tiempo de bloqueo.
+    /// </summary>
     internal static TimeSpan TimeSpan { get; set; }
 
 
@@ -21,7 +31,7 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
         // Aquí obtienes el identificador del usuario (por ejemplo, un nombre de usuario o ID único)
         var userId = GetPrimaryId(context.Request.Headers["token"].FirstOrDefault());
 
-
+        // Si existe el usuario.
         if (!string.IsNullOrEmpty(userId))
         {
             if (_userRequestLog.ContainsKey(userId))
@@ -65,7 +75,7 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
 
 
         // Pasar la solicitud al siguiente middleware si no se excede el límite
-        await _next(context);
+        await next(context);
     }
 
 

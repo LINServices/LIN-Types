@@ -3,10 +3,11 @@
 public class HttpReadAllResponse<M> : HttpResponseBase
 {
 
-
+    /// <summary>
+    /// Nueva respuesta.
+    /// </summary>
     public HttpReadAllResponse()
     {
-
         var obj = new ReadAllResponse<M>()
         {
             Response = Responses.Undefined
@@ -14,7 +15,6 @@ public class HttpReadAllResponse<M> : HttpResponseBase
 
         Response = obj.Response;
         Build(obj);
-
     }
 
 
@@ -33,7 +33,6 @@ public class HttpReadAllResponse<M> : HttpResponseBase
     }
 
 
-
     /// <summary>
     /// Constructor
     /// </summary>
@@ -49,8 +48,9 @@ public class HttpReadAllResponse<M> : HttpResponseBase
     }
 
 
-
-
+    /// <summary>
+    /// Operador de conversion.
+    /// </summary>
     public static implicit operator HttpReadAllResponse<M>(ReadAllResponse<M> res)
     {
         return new()
@@ -59,7 +59,5 @@ public class HttpReadAllResponse<M> : HttpResponseBase
             Response = res.Response
         };
     }
-
-
 
 }

@@ -3,17 +3,9 @@
 [Route("[controller]")]
 public class HealthController : ControllerBase
 {
-
     [HttpGet]
-    public IActionResult Get()
-    {
-        return Ok("OK");
-    }
+    public IActionResult Get() => Ok("Server its running");
 
     [HttpHead]
-    public IActionResult Head()
-    {
-        return Ok("OK");
-    }
-
+    public IActionResult Head() => Ok();
 }

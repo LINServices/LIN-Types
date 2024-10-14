@@ -5,7 +5,6 @@ namespace Http.Services;
 public static class Configuration
 {
 
-
     /// <summary>
     /// Estancia de la configuración.
     /// </summary>
@@ -16,7 +15,6 @@ public static class Configuration
     /// El servicio esta iniciado.
     /// </summary>
     private static readonly bool IsStart = false;
-
 
 
     /// <summary>
@@ -38,6 +36,5 @@ public static class Configuration
         return Config[route] ?? string.Empty;
 
     }
-
 
 }

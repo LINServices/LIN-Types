@@ -8,14 +8,22 @@ public static class HttpExtensions
 {
 
     /// <summary>
+    /// Usar swagger.
+    /// </summary>
+    private static bool UseSwagger { get; set; } = true;
+
+
+    /// <summary>
     /// Agregar LIN Services.
     /// </summary>
-    public static IServiceCollection AddLINHttp(this IServiceCollection services)
+    public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true)
     {
-
+        UseSwagger = useSwagger;
+        services.AddSingleton<IPMiddleware>();
         services.AddControllers();
         services.AddEndpointsApiExplorer();
-        services.AddSwaggerGen();
+        if (useSwagger)
+            services.AddSwaggerGen();
         services.AddCors(options =>
         {
             options.AddPolicy("AllowAnyOrigin",
@@ -27,9 +35,7 @@ public static class HttpExtensions
                 });
         });
 
-
         return services;
-
     }
 
 
@@ -54,18 +60,23 @@ public static class HttpExtensions
     {
 
         // Usar CORS.
+        app.UseMiddleware<IPMiddleware>();
         app.UseCors("AllowAnyOrigin");
 
         // https.
         app.UseHttpsRedirection();
 
         // Swagger.
-        app.UseSwagger();
-        app.UseSwaggerUI(config =>
+        if (UseSwagger)
         {
-            config.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
-            config.RoutePrefix = string.Empty;
-        });
+            app.UseSwagger();
+            app.UseSwaggerUI(config =>
+            {
+                config.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
+                config.RoutePrefix = string.Empty;
+                config.InjectStylesheet("./swagger/somee.css");
+            });
+        }
 
         app.UseHttpsRedirection();
         app.UseStaticFiles();
