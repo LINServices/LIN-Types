@@ -16,14 +16,15 @@ public static class HttpExtensions
     /// <summary>
     /// Agregar LIN Services.
     /// </summary>
-    public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true)
+    public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true, Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>? options = null)
     {
         UseSwagger = useSwagger;
         services.AddSingleton<IPMiddleware>();
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         if (useSwagger)
-            services.AddSwaggerGen();
+            services.AddSwaggerGen(options);
+
         services.AddCors(options =>
         {
             options.AddPolicy("AllowAnyOrigin",
