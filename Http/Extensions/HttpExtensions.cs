@@ -11,6 +11,17 @@ public static class HttpExtensions
     /// Usar swagger.
     /// </summary>
     private static bool UseSwagger { get; set; } = true;
+    internal static Func<object>? Func { get; set; } = null;
+
+
+    /// <summary>
+    /// Agregar LIN Services.
+    /// </summary>
+    public static IServiceCollection AddDatabaseAction(this IServiceCollection services, Func<object>? execute = null)
+    {
+        Func = execute;
+        return services;
+    }
 
 
     /// <summary>

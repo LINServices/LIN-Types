@@ -9,16 +9,15 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>2.0.2</Version>
-		<Platforms>AnyCPU;x86</Platforms>
+		<Version>2.0.5</Version>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="LIN.Types" Version="1.3.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
-        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.8.1" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.8.1" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.8.1" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.9.0" />
         <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.1.2" />
         <PackageReference Include="System.Text.Json" Version="8.0.5" />
     </ItemGroup>

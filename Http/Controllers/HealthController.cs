@@ -8,4 +8,7 @@ public class HealthController : ControllerBase
 
     [HttpHead]
     public IActionResult Head() => Ok();
+
+    [HttpPost("databaseUse")]
+    public IActionResult DataBase() => Ok(Extensions.HttpExtensions.Func?.Invoke());
 }

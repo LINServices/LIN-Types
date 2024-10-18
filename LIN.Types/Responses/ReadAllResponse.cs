@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Responses;
 
-
 public class ReadAllResponse<M> : ResponseBase
 {
 

@@ -13,7 +13,14 @@ public class CustomOperationFilter<T>(string headerName) : IOperationFilter wher
         var swaggerHeaderAttributes = context.MethodInfo
             .GetCustomAttributes<T>();
 
-        foreach (var attr in swaggerHeaderAttributes)
+        // Obtener atributos a nivel de controlador (clase)
+        var controllerAttributes = context.MethodInfo.DeclaringType
+                                  .GetCustomAttributes<T>();
+
+        // Combinar ambos conjuntos de atributos
+        var allAttributes = swaggerHeaderAttributes.Concat(controllerAttributes);
+
+        foreach (var attr in allAttributes)
         {
             // Crear una definición de parámetro de header
             var headerParameter = new OpenApiParameter
