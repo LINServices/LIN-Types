@@ -13,7 +13,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="LIN.Types" Version="1.3.0" />
+        <PackageReference Include="LIN.Types" Version="1.5.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
