@@ -8,4 +8,5 @@ public class EmailMessageModel
     public string Body { get; set; }
     public string Resume { get; set; }
     public string From { get; set; }
+    public bool IsSendByMe { get; set; }
 }
