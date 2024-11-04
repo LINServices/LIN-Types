@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LIN.Types.Mail")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4aceaba476d3ca7dbe8cde734408500d8db7c525")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+42b86569952d2412a6ee77cfa41d2a99cafb472a")]
 [assembly: System.Reflection.AssemblyProductAttribute("LIN.Types.Mail")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LIN.Types.Mail")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
