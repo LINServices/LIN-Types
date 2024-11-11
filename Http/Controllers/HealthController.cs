@@ -11,4 +11,5 @@ public class HealthController : ControllerBase
 
     [HttpPost("databaseUse")]
     public IActionResult DataBase() => Ok(Extensions.HttpExtensions.Func?.Invoke());
+
 }

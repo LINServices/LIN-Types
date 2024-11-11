@@ -2,20 +2,23 @@
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
 
-namespace Http.Extensions;
+namespace Http.Extensions.OpenApi;
 
-public class CustomOperationFilter<T>(string headerName) : IOperationFilter where T : Attribute
+public class HeaderMapAttribute<T> (string headerName, string description = "", string type = "string") : IOperationFilter where T : Attribute
 {
 
+    /// <summary>
+    /// Aplicar el filtro de operación.
+    /// </summary>
+    /// <param name="operation">Operación.</param>
+    /// <param name="context">Contexto.</param>
     public void Apply(OpenApiOperation operation, OperationFilterContext context)
     {
-        // Obtener el atributo SwaggerHeaderAttribute del método del controlador
-        var swaggerHeaderAttributes = context.MethodInfo
-            .GetCustomAttributes<T>();
+        // Obtener el atributo del método del controlador
+        var swaggerHeaderAttributes = context.MethodInfo.GetCustomAttributes<T>();
 
         // Obtener atributos a nivel de controlador (clase)
-        var controllerAttributes = context.MethodInfo.DeclaringType
-                                  .GetCustomAttributes<T>();
+        var controllerAttributes = context.MethodInfo.DeclaringType.GetCustomAttributes<T>();
 
         // Combinar ambos conjuntos de atributos
         var allAttributes = swaggerHeaderAttributes.Concat(controllerAttributes);
@@ -27,11 +30,11 @@ public class CustomOperationFilter<T>(string headerName) : IOperationFilter wher
             {
                 Name = headerName,
                 In = ParameterLocation.Header,
-                Description = "token de autorización.",
+                Description = description,
                 Required = true,
                 Schema = new OpenApiSchema
                 {
-                    Type = "string"
+                    Type = type
                 }
             };
 
@@ -39,4 +42,5 @@ public class CustomOperationFilter<T>(string headerName) : IOperationFilter wher
             operation.Parameters.Add(headerParameter);
         }
     }
+
 }

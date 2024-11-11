@@ -33,8 +33,11 @@ public static class HttpExtensions
         services.AddSingleton<IPMiddleware>();
         services.AddControllers();
         services.AddEndpointsApiExplorer();
+
         if (useSwagger)
+        {
             services.AddSwaggerGen(options);
+        }
 
         services.AddCors(options =>
         {
