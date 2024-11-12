@@ -1,7 +1,10 @@
 ﻿using Http.Middlewares;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
-
+#if NET9_0_OR_GREATER
+using Scalar.AspNetCore;
+#endif
 namespace Http.Extensions;
 
 public static class HttpExtensions
@@ -36,7 +39,11 @@ public static class HttpExtensions
 
         if (useSwagger)
         {
+#if NET9_0_OR_GREATER
+            services.AddOpenApi();
+#elif NET6_0_OR_GREATER
             services.AddSwaggerGen(options);
+#endif
         }
 
         services.AddCors(options =>
@@ -84,6 +91,19 @@ public static class HttpExtensions
         // Swagger.
         if (UseSwagger)
         {
+
+#if NET9_0_OR_GREATER
+
+            if(app is IEndpointRouteBuilder endpointRouteBuilder)
+            {
+                endpointRouteBuilder.MapOpenApi();
+                endpointRouteBuilder.MapScalarApiReference(options =>
+                {
+                    options.DarkMode = true;
+                    options.Theme = ScalarTheme.BluePlanet;
+                });
+            }
+#elif NET6_0_OR_GREATER
             app.UseSwagger();
             app.UseSwaggerUI(config =>
             {
@@ -91,6 +111,7 @@ public static class HttpExtensions
                 config.RoutePrefix = string.Empty;
                 config.InjectStylesheet("./swagger/somee.css");
             });
+#endif
         }
 
         app.UseHttpsRedirection();
