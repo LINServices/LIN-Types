@@ -1,7 +1,4 @@
-﻿using LIN.Types.Notes.Enumerations;
-
-namespace LIN.Types.Notes.Transient;
-
+﻿namespace LIN.Types.Notes.Transient;
 
 public class IntegrantDataModel
 {
@@ -11,7 +8,7 @@ public class IntegrantDataModel
     public int ProfileID { get; set; } = 0;
     public int AccessID { get; set; } = 0;
     public string Nombre { get; set; } = string.Empty;
-    public byte[] Perfil { get; set; } = Array.Empty<byte>();
+    public byte[] Perfil { get; set; } = [];
     public string Usuario { get; set; } = string.Empty;
     public NoteAccessState State { get; set; }
 

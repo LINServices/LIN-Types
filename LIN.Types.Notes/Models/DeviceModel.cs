@@ -1,6 +1,8 @@
-﻿namespace LIN.Types.Notes.Models;
+﻿using System.Diagnostics;
 
+namespace LIN.Types.Notes.Models;
 
+[DebuggerDisplay("Id:{Id} Platform:{Platform} LocalId:{LocalId}")]
 public class DeviceModel
 {
     public string Id { get; set; } = string.Empty;

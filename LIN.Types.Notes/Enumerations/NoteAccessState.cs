@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Notes.Enumerations;
 
-
 public enum NoteAccessState
 {
     Undefined,
