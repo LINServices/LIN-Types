@@ -94,7 +94,7 @@ public static class HttpExtensions
 
 #if NET9_0_OR_GREATER
 
-            if(app is IEndpointRouteBuilder endpointRouteBuilder)
+            if (app is IEndpointRouteBuilder endpointRouteBuilder)
             {
                 endpointRouteBuilder.MapOpenApi();
                 endpointRouteBuilder.MapScalarApiReference(options =>
