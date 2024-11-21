@@ -19,6 +19,8 @@ public class ProjectDataModel
     [Column("STATE")]
     public ProjectStatus Status { get; set; } = ProjectStatus.None;
 
+    [Column("TYPE")]
+    public string Type { get; set; }
 
     public ProfileDataModel Profile { get; set; } = null!;
     public List<FirewallRuleModel> FirewallRules { get; set; } = [];

@@ -6,7 +6,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>$(AssemblyName)</Title>
 		<Authors>LIN Platform</Authors>
-		<Version>1.0</Version>
+		<Version>1.1</Version>
 	</PropertyGroup>
 
 </Project>
