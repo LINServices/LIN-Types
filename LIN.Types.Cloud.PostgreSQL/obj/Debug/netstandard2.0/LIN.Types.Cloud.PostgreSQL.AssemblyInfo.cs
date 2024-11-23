@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LIN.Types.Cloud.PostgreSQL")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+501c67e0fb1290144992758de8f4ab5d3db5b258")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b25f9b0c90a13f05a0fd9aab2d7370ca5ad966a6")]
 [assembly: System.Reflection.AssemblyProductAttribute("LIN.Types.Cloud.PostgreSQL")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LIN.Types.Cloud.PostgreSQL")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
