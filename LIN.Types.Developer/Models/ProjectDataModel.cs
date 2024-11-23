@@ -20,7 +20,10 @@ public class ProjectDataModel
     public ProjectStatus Status { get; set; } = ProjectStatus.None;
 
     [Column("TYPE")]
-    public string Type { get; set; }
+    public string Type { get; set; } = string.Empty;
+
+    public bool VisibleKeys { get; set; }
+    public bool VisibleRules { get; set; }
 
     public ProfileDataModel Profile { get; set; } = null!;
     public List<FirewallRuleModel> FirewallRules { get; set; } = [];

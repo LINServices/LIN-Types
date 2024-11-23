@@ -24,6 +24,7 @@ LIN.Types.Labs.Applications/obj/*
 LIN.Types.Notes/obj/*
 LIN.Types.Cloud.OpenAssistant/obj/*
 LIN.Types.Mail/obj/*
+LIN.Types.Cloud.PostgreSQL/obj/*
 
 Http/bin/*
 LIN.Modules/bin/*
@@ -51,6 +52,7 @@ LIN.Types.Identity/LIN.Types.Identity/bin/*
 LIN.Types.Labs.Applications/bin/*
 LIN.Types.Cloud.OpenAssistant/bin/*
 LIN.Types.Mail/bin/*
+LIN.Types.Cloud.PostgreSQL/bin/*
 
 vs/
 .vs/

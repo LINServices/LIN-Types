@@ -9,11 +9,12 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>2.8.0.2</Version>
+		<Version>2.9</Version>
     </PropertyGroup>
 
     <ItemGroup>
         <PackageReference Include="LIN.Types" Version="1.5.0" />
+        <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
         <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
         <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
         <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.0" />

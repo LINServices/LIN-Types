@@ -83,8 +83,8 @@ public class HttpResponseBase : IActionResult
         Object!.Message = (Object.Message is null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
-        var json = System.Text.Json.JsonSerializer.Serialize(Object as object);
 
+        var json = Newtonsoft.Json.JsonConvert.SerializeObject(Object);
         await context.HttpContext.Response.WriteAsync(json);
     }
 
@@ -104,7 +104,7 @@ public class HttpResponseBase : IActionResult
 
 
     /// <summary>
-    /// Respuestas a codigos de estado.
+    /// Respuestas a códigos de estado.
     /// </summary>
     public static int ResponseEncode(Responses response)
     {
