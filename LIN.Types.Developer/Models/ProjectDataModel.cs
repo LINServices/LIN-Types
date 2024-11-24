@@ -22,6 +22,9 @@ public class ProjectDataModel
     [Column("TYPE")]
     public string Type { get; set; } = string.Empty;
 
+    [NotMapped]
+    public bool IsProvisioned { get; set; }
+
     public bool VisibleKeys { get; set; }
     public bool VisibleRules { get; set; }
 

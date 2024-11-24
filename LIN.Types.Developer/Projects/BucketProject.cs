@@ -2,6 +2,7 @@
 
 public class BucketProject : Models.ProjectDataModel
 {
-    public string BucketName { get; set; }
     public int BucketId { get; set; }
+    public double BucketSize { get; set; }
+    public double BucketActualSize { get; set; }
 }
