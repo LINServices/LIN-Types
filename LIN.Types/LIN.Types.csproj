@@ -8,7 +8,7 @@
         <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
         <Title>LIN.Types</Title>
         <Description>Tipos generales de LIN Platform</Description>
-        <Version>1.5</Version>
+        <Version>1.6</Version>
     </PropertyGroup>
 
     <ItemGroup>

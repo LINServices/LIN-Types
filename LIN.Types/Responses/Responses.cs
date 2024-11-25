@@ -47,7 +47,6 @@ public enum Responses
     /// </summary>
     InvalidParam,
 
-
     /// <summary>
     /// No hay columnas que mostrar
     /// </summary>
