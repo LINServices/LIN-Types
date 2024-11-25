@@ -9,26 +9,24 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>2.9</Version>
+		<Version>3</Version>
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="LIN.Types" Version="1.5.0" />
+        <PackageReference Include="LIN.Types" Version="1.6.0" />
         <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.9.0" />
-        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
-        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.0" />
-        <PackageReference Include="System.Text.Json" Version="8.0.5" />
+        <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.0.0" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.0.0" />
     </ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net8.0'">
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.9.0" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.10" />
 	</ItemGroup>
 
 	<ItemGroup Condition="'$(TargetFramework)' == 'net9.0'">
-		<PackageReference Include="Scalar.AspNetCore" Version="1.2.34" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0-rc.2.24474.3" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
 	</ItemGroup>
 
 </Project>
