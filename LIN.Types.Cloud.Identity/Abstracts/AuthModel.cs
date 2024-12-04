@@ -2,10 +2,8 @@
 
 namespace LIN.Types.Cloud.Identity.Abstracts;
 
-
 public class AuthModel<T> where T : new()
 {
-
     public AccountModel Account { get; set; } = null!;
 
     public T Profile { get; set; } = default!;

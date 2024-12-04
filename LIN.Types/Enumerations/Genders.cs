@@ -1,7 +1,7 @@
 ﻿namespace LIN.Types.Enumerations;
 
 /// <summary>
-/// Géneros
+/// Géneros.
 /// </summary>
 public enum Genders
 {

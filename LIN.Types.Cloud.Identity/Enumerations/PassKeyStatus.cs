@@ -4,32 +4,32 @@ public enum PassKeyStatus
 {
 
     /// <summary>
-    /// Estado desconocido
+    /// Estado desconocido.
     /// </summary>
     Undefined,
 
     /// <summary>
-    /// Correcto
+    /// Correcto.
     /// </summary>
     Success,
 
     /// <summary>
-    /// Fallo
+    /// Fallo.
     /// </summary>
     Failed,
 
     /// <summary>
-    /// Rechazado
+    /// Rechazado.
     /// </summary>
     Rejected,
 
     /// <summary>
-    /// Expirado
+    /// Expirado.
     /// </summary>
     Expired,
 
     /// <summary>
-    /// Bloqueado por la organización
+    /// Bloqueado por la organización.
     /// </summary>
     BlockedByOrg
 

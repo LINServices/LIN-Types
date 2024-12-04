@@ -30,9 +30,6 @@ public class ResponseBase
     public string Token { get; set; } = "";
 
 
-    public string StreamKey { get; set; } = "";
-
-
     public object AlternativeObject { get; set; }
 
 

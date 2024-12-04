@@ -2,7 +2,6 @@
 
 namespace LIN.Types.Responses;
 
-
 public class ReadOneResponse<M> : ResponseBase where M : new()
 {
 
