@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace LIN.Types.Cloud.PostgreSQL.Models;
+﻿namespace LIN.Types.Cloud.PostgreSQL.Models;
 
 public class CreateDatabaseRequest
 {
