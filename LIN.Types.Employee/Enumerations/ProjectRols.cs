@@ -17,7 +17,7 @@ public enum ProjectRoles
     /// <summary>
     /// Desarrollador
     /// </summary>
-    Developer, 
+    Developer,
 
     /// <summary>
     /// Diseñador

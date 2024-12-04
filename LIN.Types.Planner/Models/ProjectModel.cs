@@ -4,7 +4,7 @@
 public class ProjectModel
 {
 
-    public int Id { get; set; } 
+    public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public bool IsClose { get; set; }
     public List<ItemModel> Tasks { get; set; } = [];

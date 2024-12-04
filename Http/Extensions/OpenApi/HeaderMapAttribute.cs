@@ -4,7 +4,7 @@ using System.Reflection;
 
 namespace Http.Extensions.OpenApi;
 
-public class HeaderMapAttribute<T> (string headerName, string description = "", string type = "string") : IOperationFilter where T : Attribute
+public class HeaderMapAttribute<T>(string headerName, string description = "", string type = "string") : IOperationFilter where T : Attribute
 {
 
     /// <summary>

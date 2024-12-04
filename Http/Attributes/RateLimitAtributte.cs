@@ -7,7 +7,7 @@ namespace Http.Attributes;
 [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class)]
 public class RateLimitAttribute(int requestLimit = 20, int timeWindowSeconds = 60, int blockDurationSeconds = 60) : ActionFilterAttribute
 {
-    
+
     private static ConcurrentDictionary<string, RequestInfo> _requests = new();
     private readonly int _requestLimit = requestLimit;
     private readonly TimeSpan _timeWindow = TimeSpan.FromSeconds(timeWindowSeconds);

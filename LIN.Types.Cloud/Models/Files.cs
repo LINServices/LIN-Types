@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LIN.Types.Cloud.Models;
+﻿namespace LIN.Types.Cloud.Models;
 
 public class Files
 {

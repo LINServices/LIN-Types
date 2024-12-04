@@ -1,6 +1,5 @@
 ﻿using Http.Middlewares;
 using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.DependencyInjection;
 namespace Http.Extensions;
 
@@ -36,7 +35,7 @@ public static class HttpExtensions
 
         if (useSwagger)
             services.AddSwaggerGen(options);
-        
+
 
         services.AddCors(options =>
         {

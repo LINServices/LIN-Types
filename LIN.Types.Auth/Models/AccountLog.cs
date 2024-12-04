@@ -2,7 +2,7 @@
 
 public class AccountLog
 {
-    public int Id { get; set; } 
+    public int Id { get; set; }
     public AuthenticationMethods AuthenticationMethod { get; set; }
     public DateTime Time { get; set; }
     public AccountModel Account { get; set; } = null!;

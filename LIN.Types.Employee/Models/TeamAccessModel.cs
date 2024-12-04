@@ -1,5 +1,4 @@
 ﻿using LIN.Types.Employee.Enumerations;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace LIN.Types.Employee.Models;
 

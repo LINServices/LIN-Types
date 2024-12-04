@@ -2,7 +2,5 @@
 
 public class AssistantResponse
 {
-
     public string Content { get; set; } = string.Empty;
-
 }
