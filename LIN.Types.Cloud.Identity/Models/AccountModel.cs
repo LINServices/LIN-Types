@@ -4,7 +4,7 @@ public class AccountModel
 {
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
-    public byte[] Profile { get; set; } = [];
+    public string Profile { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
     public Visibility Visibility { get; set; }
     public IdentityService IdentityService { get; set; }
