@@ -9,7 +9,7 @@ public class CreateResponse : ResponseBase
     /// <summary>
     /// ID del elemento
     /// </summary>
-    public int LastID { get; set; } = -1;
+    public int LastId { get; set; } = -1;
 
 
     /// <summary>
@@ -24,7 +24,7 @@ public class CreateResponse : ResponseBase
     public CreateResponse()
     {
         Response = Responses.Undefined;
-        LastID = -1;
+        LastId = -1;
     }
 
 
@@ -32,11 +32,10 @@ public class CreateResponse : ResponseBase
     /// Nueva respuesta 
     /// </summary>
     /// <param name="response">Respuesta</param>
-    /// <param name="lastID">ID</param>
-    public CreateResponse(Responses response = Responses.Undefined, int lastID = -1, string message = "")
+    public CreateResponse(Responses response = Responses.Undefined, int lastId = -1, string message = "")
     {
         Response = response;
-        LastID = lastID;
+        LastId = lastId;
         Message = message;
     }
 

@@ -1,36 +1,35 @@
 ﻿namespace LIN.Types.Developer.Models;
 
-
 public class ProfileDataModel : IProfile
 {
 
-    [Column("ID")]
+    [Column("id")]
     public int Id { get; set; }
 
-    [Column("ALIAS")]
+    [Column("alias")]
     public string Alias { get; set; } = string.Empty;
 
-    [Column("CREDITS")]
-    public decimal Credits { get; set; } = 0m;
-
-    [Column("DISCOUNT")]
+    [Column("discount")]
     public int Discount { get; set; } = 0;
 
-    [Column("MAIL")]
+    [Column("mail")]
     public string Email { get; set; } = string.Empty;
 
-    [Column("DESCRIPTION")]
+    [Column("description")]
     public string Description { get; set; } = string.Empty;
 
-    [Column("STATE")]
+    [Column("state")]
     public ProfileStatus Estado { get; set; } = ProfileStatus.Normal;
 
-    [Column("CREATION")]
+    [Column("creation")]
     public DateTime Creation { get; set; }
 
-    [Column("ACCOUNT_ID")]
+    [Column("account_id")]
     public int AccountId { get; set; }
 
-    public List<TransactionDataModel> Transactions { get; set; } = new();
+    public BillingAccount Billing { get; set; } = null!;
+    public int BillingId { get; set; }
+
+    public List<OwnerModel> MyProjects { get; set; } = [];
 
 }

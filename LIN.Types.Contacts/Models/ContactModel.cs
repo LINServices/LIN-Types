@@ -2,11 +2,10 @@
 
 namespace LIN.Types.Contacts.Models;
 
-
 public class ContactModel
 {
     public int Id { get; set; }
-    public string Nombre { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
     public string Picture { get; set; } = string.Empty;
     public List<MailModel> Mails { get; set; } = [];
     public List<PhoneModel> Phones { get; set; } = [];

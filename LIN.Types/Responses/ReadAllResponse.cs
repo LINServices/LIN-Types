@@ -8,7 +8,6 @@ public class ReadAllResponse<M> : ResponseBase
     /// </summary>
     public List<M> Models { get; set; }
 
-
     /// <summary>
     /// Constructor
     /// </summary>
@@ -18,7 +17,6 @@ public class ReadAllResponse<M> : ResponseBase
         Models = [];
     }
 
-
     /// <summary>
     /// Constructor
     /// </summary>
@@ -27,7 +25,6 @@ public class ReadAllResponse<M> : ResponseBase
         Response = response;
         Models = [];
     }
-
 
     /// <summary>
     /// Constructor

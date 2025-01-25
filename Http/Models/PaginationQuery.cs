@@ -8,12 +8,10 @@ public class PaginationQuery
     /// </summary>
     public int Limit { get; set; }
 
-
     /// <summary>
     /// Ultimo Id.
     /// </summary>
     public int LastId { get; set; }
-
 
     /// <summary>
     /// Obtener una instancia sin paginación.
@@ -22,7 +20,6 @@ public class PaginationQuery
     {
         return new PaginationQuery() { Limit = int.MaxValue, LastId = 0 };
     }
-
 
     /// <summary>
     /// Paginación.

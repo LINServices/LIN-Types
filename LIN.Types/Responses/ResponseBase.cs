@@ -30,6 +30,9 @@ public class ResponseBase
     public string Token { get; set; } = "";
 
 
+    /// <summary>
+    /// Objeto alternativo
+    /// </summary>
     public object AlternativeObject { get; set; }
 
 

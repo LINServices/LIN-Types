@@ -133,7 +133,7 @@ public enum Responses
     IsLoading,
 
     /// <summary>
-    /// Recurso ya existe..
+    /// Recurso ya existe.
     /// </summary>
     ResourceExist,
 
