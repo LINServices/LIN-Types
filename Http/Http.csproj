@@ -15,11 +15,11 @@
 	<ItemGroup>
 		<PackageReference Include="LIN.Types" Version="1.6.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.1.0" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.1.0" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.2.1" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.1.0" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="7.2.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.3.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="7.2.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
 	</ItemGroup>
 
 </Project>
