@@ -5,5 +5,6 @@ public class ProfileModel
     public int Id { get; set; }
     public string Alias { get; set; }
     public string City { get; set; }
+    public int Model { get; set; }
     public int AccountId { get; set; }
 }

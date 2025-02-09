@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Cloud.OpenAssistant</Title>
 		<Description>Tipos de asistente</Description>
-		<Version>1.4</Version>
+		<Version>1.5</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
