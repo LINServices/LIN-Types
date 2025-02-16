@@ -1,21 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-	  <TargetFramework>netstandard2.0</TargetFramework>
-	  <LangVersion>12</LangVersion>
-	  <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>  
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>12</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
 
 	<PropertyGroup>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Cloud.Identity</Title>
 		<Description>Tipos de Identidad</Description>
-		<Version>1.7</Version>
+		<Version>3.0.3-pre</Version>
 	</PropertyGroup>
-	
-  <ItemGroup>
-    <PackageReference Include="LIN.Types" Version="1.6.0" />
-  </ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="LIN.Types" Version="1.6.0" />
+	</ItemGroup>
 
 </Project>
