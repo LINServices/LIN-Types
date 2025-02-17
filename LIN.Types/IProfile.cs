@@ -11,12 +11,10 @@ public interface IProfile
     /// </summary>
     public int Id { get; set; }
 
-
     /// <summary>
     /// Fecha de creación del perfil
     /// </summary>
     public DateTime Creation { get; set; }
-
 
     /// <summary>
     /// ID de la cuenta en LIN Auth

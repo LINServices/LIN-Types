@@ -10,7 +10,6 @@ public class ReadOneResponse<M> : ResponseBase where M : new()
     /// </summary>
     public M Model { get; set; }
 
-
     /// <summary>
     /// Constructor
     /// </summary>
@@ -25,7 +24,6 @@ public class ReadOneResponse<M> : ResponseBase where M : new()
         Response = Responses.Undefined;
         Model = model;
     }
-
 
     /// <summary>
     /// Constructor

@@ -11,12 +11,10 @@ public class CreateResponse : ResponseBase
     /// </summary>
     public int LastId { get; set; } = -1;
 
-
     /// <summary>
     /// ID del elemento
     /// </summary>
     public string LastUnique { get; set; } = string.Empty;
-
 
     /// <summary>
     /// Nueva respuesta 
@@ -26,7 +24,6 @@ public class CreateResponse : ResponseBase
         Response = Responses.Undefined;
         LastId = -1;
     }
-
 
     /// <summary>
     /// Nueva respuesta 
