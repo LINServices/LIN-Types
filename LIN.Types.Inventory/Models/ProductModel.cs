@@ -1,9 +1,7 @@
 ﻿namespace LIN.Types.Inventory.Models;
 
-
 public class ProductModel
 {
-
     public int Id { get; set; }
     public string Name { get; set; } = string.Empty;
     public string Image { get; set; } = string.Empty;
@@ -16,7 +14,6 @@ public class ProductModel
     public int InventoryId { get; set; }
 
     public List<ProductDetailModel> Details { get; set; } = [];
-
 
     [NotMapped]
     public ProductDetailModel? DetailModel => Details?.FirstOrDefault();

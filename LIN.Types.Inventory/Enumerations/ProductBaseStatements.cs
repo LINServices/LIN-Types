@@ -2,7 +2,7 @@
 
 
 /// <summary>
-/// Enumeracion de estado de un producto
+/// Enumeración de estado de un producto
 /// </summary>
 public enum ProductBaseStatements
 {

@@ -1,32 +1,20 @@
-﻿namespace LIN.Types.Inventory.Models
+﻿namespace LIN.Types.Inventory.Models;
+
+public class InventoryDataModel
 {
+    public int Id { get; set; } = 0;
+    public string Nombre { get; set; } = string.Empty;
+    public string Direction { get; set; } = string.Empty;
+    [Column("CREADOR_FK")]
+    public int Creador { get; set; } = 0;
+    public List<ProductModel> Products { get; set; } = [];
+    public List<OutflowDataModel> Outflows { get; set; } = [];
+    public List<InflowDataModel> Inflows { get; set; } = [];
 
-    /// <summary>
-    /// Model de 'UserDataModel'
-    /// </summary>
-    public class InventoryDataModel
-    {
+    [NotMapped]
+    public InventoryRoles MyRol { get; set; }
 
-        public int ID { get; set; } = 0;
-        public string Nombre { get; set; } = string.Empty;
-        public string Direction { get; set; } = string.Empty;
+    [NotMapped]
+    public List<InventoryAccessDataModel> UsersAccess { get; set; } = new();
 
-
-        [Column("CREADOR_FK")]
-        public int Creador { get; set; } = 0;
-
-        public List<ProductModel> Products { get; set; } = [];
-        public List<OutflowDataModel> Outflows { get; set; } = [];
-        public List<InflowDataModel> Inflows { get; set; } = [];
-
-
-
-        [NotMapped]
-        public InventoryRoles MyRol { get; set; }
-
-        [NotMapped]
-        public List<InventoryAcessDataModel> UsersAccess { get; set; } = new();
-
-
-    }
 }

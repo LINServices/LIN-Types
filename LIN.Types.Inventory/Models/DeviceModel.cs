@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Inventory.Models;
 
-
 public class DeviceModel
 {
     public string Id { get; set; } = string.Empty;

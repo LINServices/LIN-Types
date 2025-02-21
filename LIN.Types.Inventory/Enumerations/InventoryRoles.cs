@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Inventory.Enumerations;
 
-
 public enum InventoryRoles
 {
 
