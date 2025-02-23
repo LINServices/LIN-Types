@@ -1,9 +1,9 @@
 ﻿using Http.Middlewares;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
 using LIN.Access.Logger;
-using Microsoft.Extensions.Hosting;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace Http.Extensions;
 
@@ -105,7 +105,7 @@ public static class HttpExtensions
     /// </summary>
     public static IHostBuilder UseLoggingService(this IHostBuilder app, IConfiguration configuration)
     {
-        LoggerExtensions.AddServiceLogging(app, configuration["Logging:appName"] ?? string.Empty);
+        LoggerExtensions.AddServiceLogging(app, configuration["Logging:appName"] ?? string.Empty, configuration["Logging:appKey"] ?? string.Empty);
         return app;
     }
 
