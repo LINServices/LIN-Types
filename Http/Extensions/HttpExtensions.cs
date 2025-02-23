@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using LIN.Access.Logger;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Configuration;
 
 namespace Http.Extensions;
 
@@ -102,9 +103,9 @@ public static class HttpExtensions
     /// <summary>
     /// Agregar LIN Services de logging.
     /// </summary>
-    public static IHostBuilder UseLoggingService(this IHostBuilder app, string appName)
+    public static IHostBuilder UseLoggingService(this IHostBuilder app, IConfiguration configuration)
     {
-        LoggerExtensions.AddServiceLogging(app, appName);
+        LoggerExtensions.AddServiceLogging(app, configuration["Logging:appName"] ?? string.Empty);
         return app;
     }
 
