@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Inventory.Transient;
 
-
 public class CommandModel
 {
     public string Command { get; set; } = string.Empty;

@@ -36,7 +36,6 @@ public static class HttpExtensions
         if (useSwagger)
             services.AddSwaggerGen(options);
 
-
         services.AddCors(options =>
         {
             options.AddPolicy("AllowAnyOrigin",
@@ -95,7 +94,6 @@ public static class HttpExtensions
         app.UseStaticFiles();
 
         return app;
-
     }
 
 }

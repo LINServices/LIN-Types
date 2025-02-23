@@ -2,7 +2,6 @@
 
 namespace LIN.Types.Exp.Search.Models;
 
-
 public class SearchResult(string title, string link, string snippet)
 {
     public string Title { get; set; } = title;

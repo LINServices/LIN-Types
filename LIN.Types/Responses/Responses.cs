@@ -1,9 +1,5 @@
 ﻿namespace LIN.Types.Responses;
 
-
-/// <summary>
-/// Enumeración de respuestas
-/// </summary>
 public enum Responses
 {
 

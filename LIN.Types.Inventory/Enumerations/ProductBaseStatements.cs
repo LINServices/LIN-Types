@@ -1,13 +1,10 @@
 ﻿namespace LIN.Types.Inventory.Enumerations;
 
-
 /// <summary>
 /// Enumeración de estado de un producto
 /// </summary>
 public enum ProductBaseStatements
 {
-
-
     /// <summary>
     /// Estado desconocido
     /// </summary>

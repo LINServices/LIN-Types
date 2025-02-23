@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Exp.Search.Models;
 
-
 public class Temperature
 {
     public double Value { get; set; }

@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Contacts.Transient;
 
-
 public class DeviceModel
 {
     public string Id { get; set; } = string.Empty;

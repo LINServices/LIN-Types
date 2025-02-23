@@ -33,7 +33,7 @@ public class ResponseBase
     /// <summary>
     /// Objeto alternativo
     /// </summary>
-    public object AlternativeObject { get; set; }
+    public object? AlternativeObject { get; set; }
 
 
     /// <summary>

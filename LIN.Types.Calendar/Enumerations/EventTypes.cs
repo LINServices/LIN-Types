@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Calendar.Enumerations;
 
-
 public enum EventTypes
 {
     Event,

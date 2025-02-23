@@ -13,7 +13,6 @@ public class MessageModel
     [NotMapped]
     public string Guid { get; set; }
 
-
     [NotMapped]
     public bool IsLocal { get; set; }
 

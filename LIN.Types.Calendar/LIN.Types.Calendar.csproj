@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<LangVersion>12</LangVersion>
+		<LangVersion>13</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
@@ -11,11 +11,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Calendar</Title>
 		<Description>Tipos de Calendario</Description>
-		<Version>1.1</Version>
+		<Version>1.2</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="1.6.0" />
+		<PackageReference Include="LIN.Types" Version="2.0.0" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 	</ItemGroup>
 

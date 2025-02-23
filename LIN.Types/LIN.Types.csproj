@@ -2,13 +2,13 @@
 
 	<PropertyGroup>
 		<TargetFramework>netstandard2.0</TargetFramework>
-		<LangVersion>12</LangVersion>
+		<LangVersion>13</LangVersion>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types</Title>
 		<Description>Tipos generales de LIN Platform</Description>
-		<Version>1.6</Version>
+		<Version>2</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

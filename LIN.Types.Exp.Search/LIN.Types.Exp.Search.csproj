@@ -3,7 +3,7 @@
 	<PropertyGroup>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<Nullable>enable</Nullable>
-		<LangVersion>12</LangVersion>
+		<LangVersion>13</LangVersion>
 		<Platforms>AnyCPU;x86</Platforms>
 	</PropertyGroup>
 
@@ -11,11 +11,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Exp.Search</Title>
 		<Description>Tipos generales de LIN Search</Description>
-		<Version>1.4</Version>
+		<Version>1.5</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="1.6.0" />
+		<PackageReference Include="LIN.Types" Version="2.0.0" />
 		<PackageReference Include="System.Text.Json" Version="9.0.2" />
 	</ItemGroup>
 

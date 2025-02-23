@@ -7,6 +7,5 @@ public class BillingAccount
     public BillingAccountTypes Type { get; set; }
     public BillingAccountStatus State { get; set; }
     public decimal Balance { get; set; }
-
     public List<TransactionDataModel> Transactions { get; set; } = [];
 }

@@ -11,7 +11,7 @@ public class HttpCreateResponse : HttpResponseBase
         var obj = new CreateResponse()
         {
             Response = Responses.Undefined,
-            LastID = -1
+            LastId = -1
         };
         Response = obj.Response;
         Build(obj);
@@ -28,7 +28,7 @@ public class HttpCreateResponse : HttpResponseBase
         var obj = new CreateResponse()
         {
             Response = response,
-            LastID = lastID,
+            LastId = lastID,
             Message = message
         };
         Response = obj.Response;
