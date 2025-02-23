@@ -1,6 +1,9 @@
 ﻿using Http.Middlewares;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
+using LIN.Access.Logger;
+using Microsoft.Extensions.Hosting;
+
 namespace Http.Extensions;
 
 public static class HttpExtensions
@@ -93,6 +96,15 @@ public static class HttpExtensions
         app.UseHttpsRedirection();
         app.UseStaticFiles();
 
+        return app;
+    }
+
+    /// <summary>
+    /// Agregar LIN Services de logging.
+    /// </summary>
+    public static IHostBuilder UseLoggingService(this IHostBuilder app, string appName)
+    {
+        LoggerExtensions.AddServiceLogging(app, appName);
         return app;
     }
 
