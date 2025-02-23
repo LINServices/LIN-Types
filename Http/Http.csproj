@@ -9,11 +9,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>3.3</Version>
+		<Version>3.3.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Access.Logger" Version="1.0.1" />
+		<PackageReference Include="LIN.Access.Logger" Version="1.1.0" />
 		<PackageReference Include="LIN.Types" Version="2.0.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="7.2.0" />
