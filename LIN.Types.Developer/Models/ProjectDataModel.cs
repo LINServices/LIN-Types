@@ -3,36 +3,34 @@
 public class ProjectDataModel
 {
 
-    [Column("pro_id")]
+    [Column("id")]
     public int Id { get; set; }
 
-    [Column("pro_name")]
+    [Column("name")]
     public string Name { get; set; } = string.Empty;
 
-    [Column("pro_creation")]
+    [Column("creation")]
     public DateTime Creation { get; set; }
 
-    [Column("pro_state")]
+    [Column("state")]
     public ProjectStatus Status { get; set; } = ProjectStatus.None;
 
-    [Column("pro_type")]
+    [Column("type")]
     public string Type { get; set; } = string.Empty;
 
-    [NotMapped]
-    public bool IsProvisioned { get; set; }
-
-    [Column("pro_visible_keys")]
+    [Column("visibleKeys")]
     public bool VisibleKeys { get; set; }
 
-    [Column("pro_visible_rules")]
+    [Column("visibleRules")]
     public bool VisibleRules { get; set; }
     public List<OwnerModel> Owners { get; set; } = [];
     public List<FirewallRuleModel> FirewallRules { get; set; } = [];
     public List<KeyModel> Keys { get; set; } = [];
-
     public List<TransactionDataModel> Transactions { get; set; } = [];
-
     public BillingAccount Billing { get; set; } = null!;
     public int BillingId { get; set; }
+
+    [NotMapped]
+    public bool IsProvisioned { get; set; }
 
 }
