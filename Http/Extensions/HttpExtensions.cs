@@ -75,14 +75,13 @@ public static class HttpExtensions
     /// <summary>
     /// Agregar LIN Services.
     /// </summary>
-    public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app, string? gatewayPath = null)
+    public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app, bool useGateway = false)
     {
+        if (useGateway)
+            app.UseMiddleware<GatewayBasePathMiddleware>();
 
         // Usar CORS.
         app.UseMiddleware<IPMiddleware>();
-
-        if (gatewayPath is not null)
-            app.UseMiddleware<GatewayBasePathMiddleware>();
 
         app.UseCors("AllowAnyOrigin");
 
@@ -92,18 +91,18 @@ public static class HttpExtensions
         // Swagger.
         if (UseSwagger)
         {
-            string @default = "swagger";
-            app.UseSwagger(config => config.RouteTemplate = $$"""{{gatewayPath ?? @default}}/{documentName}/swagger.json""");
+            app.UseSwagger(config => config.RouteTemplate = "{documentName}/swagger.json");
             app.UseSwaggerUI(config =>
             {
                 config.SwaggerEndpoint("v1/swagger.json", "API");
-                config.RoutePrefix = gatewayPath ?? string.Empty;
+                config.RoutePrefix = string.Empty;
                 config.InjectStylesheet("./swagger/somee.css");
             });
         }
 
         app.UseHttpsRedirection();
         app.UseStaticFiles();
+        app.UseRouting();
 
         return app;
     }
