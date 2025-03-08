@@ -65,6 +65,9 @@ public static class HttpExtensions
         RateTokenLimitingMiddleware.TimeSpan = time;
         RateTokenLimitingMiddleware.RequestLimit = limit;
         app.UseMiddleware<RateTokenLimitingMiddleware>();
+
+
+        app.UseMiddleware<GatewayBasePathMiddleware>();
         return app;
     }
 
@@ -72,11 +75,15 @@ public static class HttpExtensions
     /// <summary>
     /// Agregar LIN Services.
     /// </summary>
-    public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app)
+    public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app, string? gatewayPath = null)
     {
 
         // Usar CORS.
         app.UseMiddleware<IPMiddleware>();
+
+        if (gatewayPath is not null)
+            app.UseMiddleware<GatewayBasePathMiddleware>();
+
         app.UseCors("AllowAnyOrigin");
 
         // https.
@@ -85,11 +92,12 @@ public static class HttpExtensions
         // Swagger.
         if (UseSwagger)
         {
-            app.UseSwagger();
+            string @default = "swagger";
+            app.UseSwagger(config => config.RouteTemplate = $$"""{{gatewayPath ?? @default}}/{documentName}/swagger.json""");
             app.UseSwaggerUI(config =>
             {
-                config.SwaggerEndpoint("/swagger/v1/swagger.json", "API");
-                config.RoutePrefix = string.Empty;
+                config.SwaggerEndpoint("v1/swagger.json", "API");
+                config.RoutePrefix = gatewayPath ?? string.Empty;
                 config.InjectStylesheet("./swagger/somee.css");
             });
         }
