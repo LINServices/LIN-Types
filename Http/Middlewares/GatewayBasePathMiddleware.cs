@@ -25,19 +25,6 @@ public class GatewayBasePathMiddleware(RequestDelegate next)
                 context.Request.PathBase = gatewayPath;
             }
         }
-        else
-        {
-#if !DEBUG
-            context.Response.StatusCode = 404;
-            await context.Response.WriteAsJsonAsync(new ResponseBase()
-            {
-                Response = Responses.Unauthorized,
-                Message = "Esta aplicación solo puede ser accedida desde el manejador API Gateway de LIN Platform"
-            });
-            return;
-#endif
-        }
-
         await _next(context);
     }
 }
