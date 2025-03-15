@@ -3,10 +3,10 @@
 public enum OutflowsTypes
 {
     None,
-    Venta,
-    Perdida,
-    Consumo,
-    Fraude,
-    Donacion,
-    Caducidad
+    Purchase,
+    Loss,
+    Usage,
+    Fraud,
+    Contribution,
+    Expiry
 }

@@ -6,7 +6,7 @@
 public enum ProductBaseStatements
 {
     /// <summary>
-    /// Estado desconocido
+    /// Status desconocido
     /// </summary>
     Undefined,
 

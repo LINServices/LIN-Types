@@ -3,8 +3,8 @@
 public enum InflowsTypes
 {
     Undefined,
-    Compra,
-    Devolucion,
-    Regalo,
-    Ajuste
+    Purchase,
+    Refund,
+    Gift,
+    Correction
 }

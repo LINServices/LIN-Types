@@ -9,7 +9,6 @@ public class ProductModel
     public string Description { get; set; } = string.Empty;
     public ProductCategories Category { get; set; } = ProductCategories.Undefined;
     public ProductBaseStatements Statement { get; set; }
-
     public InventoryDataModel Inventory { get; set; } = null!;
     public int InventoryId { get; set; }
 

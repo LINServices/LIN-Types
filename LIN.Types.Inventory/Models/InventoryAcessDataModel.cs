@@ -4,14 +4,8 @@ public class InventoryAccessDataModel
 {
     public int Id { get; set; } = 0;
     public InventoryRoles Rol { get; set; }
-
-    [Column("ESTADO")]
     public InventoryAccessState State { get; set; }
-    public DateTime Fecha { get; set; }
-
-    [Column("PROFILE_FK")]
+    public DateTime Date { get; set; }
     public int ProfileId { get; set; }
-
-    [Column("INVENTARIO_FK")]
-    public int Inventario { get; set; }
+    public int InventoryId { get; set; }
 }

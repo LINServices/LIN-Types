@@ -2,9 +2,10 @@
 
 public class OutflowDataModel : MovementDataModel<OutflowDetailsDataModel>
 {
-
-    [Column("TIPO")]
     public OutflowsTypes Type { get; set; }
+
+    public InflowDataModel? InflowRelated { get; set; }
+    public int? InflowRelatedId { get; set; }
 
     [NotMapped]
     public decimal Ganancia { get; set; } = 0;

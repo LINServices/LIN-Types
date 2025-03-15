@@ -3,7 +3,7 @@
 public class OutflowDetailsDataModel
 {
     public int Id { get; set; } = 0;
-    public int Cantidad { get; set; }
+    public int Quantity { get; set; }
     public ProductDetailModel ProductDetail { get; set; } = null!;
     public int ProductDetailId { get; set; }
     public OutflowDataModel Movement { get; set; } = null!;
