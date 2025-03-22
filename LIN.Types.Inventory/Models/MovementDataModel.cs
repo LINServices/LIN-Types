@@ -12,6 +12,8 @@ public abstract class MovementDataModel<DetailsModel> where DetailsModel : class
     public int? ProfileId { get; set; }
     public ProfileModel? Profile { get; set; } = null!;
     public List<DetailsModel> Details { get; set; } = [];
+    public OutsiderModel? Outsider { get; set; }
+    public int? OutsiderId { get; set; }
 
     [NotMapped]
     public int CountDetails { get; set; } = 0;

@@ -21,19 +21,19 @@ public class ResponseBase
     /// <summary>
     /// Mensaje del elemento
     /// </summary>
-    public string Message { get; set; } = "";
+    public string Message { get; set; } = string.Empty;
 
 
     /// <summary>
     /// Autenticación
     /// </summary>
-    public string Token { get; set; } = "";
+    public string Token { get; set; } = string.Empty;
 
 
     /// <summary>
     /// Objeto alternativo
     /// </summary>
-    public object? AlternativeObject { get; set; }
+    public List<object> Alternatives { get; set; } = [];
 
 
     /// <summary>

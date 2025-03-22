@@ -80,6 +80,12 @@ public class HttpResponseBase : IActionResult
     /// <param name="context">Contexto.</param>
     public async Task ExecuteResultAsync(ActionContext context)
     {
+
+        for (int i = 0; i < Object.Alternatives.Count; i++)
+        {
+            Object.Alternatives[i] = Newtonsoft.Json.JsonConvert.SerializeObject(Object.Alternatives[i]);
+        }
+
         Object!.Message = (Object.Message is null || Object.Message.Trim() == string.Empty ? Message : Object.Message) ?? "";
         context.HttpContext.Response.StatusCode = ResponseEncode(Response);
         context.HttpContext.Response.ContentType = "application/json";
