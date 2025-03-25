@@ -7,8 +7,6 @@ public class GatewayBasePathMiddleware(RequestDelegate next)
 
     public async Task Invoke(HttpContext context)
     {
-
-
         if (context.Request.Headers.TryGetValue("x-gateway", out var gatewayValue) && !string.IsNullOrWhiteSpace(gatewayValue))
         {
             var gatewayPath = $"/{gatewayValue}";

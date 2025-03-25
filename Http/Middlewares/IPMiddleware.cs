@@ -30,6 +30,7 @@ public class IPMiddleware : IMiddleware
 
         // Headers.
         context.Response.Headers.Append("client-ip", ip.MapToIPv4().ToString());
+        context.Response.Headers.XPoweredBy = "LIN Cloud Platform";
 
         // Pipeline.
         await next(context);
