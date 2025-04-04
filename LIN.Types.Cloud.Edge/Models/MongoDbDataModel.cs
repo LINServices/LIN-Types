@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Cloud.Ada.Models;
+﻿namespace LIN.Types.Cloud.Edge.Models;
 
 public class MongoDbDataModel
 {

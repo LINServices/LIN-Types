@@ -1,8 +1,0 @@
-is_global = true
-build_property.RootNamespace = LIN.Types.Cloud.Ada
-build_property.ProjectDir = D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\
-build_property.EnableComHosting = 
-build_property.EnableGeneratedComInterfaceComImportInterop = 
-build_property.CsWinRTUseWindowsUIXamlProjections = false
-build_property.EffectiveAnalysisLevelStyle = 
-build_property.EnableCodeStyleSeverity = 

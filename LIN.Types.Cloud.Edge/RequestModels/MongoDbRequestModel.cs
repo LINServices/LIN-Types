@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Cloud.Ada.RequestModels;
+﻿namespace LIN.Types.Cloud.Edge.RequestModels;
 
 public class MongoDbRequestModel
 {
