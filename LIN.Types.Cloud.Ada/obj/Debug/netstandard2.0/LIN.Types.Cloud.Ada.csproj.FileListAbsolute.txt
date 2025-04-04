@@ -1,0 +1,11 @@
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\bin\Debug\netstandard2.0\LIN.Types.Cloud.Ada.deps.json
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\bin\Debug\netstandard2.0\LIN.Types.Cloud.Ada.dll
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\bin\Debug\netstandard2.0\LIN.Types.Cloud.Ada.pdb
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.csproj.AssemblyReference.cache
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.GeneratedMSBuildEditorConfig.editorconfig
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.AssemblyInfoInputs.cache
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.AssemblyInfo.cs
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.csproj.CoreCompileInputs.cache
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.sourcelink.json
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.dll
+D:\LIN\LIN Services\Tipos\LIN.Types.Cloud.Ada\obj\Debug\netstandard2.0\LIN.Types.Cloud.Ada.pdb
