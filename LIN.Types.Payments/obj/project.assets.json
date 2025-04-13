@@ -27,7 +27,7 @@
         }
       }
     },
-    ".NETStandard,Version=v2.0/linux-x64": {
+    ".NETStandard,Version=v2.0/win-x86": {
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -279,7 +279,7 @@
       }
     },
     "runtimes": {
-      "linux-x64": {
+      "win-x86": {
         "#import": []
       }
     }
