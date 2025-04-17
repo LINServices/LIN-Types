@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Developer.Models;
+﻿namespace LIN.Types.Developer.TransactionModels;
 
 public class PricingModel
 {

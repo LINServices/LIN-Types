@@ -1,6 +1,6 @@
-﻿namespace LIN.Types.Developer.Projects;
+﻿namespace LIN.Types.Developer.Resources;
 
-public class PaymentProject : Models.ProjectDataModel
+public class PaymentResource : Models.ProjectDataModel
 {
     public string UserName { get; set; } = string.Empty;
     public string UserMail { get; set; } = string.Empty;

@@ -1,6 +1,6 @@
-﻿namespace LIN.Types.Developer.Projects;
+﻿namespace LIN.Types.Developer.Resources;
 
-public class BucketProject : Models.ProjectDataModel
+public class BucketResource : Models.ProjectDataModel
 {
     public int BucketId { get; set; }
     public double BucketSize { get; set; }
