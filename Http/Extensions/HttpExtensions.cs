@@ -65,8 +65,6 @@ public static class HttpExtensions
         RateTokenLimitingMiddleware.TimeSpan = time;
         RateTokenLimitingMiddleware.RequestLimit = limit;
         app.UseMiddleware<RateTokenLimitingMiddleware>();
-
-
         app.UseMiddleware<GatewayBasePathMiddleware>();
         return app;
     }
@@ -111,8 +109,8 @@ public static class HttpExtensions
     /// Agregar LIN Services de logging.
     /// </summary>
     public static IHostBuilder UseLoggingService(this IHostBuilder app, IConfiguration configuration)
-    {
-        LoggerExtensions.AddServiceLogging(app, configuration["Logging:appName"] ?? string.Empty, configuration["Logging:appKey"] ?? string.Empty);
+    { 
+        LoggerExtensions.AddServiceLogging(app, configuration["logs:name"] ?? string.Empty, configuration["logs:key"] ?? string.Empty);
         return app;
     }
 
