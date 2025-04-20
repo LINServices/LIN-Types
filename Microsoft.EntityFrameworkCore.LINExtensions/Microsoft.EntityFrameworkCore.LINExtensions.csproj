@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net9.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<RootNamespace>Microsoft.EntityFrameworkCore</RootNamespace>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>Microsoft.EntityFrameworkCore.LINExtensions</Title>
+		<PackageId>Microsoft.EntityFrameworkCore.LINExtensions</PackageId>
+		<Version>1</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.4" />
+	</ItemGroup>
+
+</Project>
