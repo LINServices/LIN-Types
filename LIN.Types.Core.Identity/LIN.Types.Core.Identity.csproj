@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>13</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>LIN.Types.Core.Identity</Title>
+		<Description>Tipos de Core Identity</Description>
+		<Version>1.0</Version>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="LIN.Types" Version="2.1.0" />
+	</ItemGroup>
+
+</Project>
