@@ -20,6 +20,7 @@ public class ProjectDataModel
 
     [Column("visibleKeys")]
     public bool VisibleKeys { get; set; }
+    public bool IsConfirmed { get; set; }
 
     [Column("visibleRules")]
     public bool VisibleRules { get; set; }
