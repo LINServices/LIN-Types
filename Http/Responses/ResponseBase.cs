@@ -142,7 +142,7 @@ public class HttpResponseBase : IActionResult
             Responses.NotFoundDirectory => 404,
             Responses.PoliciesNotComplied => 403,
             Responses.ResourceExist => 409,
-            Responses.IsLoading => 102,
+            Responses.IsLoading => 202,
             Responses.RateLimitExceeded => 429,
             _ => 500
         };

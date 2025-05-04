@@ -107,7 +107,7 @@ Cada Status representa un estado de la respuesta y se mapea a un código HTTP co
 | UnauthorizedByApp     | 403        | Aplicación no autorizada              |
 | NotFoundDirectory     | 404        | Directorio no encontrado              |
 | PoliciesNotComplied   | 403        | No cumple con las políticas           |
-| IsLoading            | 102        | Cargando                              |
+| IsLoading            | 202        | Cargando                              |
 | ResourceExist        | 409        | Recurso ya existe                     |
 | ClosedStream (Obsoleto) | -      | Flujo cerrado (ya no en uso)          |
 | RateLimitExceeded     | 429        | Límite de solicitudes excedido        |
