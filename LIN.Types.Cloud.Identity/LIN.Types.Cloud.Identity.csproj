@@ -11,7 +11,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Cloud.Identity</Title>
 		<Description>Tipos de Identidad</Description>
-		<Version>4.0-pre</Version>
+		<Version>4.0.1-pre</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
