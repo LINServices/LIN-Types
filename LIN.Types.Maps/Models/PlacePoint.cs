@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Maps.Models;
 
-
 public class PlacePoint
 {
     public int ID { get; set; }
@@ -8,5 +7,4 @@ public class PlacePoint
     public double Latitude { get; set; }
     public DateTime Time { get; set; }
     public ProfileModel Profile { get; set; } = null!;
-
 }
