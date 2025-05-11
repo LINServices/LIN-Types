@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Cloud.Identity.Models;
+﻿namespace LIN.Types.Cloud.Identity.Models.Identities;
 
 public class ApplicationModel
 {
@@ -9,6 +9,5 @@ public class ApplicationModel
     public int IdentityId { get; set; }
     public IdentityModel Owner { get; set; } = null!;
     public int OwnerId { get; set; }
-    public ApplicationRestrictionModel? Restriction { get; set; } = null!;
-    public int? RestrictionId { get; set; }
+    public List<PolicyModel> Policies { get; set; } = [];
 }

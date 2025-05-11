@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Cloud.Identity.Models;
+﻿namespace LIN.Types.Cloud.Identity.Models.Identities;
 
 public class IdentityModel
 {

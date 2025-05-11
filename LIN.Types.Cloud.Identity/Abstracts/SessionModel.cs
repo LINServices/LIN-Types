@@ -1,4 +1,4 @@
-﻿using LIN.Types.Cloud.Identity.Models;
+﻿using LIN.Types.Cloud.Identity.Models.Identities;
 
 namespace LIN.Types.Cloud.Identity.Abstracts;
 

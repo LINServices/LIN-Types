@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Cloud.Identity.Models;
+﻿namespace LIN.Types.Cloud.Identity.Models.Identities;
 
 public class GroupModel
 {
@@ -9,6 +9,4 @@ public class GroupModel
     public List<GroupMember> Members { get; set; } = [];
     public IdentityModel Identity { get; set; } = null!;
     public int IdentityId { get; set; }
-    public OrganizationModel? Owner { get; set; } = null!;
-    public int? OwnerId { get; set; }
 }

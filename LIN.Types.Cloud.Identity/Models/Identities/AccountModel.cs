@@ -1,4 +1,4 @@
-﻿namespace LIN.Types.Cloud.Identity.Models;
+﻿namespace LIN.Types.Cloud.Identity.Models.Identities;
 
 public class AccountModel
 {
@@ -6,7 +6,6 @@ public class AccountModel
     public string Name { get; set; } = string.Empty;
     public string Profile { get; set; } = string.Empty;
     public string Password { get; set; } = string.Empty;
-    public bool IsLINAdmin { get; set; } = false;
     public Visibility Visibility { get; set; }
     public IdentityService IdentityService { get; set; }
     public AccountTypes AccountType { get; set; }
