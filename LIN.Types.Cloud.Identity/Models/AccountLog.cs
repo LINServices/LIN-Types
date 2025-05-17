@@ -1,6 +1,4 @@
-﻿using LIN.Types.Cloud.Identity.Models.Identities;
-
-namespace LIN.Types.Cloud.Identity.Models;
+﻿namespace LIN.Types.Cloud.Identity.Models;
 
 public class AccountLog
 {

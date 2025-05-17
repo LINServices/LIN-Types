@@ -8,7 +8,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Microsoft.EntityFrameworkCore.LINExtensions</Title>
 		<PackageId>Microsoft.EntityFrameworkCore.LINExtensions</PackageId>
-		<Version>1</Version>
+		<Version>1.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

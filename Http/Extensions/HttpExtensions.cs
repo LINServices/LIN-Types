@@ -109,7 +109,7 @@ public static class HttpExtensions
     /// Agregar LIN Services de logging.
     /// </summary>
     public static IHostBuilder UseLoggingService(this IHostBuilder app, IConfiguration configuration)
-    { 
+    {
         LoggerExtensions.AddServiceLogging(app, configuration["logs:name"] ?? string.Empty, configuration["logs:key"] ?? string.Empty);
         return app;
     }

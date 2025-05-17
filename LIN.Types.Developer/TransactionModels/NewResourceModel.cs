@@ -2,7 +2,7 @@
 
 namespace LIN.Types.Developer.TransactionModels;
 
-public class NewResourceModel<T> where T : new() 
+public class NewResourceModel<T> where T : new()
 {
     public string Key { get; set; } = string.Empty;
     public string TokenCloud { get; set; } = string.Empty;

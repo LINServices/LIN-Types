@@ -1,6 +1,4 @@
-﻿using LIN.Types.Cloud.Identity.Models.Identities;
-
-namespace LIN.Types.Cloud.Identity.Models;
+﻿namespace LIN.Types.Cloud.Identity.Models;
 
 public class PolicyModel
 {
@@ -12,5 +10,7 @@ public class PolicyModel
     public int CreatedById { get; set; }
     public OrganizationModel? Owner { get; set; } = null!;
     public int OwnerId { get; set; }
-    public List<IdentityAllowedOnPolicyModel> ApplyFor { get; set; } = [];
+    public List<TimeAccessPolicy> TimeAccessPolicies { get; set; } = [];
+    public List<IpAccessPolicy> IpAccessPolicies { get; set; } = [];
+    public List<IdentityTypePolicy> IdentityTypePolicies { get; set; } = [];
 }
