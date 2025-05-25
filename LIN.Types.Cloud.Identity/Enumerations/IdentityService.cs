@@ -16,6 +16,11 @@ public enum IdentityService
     /// <summary>
     /// Proveedor Microsoft Corporación.
     /// </summary>
-    Microsoft
+    Microsoft,
+
+    /// <summary>
+    /// Proveedor GitHub.
+    /// </summary>
+    GitHub
 
 }
