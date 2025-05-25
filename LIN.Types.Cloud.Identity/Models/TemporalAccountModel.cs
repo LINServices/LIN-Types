@@ -1,11 +1,11 @@
 ﻿namespace LIN.Types.Cloud.Identity.Models;
 
-public class DomainModel
+public class TemporalAccountModel
 {
     public int Id { get; set; }
-    public string Domain { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
+    public string Email { get; set; } = string.Empty;
     public string VerificationCode { get; set; } = string.Empty;
-    public bool IsVerified { get; set; }
-    public OrganizationModel Organization { get; set; } = null!;
+    public IdentityService Provider { get; set; }
     public int OrganizationId { get; set; }
 }
