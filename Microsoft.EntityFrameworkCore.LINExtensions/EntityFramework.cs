@@ -11,10 +11,10 @@ public static class EntityFrameworkExtensions
     /// <typeparam name="TEntity">El tipo de la entidad.</typeparam>
     /// <param name="context">El contexto de la base de datos.</param>
     /// <param name="entity">La entidad a adjuntar o actualizar.</param>
-    public static TEntity? AttachOrUpdate<TEntity>(this DbContext context, TEntity? entity) where TEntity : class
+    public static TEntity AttachOrUpdate<TEntity>(this DbContext context, TEntity? entity) where TEntity : class
     {
         if (entity is null)
-            return null;
+            return null!;
 
         // Obtiene la clave primaria de la entidad
         var key = context.Model.FindEntityType(typeof(TEntity))?.FindPrimaryKey();
