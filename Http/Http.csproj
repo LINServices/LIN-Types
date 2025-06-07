@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>4.6</Version>
+		<Version>4.7</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -17,12 +17,12 @@
 		<PackageReference Include="LIN.Access.Logger" Version="4.0.0" />
 		<PackageReference Include="LIN.Types" Version="2.1.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.1" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.1" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.8.0" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.1" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.4" />
-		<PackageReference Include="System.Text.Json" Version="9.0.4" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.4" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.4" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.4" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
+		<PackageReference Include="System.Text.Json" Version="9.0.5" />
 	</ItemGroup>
 
 </Project>
