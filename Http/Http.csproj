@@ -17,12 +17,12 @@
 		<PackageReference Include="LIN.Access.Logger" Version="4.0.0" />
 		<PackageReference Include="LIN.Types" Version="2.1.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="8.1.4" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="8.1.4" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.0" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="8.1.4" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.5" />
-		<PackageReference Include="System.Text.Json" Version="9.0.5" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
+		<PackageReference Include="System.Text.Json" Version="9.0.7" />
 	</ItemGroup>
 
 </Project>
