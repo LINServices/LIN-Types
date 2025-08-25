@@ -1,6 +1,7 @@
 ﻿using Http.Middlewares;
 using LIN.Access.Logger;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -32,10 +33,21 @@ public static class HttpExtensions
     /// </summary>
     public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true, Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>? options = null)
     {
+        // Lee X-Forwarded-Proto y X-Forwarded-Host que enviará YARP
+        services.Configure<ForwardedHeadersOptions>(options =>
+        {
+            options.ForwardedHeaders = ForwardedHeaders.XForwardedProto | ForwardedHeaders.XForwardedHost;
+
+            // limpia restricciones de proxies conocidos:
+            options.KnownNetworks.Clear();
+            options.KnownProxies.Clear();
+        });
+
         UseSwagger = useSwagger;
         services.AddSingleton<IPMiddleware>();
         services.AddControllers();
         services.AddEndpointsApiExplorer();
+        services.AddHttpContextAccessor();
 
         if (useSwagger)
             services.AddSwaggerGen(options);
@@ -75,6 +87,8 @@ public static class HttpExtensions
     /// </summary>
     public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app, bool useGateway = false)
     {
+        app.UseForwardedHeaders();
+
         if (useGateway)
             app.UseMiddleware<GatewayBasePathMiddleware>();
 
@@ -83,9 +97,16 @@ public static class HttpExtensions
 
         app.UseCors("AllowAnyOrigin");
 
-        // https.
-        app.UseHttpsRedirection();
+        var config = app.ApplicationServices.GetService<IConfiguration>();
 
+        if (config is not null)
+        {
+            var xformard = config["LIN:gateway"];
+            if (!string.IsNullOrEmpty(xformard))
+                app.UsePathBase(xformard);
+        }
+
+        app.UseRouting();
         // Swagger.
         if (UseSwagger)
         {
@@ -97,10 +118,7 @@ public static class HttpExtensions
                 config.InjectStylesheet("./swagger/somee.css");
             });
         }
-
-        app.UseHttpsRedirection();
         app.UseStaticFiles();
-        app.UseRouting();
 
         return app;
     }

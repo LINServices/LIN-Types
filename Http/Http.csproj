@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>4.7</Version>
+		<Version>5.0.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -19,10 +19,10 @@
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.3" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.3" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.12.1" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.14.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="9.0.3" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.7" />
-		<PackageReference Include="System.Text.Json" Version="9.0.7" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.8" />
+		<PackageReference Include="System.Text.Json" Version="9.0.8" />
 	</ItemGroup>
 
 </Project>

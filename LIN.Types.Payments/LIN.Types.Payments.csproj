@@ -9,7 +9,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Payments</Title>
 		<Description>Tipos de pagos</Description>
-		<Version>1.1</Version>
+		<Version>1.2</Version>
 	</PropertyGroup>
 
 </Project>
