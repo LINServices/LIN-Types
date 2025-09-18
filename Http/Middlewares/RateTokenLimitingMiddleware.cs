@@ -1,45 +1,49 @@
-﻿using System.IdentityModel.Tokens.Jwt;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
 
 namespace Http.Middlewares;
 
+/// <summary>
+/// Middleware que limita la cantidad de solicitudes por usuario mediante un token JWT.
+/// </summary>
 public class RateTokenLimitingMiddleware(RequestDelegate next)
 {
 
     /// <summary>
-    /// Cache.
+    /// Registro de solicitudes realizadas por cada usuario.
     /// </summary>
     private static readonly Dictionary<string, (DateTime Timestamp, int RequestCount)> _userRequestLog = new();
 
 
     /// <summary>
-    /// Limite.
+    /// Límite máximo de solicitudes permitidas por intervalo.
     /// </summary>
     internal static int RequestLimit { get; set; }
 
 
     /// <summary>
-    /// Tiempo de bloqueo.
+    /// Duración del intervalo en el cual se contabilizan las solicitudes.
     /// </summary>
-    internal static TimeSpan TimeSpan { get; set; }
+    internal static TimeSpan TimeWindow { get; set; }
 
 
     /// <summary>
-    /// AL invocar.
+    /// Procesa la solicitud y aplica el límite de solicitudes configurado.
     /// </summary>
     public async Task InvokeAsync(HttpContext context)
     {
-        // Aquí obtienes el identificador del usuario (por ejemplo, un nombre de usuario o ID único)
+        // Obtener el identificador primario del usuario a partir del token.
         var userId = GetPrimaryId(context.Request.Headers["token"].FirstOrDefault());
 
-        // Si existe el usuario.
+        // Si se identificó un usuario.
         if (!string.IsNullOrEmpty(userId))
         {
             if (_userRequestLog.ContainsKey(userId))
             {
                 var (timestamp, requestCount) = _userRequestLog[userId];
 
-                // Verificar si el tiempo actual está dentro del mismo intervalo de tiempo (1 minuto)
-                if (DateTime.UtcNow - timestamp < TimeSpan)
+                // Verificar si la solicitud se encuentra dentro del intervalo configurado.
+                if (DateTime.UtcNow - timestamp < TimeWindow)
                 {
                     if (requestCount >= RequestLimit)
                     {
@@ -56,31 +60,31 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
                     }
                     else
                     {
-                        // Aumentar el contador de solicitudes
+                        // Aumentar el contador de solicitudes.
                         _userRequestLog[userId] = (timestamp, requestCount + 1);
                     }
                 }
                 else
                 {
-                    // Reiniciar el contador y el timestamp si el intervalo de tiempo ha pasado
+                    // Reiniciar el contador y el timestamp si el intervalo de tiempo ha pasado.
                     _userRequestLog[userId] = (DateTime.UtcNow, 1);
                 }
             }
             else
             {
-                // Agregar una nueva entrada para un usuario nuevo o sin registros previos
+                // Agregar una nueva entrada para un usuario nuevo o sin registros previos.
                 _userRequestLog[userId] = (DateTime.UtcNow, 1);
             }
         }
 
 
-        // Pasar la solicitud al siguiente middleware si no se excede el límite
+        // Pasar la solicitud al siguiente middleware si no se excede el límite.
         await next(context);
     }
 
 
     /// <summary>
-    /// Obtener el primary id del token JWT.
+    /// Obtiene el identificador primario del token JWT.
     /// </summary>
     /// <param name="token">Token a validar.</param>
     private static string GetPrimaryId(string? token)
@@ -91,18 +95,19 @@ public class RateTokenLimitingMiddleware(RequestDelegate next)
 
         try
         {
-            // Decodificar el JWT sin verificar la firma
+            // Decodificar el JWT sin verificar la firma.
             var handler = new JwtSecurityTokenHandler();
             var jsonToken = handler.ReadJwtToken(token);
             var payload = jsonToken.Payload;
 
-            // Obtener el primary id del payload
-            var primarySid = payload.FirstOrDefault(p => p.Key == "http://schemas.microsoft.com/ws/2008/06/identity/claims/primarysid").Value;
+            // Obtener el identificador principal del payload.
+            var primarySid = payload.FirstOrDefault(p => p.Key == ClaimTypes.PrimarySid).Value;
 
             return primarySid?.ToString() ?? "";
         }
         catch (Exception)
         {
+            // Ignorar errores de decodificación.
         }
         return "";
 
