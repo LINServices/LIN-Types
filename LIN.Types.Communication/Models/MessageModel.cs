@@ -10,7 +10,7 @@ public class MessageModel
     public MessageTypes Type { get; set; }
     public DateTime Time { get; set; }
     public ConversationModel Conversacion { get; set; }
-    public ProfileModel Remitente { get; set; }
+    public ProfileModel? Remitente { get; set; }
 
     [NotMapped]
     public string Guid { get; set; }

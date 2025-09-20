@@ -15,6 +15,7 @@ public static class HttpExtensions
     /// Usar swagger.
     /// </summary>
     private static bool UseSwagger { get; set; } = true;
+    private static bool UseCors { get; set; } = true;
     internal static Func<object>? Func { get; set; } = null;
 
 
@@ -31,8 +32,10 @@ public static class HttpExtensions
     /// <summary>
     /// Agregar LIN Services.
     /// </summary>
-    public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true, Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>? options = null)
+    public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true, Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>? options = null, bool useCors = true)
     {
+        UseCors = useCors;
+
         // Lee X-Forwarded-Proto y X-Forwarded-Host que enviará YARP
         services.Configure<ForwardedHeadersOptions>(options =>
         {
@@ -52,16 +55,19 @@ public static class HttpExtensions
         if (useSwagger)
             services.AddSwaggerGen(options);
 
-        services.AddCors(options =>
+        if (useCors)
         {
-            options.AddPolicy("AllowAnyOrigin",
-                builder =>
-                {
-                    builder.AllowAnyOrigin()
-                           .AllowAnyHeader()
-                           .AllowAnyMethod();
-                });
-        });
+            services.AddCors(options =>
+                    {
+                        options.AddPolicy("AllowAnyOrigin",
+                            builder =>
+                            {
+                                builder.AllowAnyOrigin()
+                                       .AllowAnyHeader()
+                                       .AllowAnyMethod();
+                            });
+                    });
+        }
 
         return services;
     }
@@ -95,7 +101,10 @@ public static class HttpExtensions
         // Usar CORS.
         app.UseMiddleware<IPMiddleware>();
 
-        app.UseCors("AllowAnyOrigin");
+        if (UseCors)
+        {
+            app.UseCors("AllowAnyOrigin");
+        }
 
         var config = app.ApplicationServices.GetService<IConfiguration>();
 
