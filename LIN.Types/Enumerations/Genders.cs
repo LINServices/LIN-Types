@@ -1,11 +1,7 @@
 ﻿namespace LIN.Types.Enumerations;
 
-/// <summary>
-/// Géneros.
-/// </summary>
 public enum Genders
 {
-
     /// <summary>
     /// Genero indefinido / desconocido.
     /// </summary>
@@ -20,5 +16,4 @@ public enum Genders
     /// Genero femenino.
     /// </summary>
     Female
-
 }

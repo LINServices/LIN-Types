@@ -21,7 +21,7 @@ public enum Platforms
     /// <summary>
     /// MacOS
     /// </summary>
-    Mac,
+    MacOs,
 
     /// <summary>
     /// Linux
@@ -29,8 +29,7 @@ public enum Platforms
     Linux,
 
     /// <summary>
-    /// Web (Navegador)
+    /// iOs
     /// </summary>
-    Web
-
+    IOs
 }

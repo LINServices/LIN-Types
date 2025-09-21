@@ -8,12 +8,12 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types</Title>
 		<Description>Tipos generales de LIN Platform</Description>
-		<Version>2.1</Version>
+		<Version>2.2</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
-		<PackageReference Include="System.Text.Json" Version="9.0.8" />
+		<PackageReference Include="System.Text.Json" Version="9.0.9" />
 	</ItemGroup>
 
 </Project>

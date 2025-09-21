@@ -5,16 +5,30 @@ public enum Languages
     /// <summary>
     /// Lenguaje desconocido
     /// </summary>
-    Undefined,
+    Undefined = 0,
 
     /// <summary>
-    /// Lenguaje: Español
+    /// Español (es)
     /// </summary>
-    Spain,
+    Spanish = 1,
 
     /// <summary>
-    /// Lenguaje: Ingles
+    /// Inglés (en)
     /// </summary>
-    English
+    English = 2,
 
+    /// <summary>
+    /// Francés (fr)
+    /// </summary>
+    French = 3,
+
+    /// <summary>
+    /// Alemán (de)
+    /// </summary>
+    German = 4,
+
+    /// <summary>
+    /// Portugués (pt)
+    /// </summary>
+    Portuguese = 5
 }
