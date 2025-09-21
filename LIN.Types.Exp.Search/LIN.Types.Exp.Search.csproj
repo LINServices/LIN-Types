@@ -11,11 +11,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Exp.Search</Title>
 		<Description>Tipos generales de LIN Search</Description>
-		<Version>1.5</Version>
+		<Version>1.6</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="2.1.0" />
+		<PackageReference Include="LIN.Types" Version="2.2.0" />
 		<PackageReference Include="System.Text.Json" Version="9.0.9" />
 	</ItemGroup>
 

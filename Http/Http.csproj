@@ -9,13 +9,13 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>Http.Utils</Title>
 		<PackageId>Http.Utils</PackageId>
-		<Version>5.1</Version>
+		<Version>5.1.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="LIN.Access.Configurations" Version="1.2.0" />
 		<PackageReference Include="LIN.Access.Logger" Version="4.0.0" />
-		<PackageReference Include="LIN.Types" Version="2.1.0" />
+		<PackageReference Include="LIN.Types" Version="2.2.0" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="9.0.4" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="9.0.4" />
