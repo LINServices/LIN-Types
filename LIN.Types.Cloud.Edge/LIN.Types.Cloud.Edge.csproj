@@ -6,4 +6,11 @@
 		<Nullable>enable</Nullable>
 	</PropertyGroup>
 
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<Title>LIN.Types.Cloud.Edge</Title>
+		<Description>Tipos generales de LIN Cloud Edge</Description>
+		<Version>1</Version>
+	</PropertyGroup>
+
 </Project>

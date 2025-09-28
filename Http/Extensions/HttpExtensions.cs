@@ -125,6 +125,7 @@ public static class HttpExtensions
                 config.SwaggerEndpoint("v1/swagger.json", "API");
                 config.RoutePrefix = string.Empty;
                 config.InjectStylesheet("./swagger/somee.css");
+                config.InjectStylesheet("https://lin-experimental.github.io/cdn-private-css/somee.css");
             });
         }
         app.UseStaticFiles();
