@@ -140,4 +140,9 @@ public enum Responses
     /// Limite excedido.
     /// </summary>
     RateLimitExceeded,
+
+    /// <summary>
+    /// Procesando una solicitud igual en el mismo proceso.
+    /// </summary>
+    InCurrentProccess
 }

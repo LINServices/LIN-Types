@@ -6,7 +6,6 @@ public class BindingDataModel
     public int Port { get; set; }
     public string Name { get; set; } = string.Empty;
     public string CaddyId { get; set; } = string.Empty;
-
     public ContainerDataModel Container { get; set; } = null!;
     public int ContainerId { get; set; }
 }

@@ -29,6 +29,7 @@ public class ProjectDataModel
     public List<KeyModel> Keys { get; set; } = [];
     public List<TransactionDataModel> Transactions { get; set; } = [];
     public BillingAccount Billing { get; set; } = null!;
+    public List<ResourceStatusModel> AprovisioneStatus { get; set; } = [];
     public int BillingId { get; set; }
 
     [NotMapped]

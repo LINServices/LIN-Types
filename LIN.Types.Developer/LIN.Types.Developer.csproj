@@ -11,7 +11,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Developer</Title>
 		<Description>Tipos generales de LIN Developers</Description>
-		<Version>2.5</Version>
+		<Version>2.9.1</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -19,7 +19,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="2.2.0" />
+		<PackageReference Include="LIN.Types" Version="2.3.0" />
 	</ItemGroup>
 
 </Project>

@@ -6,4 +6,7 @@ public class MetadataDotnet
     public string CSProj { get; set; } = string.Empty;
     public string GithubToken { get; set; } = string.Empty;
     public string GitUrl { get; set; } = string.Empty;
+    public string Branch { get; set; } = string.Empty;
+    public string Version { get; set; } = string.Empty;
+    public bool AutoSwap { get; set; }
 }
