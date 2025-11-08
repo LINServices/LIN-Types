@@ -23,6 +23,5 @@ public enum ProductBaseStatements
     /// <summary>
     /// ProductDataTransfer eliminado
     /// </summary>
-    Deleted,
-
+    Deleted
 }

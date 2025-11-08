@@ -2,6 +2,7 @@
 
 public enum MovementStatus
 {
-    Accepted,
-    Reversed
+    Pending, // Pendiente de aprobarse.
+    Approved, // Aprobado y listo.
+    Reversed // Anulado o revertido.
 }

@@ -3,7 +3,6 @@
 public class OutflowDataModel : MovementDataModel<OutflowDetailsDataModel>
 {
     public OutflowsTypes Type { get; set; }
-
     public InflowDataModel? InflowRelated { get; set; }
     public int? InflowRelatedId { get; set; }
 

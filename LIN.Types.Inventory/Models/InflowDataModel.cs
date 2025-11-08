@@ -2,7 +2,6 @@
 
 public class InflowDataModel : MovementDataModel<InflowDetailsDataModel>
 {
-    public bool IsAccepted { get; set; }
     public InflowsTypes Type { get; set; }
 
     public OutflowDataModel? OutflowRelated { get; set; }
