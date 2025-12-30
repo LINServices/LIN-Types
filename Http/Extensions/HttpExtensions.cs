@@ -93,11 +93,12 @@ public static class HttpExtensions
     /// </summary>
     public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app, bool useGateway = false)
     {
-        app.UseForwardedHeaders();
+        app.UseMiddleware<TimeMiddleware>();
 
+        app.UseForwardedHeaders();
         if (useGateway)
             app.UseMiddleware<GatewayBasePathMiddleware>();
-
+            
         // Usar CORS.
         app.UseMiddleware<IPMiddleware>();
 

@@ -1,4 +1,6 @@
-﻿namespace Http.Controllers;
+﻿using System.Reflection;
+
+namespace Http.Controllers;
 
 [Route("[controller]")]
 public class HealthController : ControllerBase
@@ -9,7 +11,11 @@ public class HealthController : ControllerBase
     [HttpHead]
     public IActionResult Head() => Ok();
 
-    [HttpPost("databaseUse")]
-    public IActionResult DataBase() => Ok(Extensions.HttpExtensions.Func?.Invoke());
+    [HttpGet("version")]
+    public IActionResult Version()
+    {
+        var version = Assembly.GetEntryAssembly()?.GetName().Version?.ToString() ?? "unknown";
+        return Ok(new { version });
+    }
 
 }

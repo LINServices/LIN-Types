@@ -3,5 +3,5 @@
 public enum ContainerTags
 {
     Production,
-    Stagging,
+    Staging,
 }

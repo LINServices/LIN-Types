@@ -2,6 +2,7 @@
 
 public class DotnetSlotModel
 {
+    public int Id { get; set; }
     public string SiteName { get; set; } = string.Empty;
     public bool IsProduction { get; set; }
     public string Status { get; set; } = string.Empty;

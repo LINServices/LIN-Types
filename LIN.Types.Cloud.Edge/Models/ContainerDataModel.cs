@@ -8,6 +8,8 @@ public class ContainerDataModel
     public string DockerContainerId { get; set; } = string.Empty;
     public ContainerTags Tag { get; set; }
     public ContainerStates InformationState { get; set; }
+    public ContainerTypes Type { get; set; }
+    public List<VolumenDataModel> Vulumenes { get; set; } = [];
     public List<BindingDataModel> Bindings { get; set; } = [];
     public List<DnsRegistryDataModel> DnsRegistries { get; set; } = [];
     public ContainerGroupDataModel ContainerGroup { get; set; } = null!;
