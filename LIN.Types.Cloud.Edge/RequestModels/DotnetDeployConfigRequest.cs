@@ -2,6 +2,9 @@
 
 public class DotnetDeployConfigRequest
 {
+    public string RepositoryUrl { get; set; }
+    public string CsProjReference { get; set; }
+    public string Branch { get; set; }
     public string Version { get; set; }
-    public bool EnableMultiStagin { get; set; }
+    public bool EnableMultiStaging { get; set; }
 }

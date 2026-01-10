@@ -1,4 +1,6 @@
-﻿namespace LIN.Types.Cloud.Edge.Models;
+﻿using LIN.Types.Cloud.Edge.Enums;
+
+namespace LIN.Types.Cloud.Edge.Models;
 
 public class DomainDataModel
 {
@@ -7,16 +9,4 @@ public class DomainDataModel
     public string DomainName { get; set; }
     public DomainStatus Status { get; set; }
     public DomainType Type { get; set; }
-}
-
-public enum DomainStatus
-{
-    Inactive,
-    Active
-}
-
-public enum DomainType
-{
-    ForSites,
-    ForPublishing
 }

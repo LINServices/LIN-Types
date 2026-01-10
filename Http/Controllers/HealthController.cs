@@ -5,9 +5,6 @@ namespace Http.Controllers;
 [Route("[controller]")]
 public class HealthController : ControllerBase
 {
-    [HttpGet]
-    public IActionResult Get() => Ok("Server its running");
-
     [HttpHead]
     public IActionResult Head() => Ok();
 
@@ -17,5 +14,4 @@ public class HealthController : ControllerBase
         var version = Assembly.GetEntryAssembly()?.GetName().Version?.ToString() ?? "unknown";
         return Ok(new { version });
     }
-
 }

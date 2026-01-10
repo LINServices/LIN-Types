@@ -11,7 +11,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Communication</Title>
 		<Description>Tipos generales de comunicación</Description>
-		<Version>1.9.1</Version>
+		<Version>2</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
@@ -19,7 +19,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="2.3.0" />
+		<PackageReference Include="LIN.Types" Version="2.4.0" />
 	</ItemGroup>
 
 </Project>

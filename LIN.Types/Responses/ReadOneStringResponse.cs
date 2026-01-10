@@ -1,23 +1,23 @@
 ﻿namespace LIN.Types.Responses;
 
-public class ReadOneResponse<M> : ResponseBase where M : new()
+public class ReadOneStringResponse : ResponseBase
 {
 
     /// <summary>
     /// Modelo
     /// </summary>
-    public M Model { get; set; }
+    public string Model { get; set; }
 
     /// <summary>
     /// Constructor
     /// </summary>
-    public ReadOneResponse()
+    public ReadOneStringResponse()
     {
         Response = Responses.Undefined;
-        Model = new();
+        Model = string.Empty;
     }
 
-    public ReadOneResponse(M model)
+    public ReadOneStringResponse(string model)
     {
         Response = Responses.Undefined;
         Model = model;
@@ -26,17 +26,17 @@ public class ReadOneResponse<M> : ResponseBase where M : new()
     /// <summary>
     /// Constructor
     /// </summary>
-    public ReadOneResponse(Responses response = Responses.Undefined)
+    public ReadOneStringResponse(Responses response = Responses.Undefined)
     {
         Response = response;
-        Model = new();
+        Model = string.Empty;
     }
 
     /// <summary>
     /// Constructor
     /// </summary>
     [JsonConstructor]
-    public ReadOneResponse(Responses response, M model)
+    public ReadOneStringResponse(Responses response, string model)
     {
         Response = response;
         Model = model;

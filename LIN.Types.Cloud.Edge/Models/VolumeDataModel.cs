@@ -1,6 +1,6 @@
 ﻿namespace LIN.Types.Cloud.Edge.Models;
 
-public class VolumenDataModel
+public class VolumeDataModel
 {
     public int Id { get; set; }
     public string Name { get; set; }

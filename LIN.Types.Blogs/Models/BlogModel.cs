@@ -1,6 +1,5 @@
 ﻿namespace LIN.Types.Blogs.Models;
 
-
 public class BlogModel
 {
     public int Id { get; set; }

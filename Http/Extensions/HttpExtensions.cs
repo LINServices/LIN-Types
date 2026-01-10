@@ -1,6 +1,7 @@
 ﻿using Http.Middlewares;
 using LIN.Access.Logger;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -91,7 +92,7 @@ public static class HttpExtensions
     /// <summary>
     /// Agregar LIN Services.
     /// </summary>
-    public static IApplicationBuilder UseLINHttp(this IApplicationBuilder app, bool useGateway = false)
+    public static WebApplication UseLINHttp(this WebApplication app, bool useGateway = false)
     {
         app.UseMiddleware<TimeMiddleware>();
 
@@ -107,7 +108,7 @@ public static class HttpExtensions
             app.UseCors("AllowAnyOrigin");
         }
 
-        var config = app.ApplicationServices.GetService<IConfiguration>();
+        var config = app.Services.GetService<IConfiguration>();
 
         if (config is not null)
         {
@@ -130,6 +131,26 @@ public static class HttpExtensions
             });
         }
         app.UseStaticFiles();
+
+        app.MapHealthChecks("/health", new HealthCheckOptions
+        {
+            ResponseWriter = async (context, report) =>
+            {
+                var response = new
+                {
+                    status = report.Status.ToString(),
+                    checks = report.Entries.Select(e => new
+                    {
+                        name = e.Key,
+                        status = e.Value.Status.ToString(),
+                        description = e.Value.Description
+                    })
+                };
+            
+                context.Response.ContentType = "application/json";
+                await context.Response.WriteAsJsonAsync(response);
+            }
+        });
 
         return app;
     }
