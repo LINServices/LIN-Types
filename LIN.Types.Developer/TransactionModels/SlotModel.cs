@@ -1,6 +1,6 @@
 ﻿namespace LIN.Types.Developer.TransactionModels;
 
-public class DotnetSlotModel
+public class SlotModel
 {
     public int Id { get; set; }
     public string SiteName { get; set; } = string.Empty;

@@ -1,6 +1,4 @@
-﻿using Global.Utilities.Network;
-
-namespace Http.Middlewares;
+﻿namespace Http.Middlewares;
 
 public class TimeMiddleware : IMiddleware
 {
@@ -13,8 +11,8 @@ public class TimeMiddleware : IMiddleware
     public async Task InvokeAsync(HttpContext context, RequestDelegate next)
     {
         System.Diagnostics.Stopwatch stopwatch = System.Diagnostics.Stopwatch.StartNew();
-        await next(context);
         context.Response.Headers.Append("response-time", $"{stopwatch.ElapsedMilliseconds}ms");
+        await next(context);
     }
 
 }

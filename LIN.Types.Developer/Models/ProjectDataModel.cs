@@ -2,7 +2,6 @@
 
 public class ProjectDataModel
 {
-
     [Column("id")]
     public int Id { get; set; }
 

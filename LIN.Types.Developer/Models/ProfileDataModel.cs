@@ -27,9 +27,6 @@ public class ProfileDataModel : IProfile
     [Column("account_id")]
     public int AccountId { get; set; }
 
-    public BillingAccount Billing { get; set; } = null!;
-    public int BillingId { get; set; }
-
     public List<OwnerModel> MyProjects { get; set; } = [];
 
 }

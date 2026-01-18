@@ -48,6 +48,7 @@ public static class HttpExtensions
         });
 
         UseSwagger = useSwagger;
+        services.AddSingleton<TimeMiddleware>();
         services.AddSingleton<IPMiddleware>();
         services.AddControllers();
         services.AddEndpointsApiExplorer();
@@ -93,7 +94,8 @@ public static class HttpExtensions
     /// Agregar LIN Services.
     /// </summary>
     public static WebApplication UseLINHttp(this WebApplication app, bool useGateway = false)
-    {
+    { 
+
         app.UseMiddleware<TimeMiddleware>();
 
         app.UseForwardedHeaders();
