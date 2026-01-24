@@ -1,4 +1,4 @@
-﻿using Microsoft.OpenApi.Models;
+﻿using Microsoft.OpenApi;
 using Swashbuckle.AspNetCore.SwaggerGen;
 using System.Reflection;
 
@@ -23,6 +23,19 @@ public class HeaderMapAttribute<T>(string headerName, string description = "", s
         // Combinar ambos conjuntos de atributos
         var allAttributes = swaggerHeaderAttributes.Concat(controllerAttributes);
 
+        // Convertir el string 'type' a JsonSchemaType
+        JsonSchemaType schemaType = type.ToLower() switch
+        {
+            "string" => JsonSchemaType.String,
+            "integer" => JsonSchemaType.Integer,
+            "number" => JsonSchemaType.Number,
+            "boolean" => JsonSchemaType.Boolean,
+            "array" => JsonSchemaType.Array,
+            "object" => JsonSchemaType.Object,
+            "null" => JsonSchemaType.Null,
+            _ => JsonSchemaType.String
+        };
+
         foreach (var attr in allAttributes)
         {
             // Crear una definición de parámetro de header
@@ -34,7 +47,7 @@ public class HeaderMapAttribute<T>(string headerName, string description = "", s
                 Required = true,
                 Schema = new OpenApiSchema
                 {
-                    Type = type
+                    Type = schemaType
                 }
             };
 
