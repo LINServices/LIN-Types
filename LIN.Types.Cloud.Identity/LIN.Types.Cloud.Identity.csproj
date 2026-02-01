@@ -11,11 +11,12 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Cloud.Identity</Title>
 		<Description>Tipos de Identidad</Description>
-		<Version>2026.1.10</Version>
+		<Version>2026.1.26</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
 		<PackageReference Include="LIN.Types" Version="2.4.0" />
+		<PackageReference Include="MongoDB.Bson" Version="3.6.0" />
 	</ItemGroup>
 
 </Project>

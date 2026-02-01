@@ -9,5 +9,4 @@ public class ApplicationModel
     public int IdentityId { get; set; }
     public IdentityModel Owner { get; set; } = null!;
     public int OwnerId { get; set; }
-    public List<PolicyModel> Policies { get; set; } = [];
 }
