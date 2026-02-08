@@ -34,5 +34,4 @@ public class ReadAllResponse<M> : ResponseBase
         Response = response;
         Models = models.ToList() ?? [];
     }
-
 }
