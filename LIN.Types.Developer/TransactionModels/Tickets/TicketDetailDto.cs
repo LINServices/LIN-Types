@@ -26,4 +26,5 @@ public class TicketDetailDto
     public int? AgentId { get; set; }
 
     public string? AgentAlias { get; set; }
+    public bool IsIa { get; set; }
 }
