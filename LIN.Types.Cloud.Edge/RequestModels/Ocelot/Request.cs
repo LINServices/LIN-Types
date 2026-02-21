@@ -38,6 +38,7 @@ public class OcelotRouteRequestModel
     /// Ruta de destino (downstream path).
     /// </summary>
     public string DownstreamPath { get; set; } = string.Empty;
+    public string Schema { get; set; } = string.Empty;
 
 }
 
@@ -56,5 +57,6 @@ public class OcelotRouteResponseModel
     public string UpstreamPath { get; set; } = string.Empty;
 
     public string DownstreamPath { get; set; } = string.Empty;
+    public string Schema { get; set; } = string.Empty;
 
 }

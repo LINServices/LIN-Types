@@ -7,8 +7,7 @@ public abstract class ResourceMetadata
     public abstract BaseGithubMetadata? GithubMetadataBase { get; }
 }
 
-public class ResourceMetadata<TGithub> : ResourceMetadata
-    where TGithub : BaseGithubMetadata
+public class ResourceMetadata<TGithub> : ResourceMetadata where TGithub : BaseGithubMetadata
 {
     public TGithub? GithubMetadata { get; set; }
     public override BaseGithubMetadata? GithubMetadataBase => GithubMetadata;
@@ -19,6 +18,7 @@ public class DotnetMetadata : ResourceMetadata<GithubDotnetMetadata>
     public string Version { get; set; } = string.Empty;
 }
 
-public class StaticMetadata : ResourceMetadata<BaseGithubMetadata>
+public class StaticMetadata : ResourceMetadata<GithubStaticMetadata>
 {
+    public bool UseNpm { get; set; }
 }

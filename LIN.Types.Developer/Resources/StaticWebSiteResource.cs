@@ -15,4 +15,7 @@ public class StaticGithubConfiguration
     public bool IsConfigured { get; set; }
     public string GitPath { get; set; }
     public string Branch { get; set; }
+    public bool UseNpm { get; set; }
+    public string NpmBuildCommand { get; set; }
+    public string BuildPath { get; set; }
 }
