@@ -22,3 +22,8 @@ public class StaticMetadata : ResourceMetadata<GithubStaticMetadata>
 {
     public bool UseNpm { get; set; }
 }
+
+public class NodeMetadata : ResourceMetadata<GithubNodeMetadata>
+{
+    public string Version { get; set; } = string.Empty;
+}

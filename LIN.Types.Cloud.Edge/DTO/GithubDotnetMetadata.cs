@@ -10,3 +10,8 @@ public class GithubStaticMetadata : BaseGithubMetadata
     public string NpmBuildCommand { get; set; } = string.Empty;
     public string BuildPath { get; set; } = string.Empty;
 }
+
+public class GithubNodeMetadata : BaseGithubMetadata
+{
+    public string NpmBuildCommand { get; set; } = string.Empty;
+}

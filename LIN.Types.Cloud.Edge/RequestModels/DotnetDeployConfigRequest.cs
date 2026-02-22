@@ -18,3 +18,12 @@ public class StaticDeployConfigRequest
     public bool UseNpm { get; set; }
     public bool EnableMultiStaging { get; set; }
 }
+
+public class NodeDeployConfigRequest
+{
+    public string RepositoryUrl { get; set; }
+    public string NpmCommand { get; set; }
+    public string Branch { get; set; }
+    public string Version { get; set; }
+    public bool EnableMultiStaging { get; set; }
+}
