@@ -23,6 +23,13 @@ public class ProjectDataModel
 
     [Column("visibleRules")]
     public bool VisibleRules { get; set; }
+
+    [Column("baseProject")]
+    public int? baseProject { get; set; }
+
+    [Column("subscription")]
+    public int? Subscription { get; set; }
+
     public List<OwnerModel> Owners { get; set; } = [];
     public List<FirewallRuleModel> FirewallRules { get; set; } = [];
     public List<KeyModel> Keys { get; set; } = [];

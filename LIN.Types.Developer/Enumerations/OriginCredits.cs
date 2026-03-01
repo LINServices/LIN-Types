@@ -2,7 +2,6 @@
 
 public enum TransactionTypes
 {
-
     /// <summary>
     /// Desconocido
     /// </summary>
