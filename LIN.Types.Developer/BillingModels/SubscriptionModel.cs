@@ -29,15 +29,15 @@ public enum SubscriptionType
 public class InvoiceModel
 {
     public int Id { get; set; }
-
-    public SubscriptionModel? Subscription { get; set; }
-    public int? SubscriptionId { get; set; }
-
+    public int BillingAccountId { get; set; }
+    public string Name { get; set; } = string.Empty;
     /// <summary>
     /// Fecha en la que la factura pasara de Buildind a pendingToPay, 
     /// es decir, la fecha en la que se intentara cobrar al cliente.
     /// </summary>
-    public DateTime RecollectTime { get; set; }
+    public DateTime PendingToPayDate { get; set; }
+
+    public DateTime OverdueTime { get; set; }
 
     public List<InvoiceItem> Items { get; set; } = [];
 
@@ -57,7 +57,6 @@ public class InvoiceItem
     public int Id { get; set; }
     public decimal Amount { get; set; }
     public string Description { get; set; } = string.Empty;
-
     public int InvoiceId { get; set; }
     public InvoiceModel Invoice { get; set; } = new();
 }

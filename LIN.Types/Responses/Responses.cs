@@ -144,5 +144,10 @@ public enum Responses
     /// <summary>
     /// Procesando una solicitud igual en el mismo proceso.
     /// </summary>
-    InCurrentProccess
+    InCurrentProccess,
+
+    /// <summary>
+    /// Operación valida, pero fue denegada por algun motivo (falta de permisos, bloqueo, pagos etc).
+    /// </summary>
+    OperationDenied,
 }
