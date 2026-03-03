@@ -25,7 +25,7 @@ public class ProjectDataModel
     public bool VisibleRules { get; set; }
 
     [Column("baseProject")]
-    public int? baseProject { get; set; }
+    public int? BaseProject { get; set; }
 
     [Column("subscription")]
     public int? Subscription { get; set; }
