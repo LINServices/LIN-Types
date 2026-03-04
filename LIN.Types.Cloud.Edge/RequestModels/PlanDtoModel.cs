@@ -2,6 +2,7 @@
 
 public class PlanDtoModel
 {
+    public int ResourcePlanId { get; set; } 
     public int Cpu { get; set; }
     public int Memory { get; set; }
 }
