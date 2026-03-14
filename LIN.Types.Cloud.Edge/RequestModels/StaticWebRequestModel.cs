@@ -4,4 +4,5 @@ public class StaticWebRequestModel
 {
     public string SiteName { get; set; }
     public StaticDeployConfig DeployConfig { get; set; }
+    public PlanConfigurationResource PlanConfiguration { get; set; }
 }
