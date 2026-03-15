@@ -8,6 +8,7 @@ public class SlotModel
     public string Status { get; set; } = string.Empty;
     public SlotStatus State { get; set; }
     public List<string> CustomDomains { get; set; }  
+    public SlotRelease? LastRelease { get; set; }
 }
 
 public enum SlotStatus
@@ -16,4 +17,10 @@ public enum SlotStatus
     Running,
     Stopped,
     Restarting
+}
+
+public class SlotRelease
+{
+    public int ReleaseId { get; set; }
+    public string ReleaseName { get; set; }
 }
