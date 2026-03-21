@@ -4,5 +4,6 @@ public enum ContainerTypes
 {
     Site,
     Publisher,
-    Database
+    Database,
+    Bash
 }
