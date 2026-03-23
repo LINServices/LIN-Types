@@ -6,7 +6,7 @@ public class GroupScaleDataModel
 {
     public int Id { get; set; }
     public int ScaleCount { get; set; }
-    public ContainerTags Tags { get; set; }
+    public ScalingType Type { get; set; }
     public int ContainerGroupId { get; set; }
     public ContainerGroupDataModel ContainerGroup { get; set; } = null!;
 }

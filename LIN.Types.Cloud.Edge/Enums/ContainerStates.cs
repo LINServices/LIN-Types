@@ -3,5 +3,6 @@
 public enum ContainerStates
 {
     UpToDate,
-    WaitingToSync
+    WaitingToSync,
+    Deletable
 }

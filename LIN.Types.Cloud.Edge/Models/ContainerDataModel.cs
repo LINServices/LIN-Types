@@ -9,7 +9,7 @@ public class ContainerDataModel
     public ContainerTags Tag { get; set; }
     public ContainerStates InformationState { get; set; }
     public ContainerTypes Type { get; set; }
-    public bool Autoscale { get; set; }
+    public ContainerFrom From { get; set; }
     public List<VolumeDataModel> Volumes { get; set; } = [];
     public List<BindingDataModel> Bindings { get; set; } = [];
     public List<DnsRegistryDataModel> DnsRegistries { get; set; } = [];
