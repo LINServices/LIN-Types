@@ -39,5 +39,5 @@ public static class ServerConstants
     public const string FeatureRabbit = "rabbit";
     public const string FeatureGateway = "gateway";
     public const string FeaturePublish = "publish";
-    public const string FeatureMiniIo = "minio";
+    public const string FeatureMiniIo = "miniio";
 }

@@ -8,4 +8,6 @@ public class ContainerGroupDataModel
     public ServerDataModel? ProxyServer { get; set; } = null!;
     public int? ProxyServerId { get; set; }
     public List<ContainerDataModel> Containers { get; set; } = [];
+    public int? RegionId { get; set; }
+    public RegionDataModel? Region { get; set; }
 }
