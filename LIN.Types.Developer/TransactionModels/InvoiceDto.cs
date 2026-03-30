@@ -9,5 +9,9 @@ public class InvoiceDto
     public DateTime PendingToPayDate { get; set; }
     public DateTime OverdueTime { get; set; }
     public decimal? Price { get; set; }
+    public decimal? FinalPrice { get; set; }
     public InvoiceStatus Status { get; set; }
+
+    public List<InvoiceItem> Items { get; set; } = [];
+    public List<InvoiceDiscountModel> Discounts { get; set; } = [];
 }

@@ -40,6 +40,7 @@ public class InvoiceModel
     public DateTime OverdueTime { get; set; }
 
     public List<InvoiceItem> Items { get; set; } = [];
+    public List<InvoiceDiscountModel> Discounts { get; set; } = [];
 
     public InvoiceStatus Status { get; set; }
 }
@@ -69,4 +70,22 @@ public class BillingPeriod
     public SubscriptionModel Subscription { get; set; }
     public DateTime Start { get; set; }
     public DateTime End { get; set; }
+}
+
+public class InvoiceDiscountModel
+{
+    public int Id { get; set; }
+    public string Name { get; set; }
+    public DiscountType Type { get; set; }
+    public decimal Value { get; set; }
+    public int Order { get; set; }
+    public InvoiceModel Invoice { get; set; }
+    public int InvoiceId { get; set; }
+
+}
+
+public enum DiscountType
+{
+    FixedAmount = 1,
+    Percentage = 2
 }
