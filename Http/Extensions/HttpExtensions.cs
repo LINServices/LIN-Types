@@ -1,4 +1,4 @@
-﻿using Http.Middlewares;
+using Http.Middlewares;
 using LIN.Access.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -76,13 +76,13 @@ public static class HttpExtensions
 
 
     /// <summary>
-    /// Usar rate token limit.
+    /// Habilita el middleware de limitación de solicitudes por token.
     /// </summary>
-    /// <param name="limit">Limite.</param>
-    /// <param name="time">Tiempo.</param>
+    /// <param name="limit">Límite máximo de solicitudes.</param>
+    /// <param name="time">Duración del intervalo de evaluación.</param>
     public static IApplicationBuilder UseRateTokenLimit(this IApplicationBuilder app, int limit, TimeSpan time)
     {
-        RateTokenLimitingMiddleware.TimeSpan = time;
+        RateTokenLimitingMiddleware.TimeWindow = time;
         RateTokenLimitingMiddleware.RequestLimit = limit;
         app.UseMiddleware<RateTokenLimitingMiddleware>();
         app.UseMiddleware<GatewayBasePathMiddleware>();
