@@ -11,10 +11,30 @@ public static class PermissionConstants
     /// </summary>
     public static class Resource
     {
+        public const string Read = "resource:read";
         public const string Delete = "resource:delete";
         public const string Rename = "resource:rename";
         public const string AssociateGroup = "resource:asociategroup";
         public const string AssociateResource = "resource:asociateresource";
+    }
+
+    /// <summary>
+    /// Pemrisos relacionados con tickets y recursos.
+    /// </summary>
+    public static class Ticket
+    {
+        public const string Create = "resource:tickets:create";
+        public const string Post = "resource:tickets:post";
+        public const string Read = "resource:tickets:read";
+        public const string Close = "resource:tickets:close";
+    }
+
+    /// <summary>
+    /// Pemrisos relacionados con pagos y recursos.
+    /// </summary>
+    public static class Payment
+    {
+        public const string Read = "resource:payments:read";
     }
 
     /// <summary>

@@ -3,8 +3,6 @@
 public class OwnerModel
 {
     public ProfileDataModel Profile { get; set; } = null!;
-    public ResourcePermission ResourcePermission { get; set; }
-    public FinancePermission FinancePermission { get; set; }
 
     [Column("profile_id")]
     public int ProfileId { get; set; }
