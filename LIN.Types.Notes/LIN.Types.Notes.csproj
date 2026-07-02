@@ -11,7 +11,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Notes</Title>
 		<Description>Tipos generales de LIN Notas</Description>
-		<Version>1.7</Version>
+		<Version>1.8</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
