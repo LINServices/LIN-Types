@@ -5,6 +5,7 @@ public class RegionDataModel
     public int Id { get; set; }
     public string Name { get; set; }
     public string Code { get; set; }
+    public bool IsActive { get; set; }
     public List<ServerDataModel> Servers { get; set; } = [];
 }
 
@@ -14,6 +15,7 @@ public class ServerDataModel
     public string Name { get; set; }
     public string HostIp { get; set; } = string.Empty;
     public string HostName { get; set; } = string.Empty;
+    public bool IsActive { get; set; }
     public List<ServerFeature> ServerFeatures { get; set; } = [];
     public int RegionId { get; set; }
     public RegionDataModel Region { get; set; } = new RegionDataModel();
