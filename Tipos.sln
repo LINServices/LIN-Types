@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34330.188
+# Visual Studio Version 18
+VisualStudioVersion = 18.8.12009.203 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Http", "Http\Http.csproj", "{4A9D15AB-59DE-4919-91AA-FB27503AD893}"
 EndProject
@@ -48,6 +48,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.EntityFrameworkCore.LINExtensions", "Microsoft.EntityFrameworkCore.LINExtensions\Microsoft.EntityFrameworkCore.LINExtensions.csproj", "{D7C02F9B-26FF-4A94-8186-BD173775DD52}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Types.Cloud.Edge", "LIN.Types.Cloud.Edge\LIN.Types.Cloud.Edge.csproj", "{3C3588D2-C237-7CA7-333B-2378A3E317D3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Cloud.Synapse.Types", "LIN.Cloud.Synapse.Types\LIN.Cloud.Synapse.Types.csproj", "{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -147,6 +149,10 @@ Global
 		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
