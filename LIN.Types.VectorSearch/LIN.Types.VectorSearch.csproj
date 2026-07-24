@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+	  <LangVersion>latest</LangVersion>
+	  <ImplicitUsings>enable</ImplicitUsings>
+	  <OutputType>library</OutputType>
+	  <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+	  <Title>LIN.Types.VectorSearch</Title>
+	  <PackageId>LIN.Types.VectorSearch</PackageId>
+	  <Version>1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+</Project>
