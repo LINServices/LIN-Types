@@ -1,8 +1,6 @@
-﻿namespace LIN.Types.Cloud.Edge.RequestModels;
+﻿using LIN.RabbitMQ.Types.Contracts;
 
-public class ResourceProvisioningStatus
-{
-    public int Resource { get; set; }
-    public string Message { get; set; }
-    public bool ShouldRetryLater { get; set; }
-}
+namespace LIN.Types.Cloud.Edge.RequestModels;
+
+[IntegrationEvent("save_error")]
+public record ResourceProvisioningStatus(int Resource, string Message, bool ShouldRetryLater) : IntegrationEvent;

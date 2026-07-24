@@ -11,10 +11,11 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Developer</Title>
 		<Description>Tipos generales de LIN Developers</Description>
-		<Version>3.11.2</Version>
+		<Version>3.17</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
+		<PackageReference Include="LIN.RabbitMQ.Types" Version="2.0.1" />
 		<PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
 	</ItemGroup>
 
