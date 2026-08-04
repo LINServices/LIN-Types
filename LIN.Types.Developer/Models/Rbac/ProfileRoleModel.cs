@@ -6,5 +6,5 @@ public class ProfileRoleModel
 
     public int ResourceId { get; set; }
 
-    public int RoleId { get; set; }
+    public string RoleId { get; set; }
 }

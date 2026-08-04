@@ -3,5 +3,6 @@
 public enum ResourceRelationType
 {
     Configuration,
-    Plan
+    Plan,
+    Rag
 }

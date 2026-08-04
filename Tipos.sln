@@ -51,8 +51,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Types.Cloud.Edge", "LIN
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Cloud.Synapse.Types", "LIN.Cloud.Synapse.Types\LIN.Cloud.Synapse.Types.csproj", "{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Types.VectorSearch", "LIN.Types.VectorSearch\LIN.Types.VectorSearch.csproj", "{F6E98E2A-2E42-43D3-B226-6567F6BC0062}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -155,10 +153,6 @@ Global
 		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F6E98E2A-2E42-43D3-B226-6567F6BC0062}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F6E98E2A-2E42-43D3-B226-6567F6BC0062}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F6E98E2A-2E42-43D3-B226-6567F6BC0062}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F6E98E2A-2E42-43D3-B226-6567F6BC0062}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
