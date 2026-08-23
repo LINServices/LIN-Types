@@ -16,7 +16,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="LIN.Types" Version="2.6.0" />
-		<PackageReference Include="System.Text.Json" Version="10.0.10" />
+		<PackageReference Include="System.Text.Json" Version="10.0.11" />
 	</ItemGroup>
 
 </Project>

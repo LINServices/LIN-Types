@@ -53,6 +53,7 @@ public static class HttpExtensions
         services.AddControllers();
         services.AddEndpointsApiExplorer();
         services.AddHttpContextAccessor();
+        services.AddHealthChecks();
 
         if (useSwagger)
             services.AddSwaggerGen(options);

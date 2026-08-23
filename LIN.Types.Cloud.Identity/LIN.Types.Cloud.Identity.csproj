@@ -16,7 +16,7 @@
 
 	<ItemGroup>
 		<PackageReference Include="LIN.Types" Version="2.6.0" />
-		<PackageReference Include="MongoDB.Bson" Version="3.10.0" />
+		<PackageReference Include="MongoDB.Bson" Version="3.11.0" />
 	</ItemGroup>
 
 </Project>
