@@ -30,6 +30,10 @@ public class ProjectDataModel
     [Column("subscription")]
     public int? Subscription { get; set; }
 
+    public string ObjectId { get; set; } = string.Empty;
+
+
+
     public List<OwnerModel> Owners { get; set; } = [];
     public List<FirewallRuleModel> FirewallRules { get; set; } = [];
     public List<KeyModel> Keys { get; set; } = [];
