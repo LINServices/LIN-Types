@@ -1,4 +1,4 @@
-namespace LIN.Cloud.Identity.Platform.Access.Api.Requests;
+namespace LIN.Types.Cloud.Identity.Platform.Access.Requests;
 
 /// <summary>
 /// Cuerpo de <c>POST objects/by-app-key</c>: crea un objeto autenticando con la app-key
