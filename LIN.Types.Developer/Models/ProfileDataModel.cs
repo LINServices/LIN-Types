@@ -27,6 +27,4 @@ public class ProfileDataModel : IProfile
     [Column("account_id")]
     public int AccountId { get; set; }
 
-    public List<OwnerModel> MyProjects { get; set; } = [];
-
 }

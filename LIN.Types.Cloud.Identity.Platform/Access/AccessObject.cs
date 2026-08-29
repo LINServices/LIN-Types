@@ -10,6 +10,7 @@ public class AccessObject
 {
     [BsonId]
     public string Id { get; set; } = string.Empty;
+    public string Name { get; set; } = string.Empty;
     public int ApplicationId { get; set; }
     public string ResourceType { get; set; } = string.Empty;
 

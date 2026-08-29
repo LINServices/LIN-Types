@@ -34,7 +34,6 @@ public class ProjectDataModel
 
 
 
-    public List<OwnerModel> Owners { get; set; } = [];
     public List<FirewallRuleModel> FirewallRules { get; set; } = [];
     public List<KeyModel> Keys { get; set; } = [];
     public List<TransactionDataModel> Transactions { get; set; } = [];
