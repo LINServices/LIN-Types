@@ -11,7 +11,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Developer</Title>
 		<Description>Tipos generales de LIN Developers</Description>
-		<Version>4.0.2</Version>
+		<Version>4.1.0</Version>
 	</PropertyGroup>
 
 	<ItemGroup>

@@ -27,4 +27,19 @@ public class ProfileDataModel : IProfile
     [Column("account_id")]
     public int AccountId { get; set; }
 
+    [Column("first_name")]
+    public string FirstName { get; set; } = string.Empty;
+
+    [Column("last_name")]
+    public string LastName { get; set; } = string.Empty;
+
+    [Column("accept_updates")]
+    public bool AcceptUpdates { get; set; } = true;
+
+    [Column("share_partners")]
+    public bool SharePartners { get; set; } = false;
+
+    [Column("terms_accepted_at")]
+    public DateTime? TermsAcceptedAt { get; set; }
+
 }
