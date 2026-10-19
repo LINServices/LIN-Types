@@ -9,5 +9,8 @@ public enum ModelCapability
     Embedding = 4,
 
     /// <summary>Model can be given tools to invoke. Implies, but does not include, Chat.</summary>
-    ToolUse = 8
+    ToolUse = 8,
+
+    /// <summary>Model can turn audio into text.</summary>
+    Transcription = 16
 }
