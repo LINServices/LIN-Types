@@ -16,13 +16,13 @@
 		<PackageReference Include="LIN.Access.Configurations" Version="2026.3.28.1" />
 		<PackageReference Include="LIN.Access.Logger" Version="2025.9.21" />
 		<PackageReference Include="LIN.Types" Version="2.6.0" />
-		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.11" />
+		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="10.0.13" />
 		<PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
-		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.2.3" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.2.3" />
-		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.22.0" />
-		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.2.3" />
-		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.11" />
+		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="10.3.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="10.3.0" />
+		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.23.0" />
+		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="10.3.0" />
+		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.13" />
 	</ItemGroup>
 
 </Project>
