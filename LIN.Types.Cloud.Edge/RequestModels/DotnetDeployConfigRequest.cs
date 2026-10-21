@@ -9,6 +9,15 @@ public class DotnetDeployConfigRequest
     public bool EnableMultiStaging { get; set; }
 }
 
+public class GoDeployConfigRequest
+{
+    public string RepositoryUrl { get; set; }
+    public string MainPackage { get; set; }
+    public string Branch { get; set; }
+    public string Version { get; set; }
+    public bool EnableMultiStaging { get; set; }
+}
+
 public class StaticDeployConfigRequest
 {
     public string RepositoryUrl { get; set; }

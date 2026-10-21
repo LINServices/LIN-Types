@@ -20,7 +20,7 @@
     </ItemGroup>
 
 	<ItemGroup>
-		<PackageReference Include="LIN.Types" Version="2.6.1" />
+		<PackageReference Include="LIN.Types" Version="2.6.2" />
 	</ItemGroup>
 
 </Project>

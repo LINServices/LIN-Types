@@ -18,7 +18,12 @@ public class DotnetMetadata : ResourceMetadata<GithubDotnetMetadata>
     public string Version { get; set; } = string.Empty;
 }
 
-public class StaticMetadata : ResourceMetadata<GithubStaticMetadata>
+public class GoMetadata : ResourceMetadata<GithubGoMetadata>
+{
+    public string Version { get; set; } = string.Empty;
+}
+
+public class StaticMetadata :ResourceMetadata<GithubStaticMetadata>
 {
     public bool UseNpm { get; set; }
 }

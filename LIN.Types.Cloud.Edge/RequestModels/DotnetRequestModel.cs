@@ -14,6 +14,13 @@ public class NodeRequestModel
     public PlanConfigurationResource PlanConfiguration { get; set; }
 }
 
+public class GoRequestModel
+{
+    public string SiteName { get; set; }
+    public GoDeployConfigRequest DeployConfigRequest { get; set; }
+    public PlanConfigurationResource PlanConfiguration { get; set; }
+}
+
 public class PlanConfigurationResource
 {
     public int ResourceBaseId { get; set; }

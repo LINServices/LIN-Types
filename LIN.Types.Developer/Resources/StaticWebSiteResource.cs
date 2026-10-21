@@ -2,8 +2,6 @@
 
 public class StaticWebSiteResource : Models.ProjectDataModel
 {
-    public List<SlotModel> Slots { get; set; } = [];
-    public List<SlotModel> Publishers { get; set; } = [];
     public bool AutoSwap { get; set; }
     public string Site { get; set; }
     public bool HttpEnable { get; set; }

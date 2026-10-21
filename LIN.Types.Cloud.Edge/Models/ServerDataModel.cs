@@ -33,6 +33,7 @@ public static class ServerConstants
     public const string FeatureNet = "dotnet";
     public const string FeatureWeb = "web";
     public const string FeatureNode = "node";
+    public const string FeatureGo = "go";
     public const string FeatureMongo = "mongo";
     public const string FeaturePostgres = "postgres";
     public const string FeatureMySql = "mysql";

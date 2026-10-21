@@ -5,6 +5,11 @@ public class GithubDotnetMetadata : BaseGithubMetadata
     public string CSProj { get; set; } = string.Empty;
 }
 
+public class GithubGoMetadata : BaseGithubMetadata
+{
+    public string MainPackage { get; set; } = string.Empty;
+}
+
 public class GithubStaticMetadata : BaseGithubMetadata
 {
     public string NpmBuildCommand { get; set; } = string.Empty;

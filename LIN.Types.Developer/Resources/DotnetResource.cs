@@ -2,8 +2,6 @@
 
 public class DotnetResource : Models.ProjectDataModel
 {
-    public List<SlotModel> Slots { get; set; } = [];
-    public List<SlotModel> Publishers { get; set; } = [];
     public string Version { get; set; } = string.Empty;
     public bool AutoSwap { get; set; }
     public string Site { get; set; }
