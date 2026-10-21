@@ -2,7 +2,6 @@
 
 public enum AccountType
 {
-    Personal,
-    Work,
-    Education
+    User,
+    Service
 }

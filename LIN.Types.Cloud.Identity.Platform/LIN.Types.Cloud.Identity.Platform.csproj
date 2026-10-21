@@ -10,7 +10,7 @@
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<Title>LIN.Types.Cloud.Identity.Platform</Title>
 		<Description>Tipos de LCIP</Description>
-		<Version>1.2.3</Version>
+		<Version>1.3</Version>
 	</PropertyGroup>
 
 	<ItemGroup>
