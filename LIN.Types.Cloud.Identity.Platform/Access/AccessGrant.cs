@@ -1,3 +1,4 @@
+using System.Text.Json;
 using MongoDB.Bson.Serialization.Attributes;
 
 namespace LIN.Types.Cloud.Identity.Platform.Access;
@@ -12,4 +13,10 @@ public class AccessGrant
     public DateTime GrantedAt { get; set; }
     public DateTime? ExpiresAt { get; set; }
     public List<string> PermissionCodes { get; set; } = [];
+
+    [BsonIgnoreIfNull]
+    public DateTime? UpdatedAt { get; set; }
+
+    [BsonIgnoreIfNull]
+    public JsonElement? Metadata { get; set; }
 }
