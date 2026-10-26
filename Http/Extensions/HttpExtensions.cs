@@ -1,4 +1,5 @@
-﻿using Http.Middlewares;
+﻿using Http.Extensions.Json;
+using Http.Middlewares;
 using LIN.Access.Logger;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
@@ -6,6 +7,7 @@ using Microsoft.AspNetCore.HttpOverrides;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Newtonsoft.Json;
 
 namespace Http.Extensions;
 
@@ -35,6 +37,11 @@ public static class HttpExtensions
     /// </summary>
     public static IServiceCollection AddLINHttp(this IServiceCollection services, bool useSwagger = true, Action<Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions>? options = null, bool useCors = true)
     {
+        JsonConvert.DefaultSettings = () => new JsonSerializerSettings
+        {
+            Converters = { new JsonElementNewtonsoftConverter() }
+        };
+
         UseCors = useCors;
 
         // Lee X-Forwarded-Proto y X-Forwarded-Host que enviará YARP

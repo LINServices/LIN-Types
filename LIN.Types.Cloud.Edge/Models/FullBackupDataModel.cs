@@ -20,6 +20,11 @@ public class FullBackupDataModel
 
     public DatabaseEngine Engine { get; set; } = DatabaseEngine.Postgres;
 
+    /// <summary>
+    /// False para backups de apps, donde Engine se ignora.
+    /// </summary>
+    public bool IsDatabase { get; set; } = true;
+
     public FullBackupStatus Status { get; set; } = FullBackupStatus.Pending;
 
     /// <summary>
