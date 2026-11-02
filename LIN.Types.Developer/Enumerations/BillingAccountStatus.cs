@@ -5,5 +5,7 @@ public enum BillingAccountStatus
     Undefined,
     Active,
     Deleted,
-    Disable
+    Disable,
+    PendingApproval = 4,
+    Rejected = 5
 }

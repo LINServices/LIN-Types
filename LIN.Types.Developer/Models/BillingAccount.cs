@@ -7,5 +7,8 @@ public class BillingAccount
     public BillingAccountTypes Type { get; set; }
     public BillingAccountStatus State { get; set; }
     public decimal Balance { get; set; }
+    public BillingPlan Plan { get; set; } = BillingPlan.Free;
+    public int TrustLevel { get; set; } = 0;
+    public int? TrustLevelOverride { get; set; }
     public List<TransactionDataModel> Transactions { get; set; } = [];
 }
