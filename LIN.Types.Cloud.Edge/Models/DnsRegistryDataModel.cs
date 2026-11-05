@@ -9,4 +9,9 @@ public class DnsRegistryDataModel
     public int DomainId { get; set; }
     public ContainerDataModel Container { get; set; } = null!;
     public int ContainerId { get; set; }
+
+    /// <summary>
+    /// Indica que el registro apunta al proxy y se publica por SNI (motores de datos), no al nodo.
+    /// </summary>
+    public bool IsSni { get; set; }
 }
