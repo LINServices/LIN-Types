@@ -24,4 +24,12 @@ public class UpsertModelRequest
 
     [Range(0, double.MaxValue)]
     public decimal OutputPricePerMillionTokens { get; set; }
+
+    public bool AvailableByDefault { get; set; } = true;
+
+    [Range(0, double.MaxValue)]
+    public decimal InputCostPerMillionTokens { get; set; }
+
+    [Range(0, double.MaxValue)]
+    public decimal OutputCostPerMillionTokens { get; set; }
 }

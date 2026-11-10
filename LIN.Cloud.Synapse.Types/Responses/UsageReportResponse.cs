@@ -10,4 +10,6 @@ public class UsageReportResponse
     public long TotalInputTokens { get; set; }
     public long TotalOutputTokens { get; set; }
     public decimal TotalEstimatedCost { get; set; }
+    public decimal TotalProviderCost { get; set; }
+    public decimal TotalMargin { get; set; }
 }

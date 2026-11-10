@@ -7,4 +7,6 @@ public class UsageSummaryItem
     public long InputTokens { get; set; }
     public long OutputTokens { get; set; }
     public decimal EstimatedCost { get; set; }
+    public decimal ProviderCost { get; set; }
+    public decimal Margin { get; set; }
 }

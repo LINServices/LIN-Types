@@ -12,5 +12,8 @@ public class ModelResponse
     public bool IsEnabled { get; set; }
     public decimal InputPricePerMillionTokens { get; set; }
     public decimal OutputPricePerMillionTokens { get; set; }
+    public bool AvailableByDefault { get; set; }
+    public decimal InputCostPerMillionTokens { get; set; }
+    public decimal OutputCostPerMillionTokens { get; set; }
     public DateTime? PricingEffectiveFrom { get; set; }
 }
