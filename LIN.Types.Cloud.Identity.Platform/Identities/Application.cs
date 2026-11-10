@@ -1,4 +1,6 @@
-﻿using LIN.Types.Cloud.Identity.Platform.Identities.Enums;
+﻿using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
+using LIN.Types.Cloud.Identity.Platform.Identities.Enums;
 
 namespace LIN.Types.Cloud.Identity.Platform.Identities;
 
@@ -15,4 +17,8 @@ public class Application
     public Identity Identity { get; set; } = null!;
     public int OwnerIdentityId { get; set; }
     public Identity Owner { get; set; } = null!;
+    [JsonIgnore]
+    [IgnoreDataMember]
+    public string? SecretHash { get; set; }
+    public DateTime? SecretCreatedAt { get; set; }
 }
