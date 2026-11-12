@@ -44,14 +44,19 @@ public static class HttpExtensions
 
         UseCors = useCors;
 
-        // Lee X-Forwarded-Proto y X-Forwarded-Host que enviará YARP
-        services.Configure<ForwardedHeadersOptions>(options =>
+        // Lee X-Forwarded-For, X-Forwarded-Proto y X-Forwarded-Host que enviará YARP.
+        // X-Forwarded-For reemplaza Connection.RemoteIpAddress por la IP real del cliente.
+        services.AddOptions<ForwardedHeadersOptions>().Configure<IConfiguration>((options, config) =>
         {
-            options.ForwardedHeaders = ForwardedHeaders.XForwardedProto | ForwardedHeaders.XForwardedHost;
+            options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto | ForwardedHeaders.XForwardedHost;
 
             // limpia restricciones de proxies conocidos:
-            options.KnownNetworks.Clear();
+            options.KnownIPNetworks.Clear();
             options.KnownProxies.Clear();
+
+            // Número de proxies en cadena (ej. Cloudflare/LB -> Gateway -> Servicio = 2). Por defecto 1.
+            if (int.TryParse(config["LIN:forwardLimit"], out var forwardLimit) && forwardLimit > 0)
+                options.ForwardLimit = forwardLimit;
         });
 
         UseSwagger = useSwagger;
