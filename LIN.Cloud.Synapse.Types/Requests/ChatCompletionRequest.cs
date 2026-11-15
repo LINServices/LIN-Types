@@ -28,4 +28,10 @@ public class ChatCompletionRequest
     /// </summary>
     [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
     public string? ToolChoice { get; set; }
+
+    /// <summary>
+    /// Forces JSON output. Null or type "text" means a free-form answer.
+    /// </summary>
+    [JsonIgnore(Condition = JsonIgnoreCondition.WhenWritingNull)]
+    public ResponseFormat? ResponseFormat { get; set; }
 }

@@ -14,6 +14,12 @@ public class UpsertModelRequest
     [Required]
     public string ProviderModelName { get; set; } = string.Empty;
 
+    /// <summary>
+    /// Descripción corta del modelo, p. ej. "Modelo multimodal de propósito general".
+    /// </summary>
+    [MaxLength(500)]
+    public string? Description { get; set; }
+
     [Required]
     public ModelCapability Capabilities { get; set; }
 

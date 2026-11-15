@@ -8,6 +8,7 @@ public class ModelResponse
     public string ModelId { get; set; } = string.Empty;
     public string Provider { get; set; } = string.Empty;
     public string ProviderModelName { get; set; } = string.Empty;
+    public string? Description { get; set; }
     public ModelCapability Capabilities { get; set; }
     public bool IsEnabled { get; set; }
     public decimal InputPricePerMillionTokens { get; set; }

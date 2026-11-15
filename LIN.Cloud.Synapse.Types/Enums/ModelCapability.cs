@@ -12,5 +12,11 @@ public enum ModelCapability
     ToolUse = 8,
 
     /// <summary>Model can turn audio into text.</summary>
-    Transcription = 16
+    Transcription = 16,
+
+    /// <summary>Model can be forced to answer with valid JSON (response format "json_object").</summary>
+    JsonOutput = 32,
+
+    /// <summary>Model can be forced to answer with JSON matching a schema (response format "json_schema").</summary>
+    JsonSchema = 64
 }
