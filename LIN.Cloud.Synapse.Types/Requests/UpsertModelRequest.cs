@@ -33,6 +33,17 @@ public class UpsertModelRequest
 
     public bool AvailableByDefault { get; set; } = true;
 
+    /// <summary>
+    /// Nivel de retención de datos del proveedor. Si se omite se asume el peor caso (<see cref="DataRetentionLevel.Training"/>).
+    /// </summary>
+    [EnumDataType(typeof(DataRetentionLevel))]
+    public DataRetentionLevel DataRetention { get; set; } = DataRetentionLevel.Training;
+
+    /// <summary>
+    /// Límites de tokens por defecto (a lo sumo uno por periodo). Reemplazo total: omitirlos quita los existentes.
+    /// </summary>
+    public List<ModelDefaultQuotaItem> DefaultQuotas { get; set; } = [];
+
     [Range(0, double.MaxValue)]
     public decimal InputCostPerMillionTokens { get; set; }
 

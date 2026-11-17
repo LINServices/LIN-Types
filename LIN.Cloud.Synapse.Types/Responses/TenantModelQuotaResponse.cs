@@ -12,5 +12,10 @@ public class TenantModelQuotaResponse
     public long? UsedOutputTokens { get; set; }
     public DateTime WindowStart { get; set; }
     public DateTime WindowEnd { get; set; }
-    public DateTime UpdatedAt { get; set; }
+    public QuotaSource Source { get; set; }
+
+    /// <summary>
+    /// Última modificación del límite propio del tenant; null cuando el límite es el por defecto del modelo.
+    /// </summary>
+    public DateTime? UpdatedAt { get; set; }
 }

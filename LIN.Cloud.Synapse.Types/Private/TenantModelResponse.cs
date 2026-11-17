@@ -15,6 +15,9 @@ public class TenantModelResponse
     /// <summary>Capacidades del modelo.</summary>
     public LIN.Cloud.Synapse.Types.Enums.ModelCapability Capabilities { get; set; }
 
+    /// <summary>Qué hace el proveedor con los datos de las peticiones (0 no retiene, 1 retiene sin entrenar, 2 puede entrenar).</summary>
+    public LIN.Cloud.Synapse.Types.Enums.DataRetentionLevel DataRetention { get; set; }
+
     /// <summary>Precio vigente de entrada por millón de tokens; null si no hay precio.</summary>
     public decimal? InputPricePerMillionTokens { get; set; }
 
