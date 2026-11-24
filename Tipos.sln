@@ -47,8 +47,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LIN.Types.Cloud.OpenAssista
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.EntityFrameworkCore.LINExtensions", "Microsoft.EntityFrameworkCore.LINExtensions\Microsoft.EntityFrameworkCore.LINExtensions.csproj", "{D7C02F9B-26FF-4A94-8186-BD173775DD52}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Types.Cloud.Edge", "LIN.Types.Cloud.Edge\LIN.Types.Cloud.Edge.csproj", "{3C3588D2-C237-7CA7-333B-2378A3E317D3}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Cloud.Synapse.Types", "LIN.Cloud.Synapse.Types\LIN.Cloud.Synapse.Types.csproj", "{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LIN.Types.Cloud.Configurations", "LIN.Types.Cloud.Configurations\LIN.Types.Cloud.Configurations.csproj", "{E20A9AAE-B816-487C-AE9C-56317A8D0B2B}"
@@ -337,18 +335,6 @@ Global
 		{D7C02F9B-26FF-4A94-8186-BD173775DD52}.Release|x64.Build.0 = Release|Any CPU
 		{D7C02F9B-26FF-4A94-8186-BD173775DD52}.Release|x86.ActiveCfg = Release|Any CPU
 		{D7C02F9B-26FF-4A94-8186-BD173775DD52}.Release|x86.Build.0 = Release|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|x64.Build.0 = Debug|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Debug|x86.Build.0 = Debug|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|x64.ActiveCfg = Release|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|x64.Build.0 = Release|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|x86.ActiveCfg = Release|Any CPU
-		{3C3588D2-C237-7CA7-333B-2378A3E317D3}.Release|x86.Build.0 = Release|Any CPU
 		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEB2686F-5FB0-B624-5B3F-FD8199EA7A22}.Debug|x64.ActiveCfg = Debug|Any CPU
