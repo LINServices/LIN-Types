@@ -1,6 +1,3 @@
 ﻿namespace LIN.Types.Developer.Resources.Databases;
 
-public class MySqlResource : DatabaseResource
-{
-    public List<string> Databases { get; set; } = [];
-}
+public class MySqlResource : DatabaseResource;

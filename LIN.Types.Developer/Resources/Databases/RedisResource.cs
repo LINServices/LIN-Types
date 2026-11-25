@@ -1,6 +1,3 @@
 ﻿namespace LIN.Types.Developer.Resources.Databases;
 
-public class RedisResource : DockerResource
-{
-
-}
+public class RedisResource : DockerResource;

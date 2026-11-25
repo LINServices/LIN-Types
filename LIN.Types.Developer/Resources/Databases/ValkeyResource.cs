@@ -1,6 +1,3 @@
 ﻿namespace LIN.Types.Developer.Resources.Databases;
 
-public class ValkeyResource : DockerResource
-{
-
-}
+public class ValkeyResource : DockerResource;
